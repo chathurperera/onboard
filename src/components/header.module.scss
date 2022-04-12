@@ -1,10 +1,11 @@
+@import "/src/mixins";
+
+
 .header{
     background-color: #fff;
 }
 .headerWrap{
-    width: 90%;
-    max-width: 1700px;
-    margin:0 auto;
+    @include section-width;
     display:flex;
     align-items: center;
     justify-content: space-between;

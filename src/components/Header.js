@@ -6,7 +6,7 @@ import downArrow from "../images/downArrow.png";
 export default function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.headerWrap}>
+      <div className={styles.headerWrap} >
 
       <div className={styles.logo}>
           <h1>ONBOARD</h1>

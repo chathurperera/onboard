@@ -1,0 +1,7 @@
+@import "/src/mixins";
+
+.search{
+    &Wrap{
+     @include section-width;
+    }
+}

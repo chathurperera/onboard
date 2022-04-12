@@ -3,7 +3,8 @@ import styles from "../components/header.module.scss";
 
 export default function Search() {
   return (
-    <div>Search</div>
+    <div className={styles.search}>
+      <div className={styles.searchWrap}></div>
+    </div>
   )
 }
-gi
