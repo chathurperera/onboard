@@ -1,0 +1,35 @@
+.header{
+    background-color: #fff;
+}
+.headerWrap{
+    width: 90%;
+    max-width: 1700px;
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo{
+        h1{
+            font-size: 30px;
+            width:100px;
+        }
+    }
+    .profile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        .profileImage{
+            width:30px;
+            margin-right: 10px;
+        }
+        .downArrow{
+            margin-left: 5px;
+            width: 12px;
+        }
+        p{
+            font-weight: 600;
+        }
+    }
+}   
