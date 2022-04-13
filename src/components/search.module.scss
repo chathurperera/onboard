@@ -1,21 +1,29 @@
 @import "/src/mixins";
 @import "/src/variables";
 .search {
-    padding-top: 20px;
-    padding-bottom: 30px;
-    &Wrap {
-      background-color: #fff;
-        padding: 15px;
-        @include section-width;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 100px;
-        
-        .selectWrap {
-          display: flex;
-          align-items: center;   
-          gap: 10px;   
-        padding-right: 20px;
-        border-right: 1px solid rgba(196, 196, 196, 0.87);
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  &Wrap {
+    background-color: #fff;
+    padding: 15px;
+    @include section-width;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 100px;
+
+
+    .selectWrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-right: 20px;
+      border-right: 1px solid rgba(196, 196, 196, 0.87);
+      
+    }
+    .location {
+      display: flex;
+      padding: 20px;
+      align-items: center;
     }
   }
 }
