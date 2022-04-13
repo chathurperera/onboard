@@ -1,0 +1,22 @@
+@import "/src/variables";
+.css-b62m3t-container{
+    width: 100%;
+}
+.select__multi-value{
+    background: transparent !important ;
+    border: 1px solid rgb(199, 199, 199) !important;
+    border-radius: 5px !important;
+    color:$main-blue;
+    &__label{
+        color: $main-blue !important;
+    }
+}
+.select__control{
+    border: none !important;
+}
+.select__placeholder{
+    display: none;
+}
+.select__indicator-separator{
+    display: none;
+}

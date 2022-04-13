@@ -7,3 +7,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.main-content{
+  background-color: #fafafb;
+}
