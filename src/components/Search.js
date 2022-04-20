@@ -33,7 +33,10 @@ export default function Search() {
         </div>
         <div className={styles.location}>
         <img src={location} alt="" />
-        
+
+        </div>
+        <div className={styles.searchButton}>
+          <button>Search</button>
         </div>
       </div>
     </div>

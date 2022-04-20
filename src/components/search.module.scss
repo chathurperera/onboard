@@ -6,24 +6,44 @@
 
   &Wrap {
     background-color: #fff;
-    padding: 15px;
     @include section-width;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 100px;
-
+    grid-template-columns: 1fr 1fr 150px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 
     .selectWrap {
+      margin: 15px;
       display: flex;
       align-items: center;
       gap: 10px;
       padding-right: 20px;
       border-right: 1px solid rgba(196, 196, 196, 0.87);
-      
     }
     .location {
+      padding: 15px;
       display: flex;
       padding: 20px;
       align-items: center;
+    }
+    .searchButton {
+      button{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background: #0062ff;
+        color: #fff;
+        width: 100%;
+        font-size: 18px;
+        font-weight: 600;
+        height: 100%;
+        border: none;
+        transition: all .3s ease;
+        cursor: pointer;
+        &:hover{
+          background: #075ce4;
+        }
+
+      }
     }
   }
 }
