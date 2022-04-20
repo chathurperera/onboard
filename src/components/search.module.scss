@@ -9,8 +9,10 @@
     @include section-width;
     display: grid;
     grid-template-columns: 1fr 1fr 150px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 
     .selectWrap {
       margin: 15px;
@@ -28,8 +30,8 @@
     }
     .searchButton {
       button{
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
         background: #0062ff;
         color: #fff;
         width: 100%;
