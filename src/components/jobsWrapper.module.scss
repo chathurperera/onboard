@@ -1,5 +1,49 @@
+@import "/src/mixins";
+@import "/src/variables";
 .jobsWrapper{
     display: grid;
     grid-template-columns:2fr 8fr;
-    
+    @include section-width;
+    .alertCreate{
+        background-color: #e8f2ff;
+        border-radius: 5px;
+        padding: 16px 12px;
+        .alertTitle{
+            color: black;
+            font-size: 17px;
+            margin: 0;
+            line-height: .8;
+            font-weight: 600;
+        }
+        .alertDescription{
+            color: #7c7e89;
+            font-size: 12px;
+            line-height: 1;
+            margin: 5px 0;
+        }
+        input{
+            width: 100%;
+            padding: 8px ;
+            margin-top: 15px;
+           font-size: 15px;
+            border-radius: 3px;
+            &:focus{
+                outline: none;
+            }
+        }
+        button{
+            font-size: 14px;
+            font-weight: 600;
+            background: #0062ff;
+            color: #fff;
+            margin-top: 20px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+            padding: 6px;
+            cursor: pointer;
+        }
+
+
+    }
 }
