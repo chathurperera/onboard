@@ -9,6 +9,7 @@ export default function App() {
       <Header />
       <div className="main-content">
         <Search />
+        
         <JobsWrapper />
       </div>
     </div>
