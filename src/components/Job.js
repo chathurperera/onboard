@@ -31,7 +31,7 @@ export default function Job() {
     </div>
     <div className={styles.buttons}>
         <button>Apply Now</button>
-        <button>Messages</button>
+        <button>Learn More</button>
     </div>
   </div>
   )
