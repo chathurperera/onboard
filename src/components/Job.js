@@ -4,7 +4,7 @@ import companyLogo from '../images/companyLogo.png';
 import save from '../images/save.png';
 import saved from '../images/saved.png';
 
-export default function Job() {
+export default function Job(props) {
   return (
     <div className={styles.job}>
     <div className={styles.logoWrapper}>
@@ -19,7 +19,7 @@ export default function Job() {
       alt="logo"
     />
     </div>
-    <p className={styles.jobTitle}>UI / UX Designer</p>
+    <p className={styles.jobTitle}>{props.job ? props.job.title : '' }</p>
     <p className={styles.jobDescription}>
       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
       Cupiditate minus rerum nulla, nihil voluptatibus praesentium.

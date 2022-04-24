@@ -4,9 +4,11 @@ import companyLogo from '../images/companyLogo.png';
 import save from '../images/save.png';
 import saved from '../images/saved.png';
 import Job from "./Job";
+import data from '../data.json';
 
 export default function JobsWrapper() {
   const [expandDetails, setExpandDetails] = useState(false);
+  const [listings, setListings] = useState(data);
   const wrapperStyles = {
     width: "100%",
     display: expandDetails ? "grid" : "block",
@@ -24,7 +26,9 @@ export default function JobsWrapper() {
     gridTemplateColumns: expandDetails ? "1fr" : "1fr 1fr 1fr",
     gridGap: "20px",
   };
-
+  const jobsList = listings.map((job,idx) => {
+    return <Job job={job} key={idx} />
+  })
   return (
     <div className={styles.jobsWrapper}>
       <div className={styles.filter}>
@@ -39,13 +43,9 @@ export default function JobsWrapper() {
       </div>
       <div style={wrapperStyles}>
         <div style={jobsContainer}>
-          <Job/>
-          <div className={styles.job}>
-            <h1>job 2</h1>
-          </div>
-          <div className={styles.job}>
-            <h1>job 3</h1>
-          </div>
+          {
+            jobsList
+          }
         </div>
         <div style={expandJobInfo}>More Details</div>
       </div>

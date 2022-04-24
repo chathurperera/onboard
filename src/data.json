@@ -1,0 +1,53 @@
+[
+   {
+       "title": "UI/UX Designer",
+       "tags": {
+           "type": "Full Time",
+           "salary": "LKR 100,000",
+           "Seniority": "Senior Level"
+       },
+       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus iure, sunt rem labore dicta"
+   },
+   {
+       "title": "Sr.Product Manager",
+       "save": false,
+       "tags": {
+           "type": "Full Time",
+           "salary": "LKR 200,000",
+           "Seniority": "Mid Senior"
+       },
+       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus iure, sunt rem labore dicta"
+   },
+   {
+       "title": "User Experience Designer",
+       "save": false,
+       "tags": {
+           "type": "Remote",
+           "salary": "LKR 50,000",
+           "Seniority": "Junior"
+       },
+       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus iure, sunt rem labore dicta"
+   },
+   {
+       "title": "Product Designer",
+       "save": true,
+       "tags": {
+           "type": "Full Time",
+           "salary": "LKR 90,000",
+           "Seniority": "Mid Senior"
+       },
+       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus iure, sunt rem labore dicta"
+   },
+   {
+       "title": "Tech Lead",
+       "save": false,
+       "tags": {
+           "type": "Full Time",
+           "salary": "LKR 110,000",
+           "Seniority": "Mid Senior"
+       },
+       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus iure, sunt rem labore dicta"
+   }
+   
+
+]
