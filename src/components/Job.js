@@ -14,21 +14,20 @@ export default function Job(props) {
       alt="logo"
     />
     <img
+    onClick={props.toggleSave}
       className={styles.save}
-      src={save}
+      src={props.job.save ? saved : save}
       alt="logo"
     />
     </div>
-    <p className={styles.jobTitle}>{props.job ? props.job.title : '' }</p>
-    <p className={styles.jobDescription}>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-      Cupiditate minus rerum nulla, nihil voluptatibus praesentium.
-    </p>
+    <p className={styles.jobTitle}>{props.job.title }</p>
     <div className={styles.jobTags}>
-        <div className={styles.tag}>Full Time</div>
-        <div className={styles.tag}>Remote</div>
-        <div className={styles.tag}>LKR100,00</div>
+        <div className={styles.tag}>{ props.job.tags.type}</div>
+        <div className={styles.tag}>{props.job.tags.seniority}</div>
+        <div className={styles.tag}>{props.job.tags.salary}</div>
     </div>
+    <p className={styles.jobDescription}>{props.job.description}
+    </p>
     <div className={styles.buttons}>
         <button>Apply Now</button>
         <button>Learn More</button>

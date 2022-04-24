@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import styles from "../components/jobsWrapper.module.scss";
-import companyLogo from '../images/companyLogo.png';
-import save from '../images/save.png';
-import saved from '../images/saved.png';
 import Job from "./Job";
 import data from '../data.json';
 
 export default function JobsWrapper() {
   const [expandDetails, setExpandDetails] = useState(false);
   const [listings, setListings] = useState(data);
+
+function toggleSave(id){
+ setListings((prevListings) => {
+   return prevListings.map((listing) => {
+     return listing.id === id ? {...listing,save:!listing.save} : listing
+   })
+ })
+}
   const wrapperStyles = {
     width: "100%",
     display: expandDetails ? "grid" : "block",
@@ -26,8 +31,8 @@ export default function JobsWrapper() {
     gridTemplateColumns: expandDetails ? "1fr" : "1fr 1fr 1fr",
     gridGap: "20px",
   };
-  const jobsList = listings.map((job,idx) => {
-    return <Job job={job} key={idx} />
+  const jobsList = listings.map((job) => {
+    return <Job job={job} key={job.id} toggleSave={() => toggleSave(job.id)}/>
   })
   return (
     <div className={styles.jobsWrapper}>
