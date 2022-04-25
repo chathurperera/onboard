@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "../components/jobsWrapper.module.scss";
 import Job from "./Job";
 import data from '../data.json';
+import MoreDetails from "./MoreDetails";
 
 export default function JobsWrapper() {
   const [expandDetails, setExpandDetails] = useState(true);
@@ -23,7 +24,6 @@ function toggleSave(id){
   const expandJobInfo = {
     display: expandDetails ? "block" : "none",
     width: "100%",
-    border: "1px dashed black",
   };
   const jobsContainer = {
     marginLeft: "20px",
@@ -52,7 +52,7 @@ function toggleSave(id){
             jobsList
           }
         </div>
-        <div style={expandJobInfo}>More Details</div>
+        <MoreDetails styles={expandJobInfo} />
       </div>
     </div>
   );
