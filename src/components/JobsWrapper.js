@@ -4,7 +4,7 @@ import Job from "./Job";
 import data from '../data.json';
 
 export default function JobsWrapper() {
-  const [expandDetails, setExpandDetails] = useState(false);
+  const [expandDetails, setExpandDetails] = useState(true);
   const [listings, setListings] = useState(data);
 
 function toggleSave(id){
