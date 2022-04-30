@@ -22,6 +22,24 @@ export default function MoreDetails(props) {
           <span className={styles.applicantsCount}>98 Applicants</span>
         </p>
       </div>
+      <div className={styles.roleDetails}>
+        <div className={styles.detail}>
+          <p className={styles.label}>Experience</p>
+          <p className={styles.value}>Minimum 1 year</p>
+        </div>
+        <div className={styles.detail}>
+          <p className={styles.label}>Work Level</p>
+          <p className={styles.value}>Senior Level</p>
+        </div>
+        <div className={styles.detail}>
+          <p className={styles.label}>Employee type</p>
+          <p className={styles.value}>Full time job</p>
+        </div>
+        <div className={styles.detail}>
+          <p className={styles.label}>Offer Salary</p>
+          <p className={styles.value}>Rs 50,000 / Month</p>
+        </div>
+      </div>
     </div>
   );
 }

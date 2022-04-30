@@ -51,4 +51,23 @@
     }
 
   }
+  .roleDetails{
+    display: flex;
+    justify-content: space-around;
+    .detail{
+      min-width: 125px;
+      padding: 10px;
+      
+      border-right: 1px solid rgba(151, 149, 149, 0.315);
+      .label{
+        color: #8d8d95;
+        font-size: 10px;
+      }
+      .value{
+        color: #484853;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
 }
