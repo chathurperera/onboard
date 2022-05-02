@@ -6,7 +6,7 @@ import saved from '../images/saved.png';
 
 export default function Job(props) {
   return (
-    <div className={styles.job}>
+    <div className={styles.job} onClick={props.toggleMoreDetails}>
     <div className={styles.logoWrapper}>
     <img
       className={styles.logo}
@@ -26,7 +26,7 @@ export default function Job(props) {
         <div className={styles.tag}>{props.job.tags.seniority}</div>
         <div className={styles.tag}>{props.job.tags.salary}</div>
     </div>
-    <p className={styles.jobDescription}>{props.job.description}
+    <p className={styles.jobDescription}>{props.job.extraDetails.description}
     </p>
     <div className={styles.buttons}>
         <button>Apply Now</button>

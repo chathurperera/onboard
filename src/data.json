@@ -8,7 +8,14 @@
             "salary": "LKR 100,000",
             "seniority": "Senior Level"
         },
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus iure, sunt rem labore dicta"
+        "extraDetails": {
+            "Experience": "Minimum 1 year",
+            "Work Level": "Senior Level",
+            "employeeType": "Full time job",
+            "salary": "LKR.100,000",
+            "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, reprehenderit sint? Reiciendis nam doloribus necessitatibus dignissimos tempora ipsum deserunt sit, pariatur nostrum saepe unde deleniti sapiente id voluptatum totam et repellat exercitationem voluptas corporis voluptate accusantium labore illum? Reiciendis ipsa autem porro debitis magnam mollitia eum atque laborum nemo eligendi!",
+            "description": "Incidunt accusamus iure, sunt rem labore dicta sunt rem labore dicta sunt rem labore dicta sunt rem labore dicta"
+        }
     },
     {
         "id": 2,
@@ -19,7 +26,14 @@
             "salary": "LKR 200,000",
             "seniority": "Mid Senior"
         },
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus iure, sunt rem labore dicta"
+        "extraDetails": {
+            "Experience": "Minimum 1 year",
+            "Work Level": "Senior Level",
+            "employeeType": "Full time job",
+            "salary": "LKR.100,000",
+            "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, reprehenderit sint? Reiciendis nam doloribus necessitatibus dignissimos tempora ipsum deserunt sit, pariatur nostrum saepe unde deleniti sapiente id voluptatum totam et repellat exercitationem voluptas corporis voluptate accusantium labore illum? Reiciendis ipsa autem porro debitis magnam mollitia eum atque laborum nemo eligendi!",
+            "description": "Incidunt accusamus iure, sunt rem labore dicta sunt rem labore dicta sunt rem labore dicta sunt rem labore dicta"
+        }
     },
     {
         "id": 3,
@@ -30,7 +44,14 @@
             "salary": "LKR 50,000",
             "seniority": "Junior"
         },
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus iure, sunt rem labore dicta"
+        "extraDetails": {
+            "Experience": "Minimum 1 year",
+            "Work Level": "Senior Level",
+            "employeeType": "Full time job",
+            "salary": "LKR.100,000",
+            "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, reprehenderit sint? Reiciendis nam doloribus necessitatibus dignissimos tempora ipsum deserunt sit, pariatur nostrum saepe unde deleniti sapiente id voluptatum totam et repellat exercitationem voluptas corporis voluptate accusantium labore illum? Reiciendis ipsa autem porro debitis magnam mollitia eum atque laborum nemo eligendi!",
+            "description": "Incidunt accusamus iure, sunt rem labore dicta sunt rem labore dicta sunt rem labore dicta sunt rem labore dicta"
+        }
     },
     {
         "id": 4,
@@ -41,7 +62,14 @@
             "salary": "LKR 90,000",
             "seniority": "Mid Senior"
         },
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus iure, sunt rem labore dicta"
+        "extraDetails": {
+            "Experience": "Minimum 1 year",
+            "Work Level": "Senior Level",
+            "employeeType": "Full time job",
+            "salary": "LKR.100,000",
+            "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, reprehenderit sint? Reiciendis nam doloribus necessitatibus dignissimos tempora ipsum deserunt sit, pariatur nostrum saepe unde deleniti sapiente id voluptatum totam et repellat exercitationem voluptas corporis voluptate accusantium labore illum? Reiciendis ipsa autem porro debitis magnam mollitia eum atque laborum nemo eligendi!",
+            "description": "Incidunt accusamus iure, sunt rem labore dicta sunt rem labore dicta sunt rem labore dicta sunt rem labore dicta"
+        }
     },
     {
         "id": 5,
@@ -52,7 +80,14 @@
             "salary": "LKR 110,000",
             "seniority": "Mid Senior"
         },
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus iure, sunt rem labore dicta"
+        "extraDetails": {
+            "Experience": "Minimum 1 year",
+            "Work Level": "Senior Level",
+            "employeeType": "Full time job",
+            "salary": "LKR.100,000",
+            "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, reprehenderit sint? Reiciendis nam doloribus necessitatibus dignissimos tempora ipsum deserunt sit, pariatur nostrum saepe unde deleniti sapiente id voluptatum totam et repellat exercitationem voluptas corporis voluptate accusantium labore illum? Reiciendis ipsa autem porro debitis magnam mollitia eum atque laborum nemo eligendi!",
+            "description": "Incidunt accusamus iure, sunt rem labore dicta sunt rem labore dicta sunt rem labore dicta sunt rem labore dicta"
+        }
     },
     {
         "id": 6,
@@ -63,6 +98,12 @@
             "salary": "LKR 180,000",
             "seniority": "Senior"
         },
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus iure, sunt rem labore dicta"
+        "extraDetails": {
+            "Experience": "Minimum 1 year",
+            "Work Level": "Senior Level",
+            "employeeType": "Full time job",
+            "salary": "LKR.100met consectetur adipisicing elit. Sequi, reprehenderit sint? Reiciendis nam doloribus necessitatibus dignissimos tempora ipsum deserunt sit, pariatur nostrum saepe unde deleniti sapiente id voluptatum totam et repellat exercitationem voluptas corporis voluptate accusantium labore illum? Reiciendis ipsa autem porro debitis magnam mollitia eum atque laborum nemo eligendi!",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit amet consectetur adipisicing elit amet consectetur adipisicing elit amet consectetur adipisicing elit. Incidunt accusamus iure, sunt rem labore dicta"
+        }
     }
 ]

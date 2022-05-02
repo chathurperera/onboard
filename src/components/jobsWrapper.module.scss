@@ -2,12 +2,13 @@
 @import "/src/variables";
 .jobsWrapper {
   display: grid;
-  grid-template-columns: 2fr 8fr;
+  grid-template-columns: 1fr 1fr;
   @include section-width;
   .alertCreate {
     background-color: #e8f2ff;
     border-radius: 8px;
     padding:18px;
+    display: none;
     .alertTitle {
       color: black;
       font-size: 15px;
@@ -46,6 +47,8 @@
   }
   .job {
     padding: 20px;
+    width: 80%;
+    margin: 0 auto;
     // height: 300px;
     border-radius: 8px;
     background: #fff;

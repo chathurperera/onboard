@@ -9,7 +9,7 @@ export default function MoreDetails(props) {
         <img src={companyLogo} alt="" />
       </div>
       <div className={styles.jobTitle}>
-        <h2>UI/UX Designer</h2>
+        <h2>{props.moreDetails.title}</h2>
         <img src={shareIcon} alt="share" />
       </div>
       <div className={styles.companyDetails}>
@@ -39,6 +39,42 @@ export default function MoreDetails(props) {
           <p className={styles.label}>Offer Salary</p>
           <p className={styles.value}>Rs 50,000 / Month</p>
         </div>
+      </div>
+      <div className={styles.overView}>
+        <h2>Overview</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+          reprehenderit sint? Reiciendis nam doloribus necessitatibus
+          dignissimos tempora ipsum deserunt sit, pariatur nostrum saepe unde
+          deleniti sapiente id voluptatum totam et repellat exercitationem
+          voluptas corporis voluptate accusantium labore illum? Reiciendis ipsa
+          autem porro debitis magnam mollitia eum atque laborum nemo eligendi!
+        </p>
+      </div>
+      <div className={styles.description}>
+        <h2>Job Description</h2>
+        <ul>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem cumque ad amet natus ipsa perferendis magni.
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem cumque ad amet natus ipsa perferendis magni.
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem cumque ad amet natus ipsa perferendis magni.
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem cumque ad amet natus ipsa perferendis magni.
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem cumque ad amet natus ipsa perferendis magni.
+          </li>
+        </ul>
       </div>
     </div>
   );

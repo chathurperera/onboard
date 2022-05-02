@@ -74,4 +74,40 @@
       border-right: none;
     }
   }
+  .overView{
+    padding: 20px 0;
+    h2{
+      color: #20202d;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    p{
+      color: #696971;
+      font-size: 15px;
+    }
+  }
+  .description{
+    h2{
+      color: #20202d;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    ul>li{
+      color: #696971;
+      font-size: 15px;
+      position: relative;
+      &::before{
+        content: '';
+        width: 12px;
+        height: 12px;
+        left: -15px;
+        top: 5px;
+        position: absolute;
+        border: 2px solid #59b9ff;
+        border-radius: 50%;
+      }
+    }
+  }
 }
