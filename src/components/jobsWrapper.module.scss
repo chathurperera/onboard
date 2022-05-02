@@ -83,7 +83,8 @@
     .jobTags {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      column-gap:15px;
+      // justify-content: space-between;
       margin-bottom: 12px;
       .tag {
         background: #e1ebfb;
@@ -100,8 +101,9 @@
     .buttons {
       margin-top: 20px;
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
       align-items: center;
+      column-gap: 15px;
 
       button {
         display: flex;
