@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../components/jobsWrapper.module.scss";
 export default function JobAlert(props) {
-    const visibility = {
-        display: props.showAlert ? 'none' : 'block'
-    }
+  const visibility = {
+    display: props.showAlert ? "none" : "block",
+  };
+  const [mail, setMail] = useState("");
+  const submitMail = () => {
+    setMail("");
+  };
   return (
     <div className={styles.filter} style={visibility}>
       <div className={styles.alertCreate}>
@@ -11,8 +15,14 @@ export default function JobAlert(props) {
         <p className={styles.alertDescription}>
           Create a job alert now and never miss a job
         </p>
-        <input type="email" name="" id="" />
-        <button>Create Job Alert</button>
+        <input
+          type="email"
+          value={mail}
+          onChange={(e) => setMail(e.target.value)}
+          name=""
+          id=""
+        />
+        <button onClick={submitMail}>Create Job Alert</button>
       </div>
     </div>
   );
