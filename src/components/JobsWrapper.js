@@ -3,6 +3,7 @@ import styles from "../components/jobsWrapper.module.scss";
 import Job from "./Job";
 import data from '../data.json';
 import MoreDetails from "./MoreDetails";
+import JobAlert from "./JobAlert";
 
 export default function JobsWrapper() {
   const [expandDetails, setExpandDetails] = useState(false);
@@ -33,7 +34,6 @@ return (
     width: "100%",
   };
   const jobsContainer = {
-    marginLeft: "20px",
     display: "grid",
     gridTemplateColumns: expandDetails ? "1fr" : "1fr",
     gridGap: "20px",
@@ -51,16 +51,7 @@ return (
         </div>
       </div>
         <MoreDetails styles={expandJobInfo} moreDetails={selectedJob} />
-      {/* <div className={styles.filter}>
-        <div className={styles.alertCreate}>
-          <p className={styles.alertTitle}>Create Job Alert</p>
-          <p className={styles.alertDescription}>
-            Create a job alert now and never miss a job
-          </p>
-          <input type="email" name="" id="" />
-          <button>Create Job Alert</button>
-        </div>
-      </div> */}
+        <JobAlert showAlert={expandDetails}/>
 
     </div>
   );

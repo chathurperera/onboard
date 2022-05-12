@@ -3,12 +3,13 @@
 .jobsWrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
   @include section-width;
   .alertCreate {
     background-color: #e8f2ff;
     border-radius: 8px;
     padding:18px;
-    display: none;
+    max-width: 250px;
     .alertTitle {
       color: black;
       font-size: 15px;
@@ -47,7 +48,6 @@
   }
   .job {
     padding: 20px;
-    width: 80%;
     margin: 0 auto;
     // height: 300px;
     border-radius: 8px;
