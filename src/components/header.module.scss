@@ -29,11 +29,23 @@
         .profileImage{
             width:30px;
             border-radius: 50%;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            margin-right: 10px;
+        }
+        .loginUserImage{
+            width:20px;
+            border-radius: 50%;
             margin-right: 10px;
         }
         .downArrow{
             margin-left: 5px;
             width: 12px;
+        }
+        .upArrow{
+            margin-left: 5px;
+            width: 12px;
+            transform: rotate(180deg);
+            
         }
         p{
             font-weight: 600;
