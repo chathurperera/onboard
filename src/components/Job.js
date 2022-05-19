@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from "../components/jobsWrapper.module.scss";
 import companyLogo from '../images/companyLogo.png';
 import save from '../images/save.png';
 import saved from '../images/saved.png';
 
 export default function Job(props) {
+  const [focused,setFocused] = useState(false);
+  
+  function selectJob(toggleFunc){
+    setFocused(!focused);
+    toggleFunc();
+  }
+
   return (
-    <div className={styles.job} onClick={props.toggleMoreDetails}>
+    <div className={focused ? `${styles.job} ${styles.focused}` : `${styles.job}`} onClick={() => selectJob(props.toggleMoreDetails)}>
     <div className={styles.logoWrapper}>
     <img
       className={styles.logo}

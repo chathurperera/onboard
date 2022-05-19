@@ -46,10 +46,13 @@
       cursor: pointer;
     }
   }
+  .focused{
+    border: 2px solid #010203;
+  }
   .job {
+    max-width: 480px;
+    width: 100%;
     padding: 20px;
-    margin: 0 auto;
-    // height: 300px;
     border-radius: 8px;
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.048) 0px 5px 15px 0px;
