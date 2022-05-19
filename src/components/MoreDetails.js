@@ -1,10 +1,13 @@
 import React from "react";
 import styles from "../components/MoreDetails.module.scss";
 import companyLogo from "../images/companyLogo.png";
+import close from "../images/cross.png";
 import shareIcon from "../images/share.png";
 export default function MoreDetails(props) {
   return (
     <div className={styles.wrapper} style={props.styles}>
+
+      <img src={close} className={styles.close} alt="" />
       <div className={styles.logoWrapper}>
         <img src={companyLogo} alt="" />
       </div>
@@ -40,6 +43,7 @@ export default function MoreDetails(props) {
           <p className={styles.value}>Rs 50,000 / Month</p>
         </div>
       </div>
+      <div className={styles.details}>
       <div className={styles.overView}>
         <h2>Overview</h2>
         <p>
@@ -51,6 +55,7 @@ export default function MoreDetails(props) {
           autem porro debitis magnam mollitia eum atque laborum nemo eligendi!
         </p>
       </div>
+      
       <div className={styles.description}>
         <h2>Job Description</h2>
         <ul>
@@ -75,6 +80,8 @@ export default function MoreDetails(props) {
             Exercitationem cumque ad amet natus ipsa perferendis magni.
           </li>
         </ul>
+      </div>
+
       </div>
     </div>
   );

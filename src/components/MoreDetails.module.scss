@@ -1,15 +1,31 @@
 .wrapper {
+  position: sticky;
+  width: 100%;
+  top: 10px;
+  bottom: 10px;
+  right:0 ;
+  height: calc(100vh - 20px);
   border-radius: 12px;
   background-color: #fff;
   padding: 0 30px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
   .logoWrapper {
-    padding: 30px 0;
+    padding: 15px 0;
     img {
-      width: 100px;
-      height: 100px;
+      width: 60px;
+      height: 60px;
       border-radius: 10px;
     }
+  }
+  .close{
+    position: absolute;
+    width: 15px;
+    right: 20px;
+    top: 20px;
+  }
+  .details{
+    overflow-y: scroll;
+    height: 50%;
   }
   .jobTitle {
     display: flex;

@@ -22,7 +22,7 @@ export const Header = () => {
         <div className={styles.logo}>
           <h1>ONBOARD</h1>
         </div>
-        <div className={styles.profile} >
+        <div className={styles.profile}>
           {!isAuthenticated && (
             <>
               <img
@@ -55,18 +55,16 @@ export const Header = () => {
           ) : (
             ""
           )}
-          {/* <p>Chathura perera</p> */}
-          <img
-            src={downArrow}
-            className={expandPanel ? styles.upArrow : styles.downArrow  }
-            alt=""
-            onClick={() => setExpandPanel(!expandPanel)}
-          />
+          {isAuthenticated && (
+            <img
+              src={downArrow}
+              className={expandPanel ? styles.upArrow : styles.downArrow}
+              alt=""
+              onClick={() => setExpandPanel(!expandPanel)}
+            />
+          )}
         </div>
-        {
-          expandPanel && <DropDownPanel />
-        }
-        
+        {expandPanel && <DropDownPanel />}
       </div>
     </header>
   );
