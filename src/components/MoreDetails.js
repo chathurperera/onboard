@@ -6,7 +6,6 @@ import shareIcon from "../images/share.png";
 export default function MoreDetails(props) {
   return (
     <div className={styles.wrapper} style={props.styles}>
-
       <img src={close} className={styles.close} alt="" />
       <div className={styles.logoWrapper}>
         <img src={companyLogo} alt="" />
@@ -44,44 +43,44 @@ export default function MoreDetails(props) {
         </div>
       </div>
       <div className={styles.details}>
-      <div className={styles.overView}>
-        <h2>Overview</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-          reprehenderit sint? Reiciendis nam doloribus necessitatibus
-          dignissimos tempora ipsum deserunt sit, pariatur nostrum saepe unde
-          deleniti sapiente id voluptatum totam et repellat exercitationem
-          voluptas corporis voluptate accusantium labore illum? Reiciendis ipsa
-          autem porro debitis magnam mollitia eum atque laborum nemo eligendi!
-        </p>
-      </div>
-      
-      <div className={styles.description}>
-        <h2>Job Description</h2>
-        <ul>
-          <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem cumque ad amet natus ipsa perferendis magni.
-          </li>
-          <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem cumque ad amet natus ipsa perferendis magni.
-          </li>
-          <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem cumque ad amet natus ipsa perferendis magni.
-          </li>
-          <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem cumque ad amet natus ipsa perferendis magni.
-          </li>
-          <li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem cumque ad amet natus ipsa perferendis magni.
-          </li>
-        </ul>
-      </div>
+        <div className={styles.overView}>
+          <h2>Overview</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+            reprehenderit sint? Reiciendis nam doloribus necessitatibus
+            dignissimos tempora ipsum deserunt sit, pariatur nostrum saepe unde
+            deleniti sapiente id voluptatum totam et repellat exercitationem
+            voluptas corporis voluptate accusantium labore illum? Reiciendis
+            ipsa autem porro debitis magnam mollitia eum atque laborum nemo
+            eligendi!
+          </p>
+        </div>
 
+        <div className={styles.description}>
+          <h2>Job Description</h2>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem cumque ad amet natus ipsa perferendis magni.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem cumque ad amet natus ipsa perferendis magni.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem cumque ad amet natus ipsa perferendis magni.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem cumque ad amet natus ipsa perferendis magni.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem cumque ad amet natus ipsa perferendis magni.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
