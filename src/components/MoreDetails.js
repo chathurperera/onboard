@@ -6,7 +6,12 @@ import shareIcon from "../images/share.png";
 export default function MoreDetails(props) {
   return (
     <div className={styles.wrapper} style={props.styles}>
-      <img src={close} className={styles.close} alt="" />
+      <img
+        src={close}
+        className={styles.close}
+        alt=""
+        onClick={() => props.setExpandDetails(false)}
+      />
       <div className={styles.logoWrapper}>
         <img src={companyLogo} alt="" />
       </div>

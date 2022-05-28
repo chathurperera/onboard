@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "../components/jobsWrapper.module.scss";
 import Job from "./Job";
-import data from '../data.json';
+import data from "../data.json";
 import MoreDetails from "./MoreDetails";
 import JobAlert from "./JobAlert";
 
@@ -9,20 +9,22 @@ export default function JobsWrapper() {
   const [expandDetails, setExpandDetails] = useState(false);
   const [listings, setListings] = useState(data);
   const [selectedJob, setSelectedJob] = useState({});
-
-function toggleSave(id){
- setListings((prevListings) => {
-   return prevListings.map((listing) => {
-     return listing.id === id ? {...listing,save:!listing.save} : listing
-   })
- })
-}
-function toggleMoreDetails(id){
-  
-return (
-  setSelectedJob(listings.find(listing => listing.id === id)),
-  setExpandDetails((prevState) => !prevState));
-}
+  console.log("selectedJob", selectedJob);
+  function toggleSave(id) {
+    setListings((prevListings) => {
+      return prevListings.map((listing) => {
+        return listing.id === id
+          ? { ...listing, save: !listing.save }
+          : listing;
+      });
+    });
+  }
+  function toggleMoreDetails(id) {
+    return (
+      setSelectedJob(listings.find((listing) => listing.id === id)),
+      setExpandDetails((prevState) => !prevState)
+    );
+  }
   const wrapperStyles = {
     width: "100%",
     display: expandDetails ? "grid" : "block",
@@ -39,20 +41,28 @@ return (
     gridGap: "20px",
   };
   const jobsList = listings.map((job) => {
-    return <Job job={job} key={job.id} toggleSave={() => toggleSave(job.id)} toggleMoreDetails={() => toggleMoreDetails(job.id)} />
-  })
+    return (
+      <Job
+        job={job}
+        setSelectedJob={setSelectedJob}
+        setExpandDetails={setExpandDetails}
+        key={job.id}
+        toggleSave={() => toggleSave(job.id)}
+        toggleMoreDetails={() => toggleMoreDetails(job.id)}
+      />
+    );
+  });
   return (
     <div className={styles.jobsWrapper}>
       <div style={wrapperStyles}>
-        <div style={jobsContainer}>
-          {
-            jobsList
-          }
-        </div>
+        <div style={jobsContainer}>{jobsList}</div>
       </div>
-        <MoreDetails styles={expandJobInfo} moreDetails={selectedJob} />
-        <JobAlert showAlert={expandDetails}/>
-
+      <MoreDetails
+        styles={expandJobInfo}
+        setExpandDetails={setExpandDetails}
+        moreDetails={selectedJob}
+      />
+      <JobAlert showAlert={expandDetails} />
     </div>
   );
 }
