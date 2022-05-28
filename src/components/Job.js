@@ -15,7 +15,7 @@ export default function Job(props) {
 
   return (
     <div
-      className={focused ? `${styles.job} ${styles.focused}` : `${styles.job}`}
+      className={props.selectedJob.id === props.job.id ? `${styles.job} ${styles.focused}` : `${styles.job}`}
       onClick={selectJob}
     >
       <div className={styles.logoWrapper}>

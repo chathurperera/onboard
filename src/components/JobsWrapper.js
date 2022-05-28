@@ -45,6 +45,7 @@ export default function JobsWrapper() {
       <Job
         job={job}
         setSelectedJob={setSelectedJob}
+        selectedJob={selectedJob}
         setExpandDetails={setExpandDetails}
         key={job.id}
         toggleSave={() => toggleSave(job.id)}
