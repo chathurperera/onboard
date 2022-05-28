@@ -10,12 +10,16 @@ export default function Job(props) {
   function selectJob(toggleFunc) {
     setFocused(!focused);
     props.setSelectedJob(props.job);
-    props.setExpandDetails(prevState => !prevState);
+    props.setExpandDetails(true);
   }
 
   return (
     <div
-      className={props.selectedJob.id === props.job.id ? `${styles.job} ${styles.focused}` : `${styles.job}`}
+      className={
+        props.selectedJob.id === props.job.id && props.expandDetails
+          ? `${styles.job} ${styles.focused}`
+          : `${styles.job}`
+      }
       onClick={selectJob}
     >
       <div className={styles.logoWrapper}>

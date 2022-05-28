@@ -47,6 +47,7 @@ export default function JobsWrapper() {
         setSelectedJob={setSelectedJob}
         selectedJob={selectedJob}
         setExpandDetails={setExpandDetails}
+        expandDetails={expandDetails}
         key={job.id}
         toggleSave={() => toggleSave(job.id)}
         toggleMoreDetails={() => toggleMoreDetails(job.id)}
