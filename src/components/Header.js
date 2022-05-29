@@ -5,7 +5,7 @@ import downArrow from "../images/downArrow.png";
 import signOut from "../images/sign-out.png";
 import userPlaceholder from "../images/user.png";
 import { useAuth0 } from "@auth0/auth0-react";
-import DropDownPanel from "./DropDownCard";
+import DropDownPanel from "../components/home/DropDownCard";
 
 export const Header = () => {
   const { loginWithRedirect } = useAuth0();

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import styles from "../components/jobsWrapper.module.scss";
-import companyLogo from "../images/companyLogo.png";
-import save from "../images/save.png";
-import saved from "../images/saved.png";
+import styles from "./jobsWrapper.module.scss";
+import companyLogo from "../../images/companyLogo.png";
+import save from "../../images/save.png";
+import saved from "../../images/saved.png";
 
 export default function Job(props) {
   const [focused, setFocused] = useState(false);

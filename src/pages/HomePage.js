@@ -1,18 +1,12 @@
-import React, { useEffect, useState } from "react";
-import Header from "../components/Header";
-
+import React from "react";
 import "../App.css";
-import Search from "../components/Search";
-import JobsWrapper from "../components/JobsWrapper";
+import Search from "../components/home/Search";
+import JobsWrapper from "../components/home/JobsWrapper";
 export default function HomePage() {
   return (
-      
-    <div>
-      <Header />
-      <div className="main-content">
-        <Search />
-        <JobsWrapper />
-      </div>
+    <div className="main-content">
+      <Search />
+      <JobsWrapper />
     </div>
   );
 }

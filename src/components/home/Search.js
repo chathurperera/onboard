@@ -1,11 +1,9 @@
 import React from "react";
-import styles from "../components/search.module.scss";
+import styles from "./search.module.scss";
 import Select from "react-select";
-import location from "../images/location.png";
-import search from "../images/search.png";
-import job from "../images/job.png";
-import salary from "../images/salary.png";
-import "../components/_custom-select.scss";
+import location from "../../images/location.png";
+import search from "../../images/search.png";
+import "./_custom-select.scss";
 export default function Search() {
   const options = [
     { value: "chocolate", label: "Chocolate" },

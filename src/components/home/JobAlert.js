@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../components/jobsWrapper.module.scss";
+import styles from "./jobsWrapper.module.scss";
 export default function JobAlert(props) {
   const visibility = {
     display: props.showAlert ? "none" : "block",

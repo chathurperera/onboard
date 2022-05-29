@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "../components/MoreDetails.module.scss";
-import companyLogo from "../images/companyLogo.png";
-import close from "../images/cross.png";
-import shareIcon from "../images/share.png";
+import styles from "./MoreDetails.module.scss";
+import companyLogo from "../../images/companyLogo.png";
+import close from "../../images/cross.png";
+import shareIcon from "../../images/share.png";
 export default function MoreDetails(props) {
   return (
     <div className={styles.wrapper} style={props.styles}>

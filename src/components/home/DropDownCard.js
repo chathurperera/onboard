@@ -1,7 +1,7 @@
 import React from "react";
 import apps from "../../images/apps.png";
 import signOut from "../../images/sign-out.png";
-import styles from "../DropDownCard/dropDown.module.scss";
+import styles from "./dropDown.module.scss";
 import { useAuth0 } from "@auth0/auth0-react";
 const DropDownPanel = () => {
   const { user, isAuthenticated, logout } = useAuth0();

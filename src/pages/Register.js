@@ -1,5 +1,5 @@
 import React , { useState } from "react";
-import LoginHeader from "../components/LoginHeader";
+import LoginHeader from "../components/login/LoginHeader";
 import styles from "../pages/Register.module.scss";
 import show from "../images/show.png";
 import hide from "../images/hide.png";
