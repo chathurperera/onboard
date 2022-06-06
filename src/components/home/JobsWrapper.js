@@ -1,15 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./jobsWrapper.module.scss";
-import Job from "../home/Job";
+import Job from "../home/Job.js";
 import data from "../../data.json";
 import MoreDetails from "./MoreDetails";
 import JobAlert from "./JobAlert";
 
-export default function JobsWrapper() {
+export const JobsWrapper = () => {
   const [expandDetails, setExpandDetails] = useState(false);
   const [listings, setListings] = useState(data);
   const [selectedJob, setSelectedJob] = useState({});
   console.log("selectedJob", selectedJob);
+  useEffect(() => {
+    
+  },[])
+  
+  
   function toggleSave(id) {
     setListings((prevListings) => {
       return prevListings.map((listing) => {
@@ -68,3 +73,4 @@ export default function JobsWrapper() {
     </div>
   );
 }
+export default JobsWrapper

@@ -44,7 +44,7 @@ function Footer() {
         </div>
       </div>
       <div className={styles.copyRight}>
-        <p>Ⓒ 2022 ONBOARD All rights reserved</p>
+        <p>Ⓒ 2022 ONBOARD A side project</p>
       </div>
     </footer>
   );

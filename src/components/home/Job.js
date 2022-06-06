@@ -1,18 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 import styles from "./jobsWrapper.module.scss";
 import companyLogo from "../../images/companyLogo.png";
 import save from "../../images/save.png";
 import saved from "../../images/saved.png";
 
-export default function Job(props) {
+export const Job = memo((props) => {
   const [focused, setFocused] = useState(false);
-
   function selectJob(toggleFunc) {
     setFocused(!focused);
     props.setSelectedJob(props.job);
     props.setExpandDetails(true);
   }
-
+  console.log("job rendered");
   return (
     <div
       className={
@@ -46,4 +45,5 @@ export default function Job(props) {
       </div>
     </div>
   );
-}
+});
+export default Job
