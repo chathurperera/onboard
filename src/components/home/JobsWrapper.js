@@ -4,14 +4,20 @@ import Job from "../home/Job.js";
 import data from "../../data.json";
 import MoreDetails from "./MoreDetails";
 import JobAlert from "./JobAlert";
+import axios from "axios";
 
 export const JobsWrapper = () => {
   const [expandDetails, setExpandDetails] = useState(false);
   const [listings, setListings] = useState(data);
   const [selectedJob, setSelectedJob] = useState({});
   console.log("selectedJob", selectedJob);
+  const config = {
+    headers:{
+      'username':'81e00187-27d9-4a94-b273-dbb6675599a7'
+    }
+  }
   useEffect(() => {
-    
+      axios.get('https://www.reed.co.uk/api/1.0/search?keywords=accountant&location=london',config);
   },[])
   
   

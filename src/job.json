@@ -1,0 +1,626 @@
+
+{
+    "status": 200,
+    "message": "Search Type: Filter Search.",
+    "body": {
+        "count": 569,
+        "facets": {
+            "jobType": [
+                {
+                    "label": "full-time",
+                    "count": 569
+                }
+            ],
+            "modality": [
+                {
+                    "label": "false",
+                    "count": 438
+                },
+                {
+                    "label": "true",
+                    "count": 131
+                }
+            ],
+            "country": [
+                {
+                    "label": "Sri Lanka",
+                    "count": 424
+                },
+                {
+                    "label": "India",
+                    "count": 64
+                },
+                {
+                    "label": "",
+                    "count": 10
+                },
+                {
+                    "label": "Indonesia",
+                    "count": 4
+                },
+                {
+                    "label": "Cameroon",
+                    "count": 3
+                },
+                {
+                    "label": "United States",
+                    "count": 3
+                },
+                {
+                    "label": "Cameroun",
+                    "count": 2
+                },
+                {
+                    "label": "Finland",
+                    "count": 2
+                },
+                {
+                    "label": "Nigeria",
+                    "count": 2
+                },
+                {
+                    "label": "Philippines",
+                    "count": 2
+                }
+            ],
+            "tags": [
+                {
+                    "label": "javascript",
+                    "count": 29
+                },
+                {
+                    "label": "aws",
+                    "count": 21
+                },
+                {
+                    "label": "css",
+                    "count": 19
+                },
+                {
+                    "label": "html",
+                    "count": 18
+                },
+                {
+                    "label": "java",
+                    "count": 18
+                },
+                {
+                    "label": "php",
+                    "count": 16
+                },
+                {
+                    "label": "react",
+                    "count": 15
+                },
+                {
+                    "label": "angular",
+                    "count": 12
+                },
+                {
+                    "label": "mysql",
+                    "count": 12
+                },
+                {
+                    "label": "reactjs",
+                    "count": 12
+                }
+            ]
+        },
+        "data": [
+            {
+                "id": 15213,
+                "title": "Inside Sales MANAGER (B2B)",
+                "description": "**Experience:** 8 to 10 Years | **Department:** Sales | **Location:** Currently Remote (Bengaluru) | **Number of Positions:** 2\n\n**Mandatory Skills:** Inside sales, B2b, Database maintenance, MIS, Lead generation,Research, Tele-sales, Target achievement, Pitch, Inbound sales, Outbound & inbound sales, Manager\n\n**Additional Skills:** Communication skills, Client engagements, Self motivated personality, Organisational skills\n\n**MUST HAVE EXPERIENCE IN B2B Sales**\n\n**MUST BE FROM BENGALURU ONLY**\n\n**NOT MORE THAN 30 DAYS NOTICE PERIOD (IMMEDIATE JOINERS PREFERRED)**\n\n###### **Job Description:**\n\n**About the company**\n\nClient is India's leading Employee Assistance Program (EAP) service provider with a reputation for quality with integrity, supporting organisations improve employee well being, through a variety of programmes. Global support Partner of 750+ companies covering of 4.5 million people. Certified in ISO 9001:2013 - Quality Management System Certified ISO 27001:2013 - Information Security System, also has the largest pool of counsellors (200+) in India with 20+ years of experience & 650,000+ counselling sessions conducted. Global partners include Lifeworks (formerly Morneau Shepell) and Lifespeak.\n\n**Job Role:**\n\n- Responsible for delivering the **qualitative and quantitative goals** thru a team of inside sales reps\n- **Recruit, train and optimize a team of inside sales responsible** for **inbound** and **outbound** sales engagements.\n- Refine the **sales pitch** and process to achieve optimum results\n- Establish metrics and help the team improve by understanding their performance\n- Manage **inbound lead flow** and track efficiency of sales and marketing programs\n- Foster a high energy and a learning environment\n- Ensure **adoption of sales tools and efficacy of data/leads**\n\n###### Additional Information\n\n**Your experience in the following will count:**\n\n- Previous experience in **inside sales position**.\n- Proficiency in **Microsoft Office and CRM software** such as Salesforce.com.\n- Excellent communication skills, both verbal and written.\n- Good **organizational skills** and the ability to multitask.\n- Excellent phone and cold calling skills.\n- Strong listening and sales skills.\n- Ability to achieve targets for outbound leads\n\n###### **Required Qualification:**\n\nGraduation - Any Graduate\n\n",
+                "company_id": 10130,
+                "job_type": "full-time",
+                "location": "Bengaluru, Karnataka, India",
+                "department": "Marketing",
+                "tags": [
+                    "inside sales, b2b, database maintenance, mis, lead generation,research, tele-sales, target achievement, pitch, inbound sales, outbound & inbound sales, manager, communication skills, client engagements, self motivated personality, organisational skills"
+                ],
+                "created_at": "2022-06-06 09:07:09",
+                "updated_at": "2022-06-06 09:11:36",
+                "remote": false,
+                "subclass": "Client & Sales Administration",
+                "company_name": "AALUCKS Talent Pro",
+                "company_logo_url": "https://rooster-content-s3.s3.amazonaws.com/companyLogos/AALUCKS_Talent_Pro_Logo.png_1624678418947",
+                "min_salary": 1500000,
+                "max_salary": 1800000,
+                "salary_frequency": "year",
+                "salary_currency": "INR",
+                "is_premium": true,
+                "class": "Administration & Office Support"
+            },
+            {
+                "id": 15212,
+                "title": "Project Manager (Local & Overseas ERP Projects)",
+                "description": "Pristine Solutions is an information technology company  that focuses on direct client interaction and focused customer service.  We collaborate with world-class tech-giants such as SAP and Microsoft.\n\n**We are now looking for Project Managers to work on local and international SAP Implementation projects.**\n\n**_Responsibilities:_**\n\n- Manage various ERP installation projects and oversee work  activities to ensure projects are completed on time, within budget, and  within scope.\n- Implement a project communication plan and arrange meetings to update clients and internal management on the status of projects.\n- Establish positive working connections with all stakeholders and teams.\n- In a timely way, manage all billing obligations for given tasks.\n- Maintain the budget vs. the actual time of assigned projects.\n- Encourage  team members' creative and inventive thinking while aiding them in  bringing their ideas and career ambitions to fruition.\n\n**_Qualifications and Skills:_**\n\n- Bachelor's degree in Computer Science, Business (Accounting), or Information Systems is required.\n- Outstanding project management and organizational abilities\n- Have a working knowledge of ERP solutions.\n- A minimum of two (or more) years of experience as a Project Manager working on various large-scale projects is required.\n- A PMP or comparable qualification will be an advantage.\n\n",
+                "company_id": 12447,
+                "job_type": "full-time",
+                "location": "Colombo, Sri Lanka",
+                "department": "Development",
+                "tags": [
+                    "project management",
+                    "sap erp systems"
+                ],
+                "created_at": "2022-06-06 02:22:28",
+                "updated_at": "2022-06-06 02:22:28",
+                "remote": false,
+                "subclass": "Programme & Project Management",
+                "company_name": "Pristine Solutions",
+                "company_logo_url": "https://rooster-content-s3.s3.amazonaws.com/companyLogos/271748733_4769835039759302_225345796066262660_n.jpg_1644826179459",
+                "min_salary": 35000,
+                "max_salary": 120000,
+                "salary_frequency": "month",
+                "salary_currency": "LKR",
+                "is_premium": false,
+                "class": "Information & Communication Technology"
+            },
+            {
+                "id": 15211,
+                "title": "Digital Creator & Social Media Assistant",
+                "description": "**Digital Marketing Executive** \n\n**_Job Role:_**\n\n•\tCreate digital designs, video and content for social media and website.\n\n•\tManage our digital platforms of the company on a daily basis, with aim to create awareness, promote brand and attract new visitors.\n\n•\tCreate new and sustainable ways to distributing digital content. \n\n•\tManage our digital platforms on a daily basis.\n\n•\tMonitor, evaluate, and report on the performance of digital channels and platforms.\n\n•\tTrain and share expertise with internal teams to equip them. \n\n•\tAs needed, collaborate with supplier and internal teams. \n\n_**Candidate Profile:**_\n\n•\tDigital marketing expertise related certifications and professional qualifications. \n\n•\tHands on experience in design and video creation. \n\n•\tExperience with HubSpot, Google Analytics, and comparable systems will be advantageous.\n\n•\tExperience and knowledge in running digital marketing campaigns across many platforms, including Twitter, Facebook, LinkedIn, and Instagram. \n\n•\tUnderstanding of digital analytics and metrics, as well as the tools for monitoring, managing, and evaluating them, such as Google Analytics and HubSpot.\n\n•\tAbility to form and maintain productive working relationships with other departments, members, and suppliers.\n\n•\tGood written and spoken communication skills, as \twell as careful proofreading are required.",
+                "company_id": 12447,
+                "job_type": "full-time",
+                "location": "Colombo, Sri Lanka",
+                "department": "Marketing",
+                "tags": [
+                    "photoshop",
+                    "copy writing",
+                    "content writing",
+                    "content creation",
+                    "social media management"
+                ],
+                "created_at": "2022-06-06 02:07:51",
+                "updated_at": "2022-06-06 02:07:51",
+                "remote": false,
+                "subclass": "Web & Interaction Design",
+                "company_name": "Pristine Solutions",
+                "company_logo_url": "https://rooster-content-s3.s3.amazonaws.com/companyLogos/271748733_4769835039759302_225345796066262660_n.jpg_1644826179459",
+                "min_salary": 35000,
+                "max_salary": 80000,
+                "salary_frequency": "month",
+                "salary_currency": "LKR",
+                "is_premium": false,
+                "class": "Design & Architecture"
+            },
+            {
+                "id": 15201,
+                "title": "Video Director",
+                "description": "Starting Salary: LKR 70,000/- (Actual compensation is influenced by a wide array of factors including but not limited to skill set and level of experience)\n\nWe’re looking for a Video Director with an eye for detail, strong storytelling skills, and great sense of good aesthetics to engage viewers. You’ll join a cross-functional team focused on developing content in support of sales communications initiatives at Pettah Effect.\n\nKey Qualifications\n\n- You have a passion for filmmaking, photography, design, and technology.\n- You're conceptual thinker and problem solver who is wildly creative and also obsessively meticulous.\n- An expert in all aspects of filmmaking, and are able to lead internal production teams as well as vendors, and direct professional and internal talent.\n- Expert storyteller with a command of visual, communication, narrative, and motion design principles, including composition, framing, and timing.\n- Flexible and can direct big productions as well as getting hands-on in smaller projects.\n- Understanding of what makes content— everything from live action to motion graphics— engaging and successful across channels and audiences.\n- Love keeping up with trends across all types of media associated with the entertainment, and social media.\n- Deep understanding and hands-on experience in: cinematography, lighting, camera operation, sound recording, and video editing.\n- Knowledgeable and hands-on experience with: RED cameras, RED RAW workflow, and ARRI cameras.\n- Deep understanding of and excellent proficiency in: Final Cut Pro, Premiere, DaVinci Resolve, After Effects, and a diverse range of motion design software, plug-ins, techniques and approaches.\n- A keen ability to build work as well as package and presenting creative solutions in an inspiring manner.\n- Clear and concise communicator displaying strong organization and collaboration skills.\n- Flexibility to travel domestically and internationally as the need arises.\n\nDescription\n\n- Build impactful edits and engage key audiences.\n- Have the ability to visualize the project’s vision in the early conceptualization stage and continual ideation with the team throughout the edit.\n- Work well with key partners to ensure successful execution throughout the post-production process.\n- Direct teams to produce video content, as well as touch all aspects of production from ideation, to video shooting, and postproduction.\n- Methodically assess and resolve technical and creative issues.\n- Achieve high quality and continuity between multiple projects while working against aggressive deadlines.\n- Actively maintain expertise in the latest technology trends, techniques, and tools related to post-production.\n\nEditing (Additional Qualifications)\n\n- You have a proficiency of editing platforms Davinci Resolve, Premiere, Avid.\n- Experience and understanding of post-production workflows.\n- Proficiency in supporting applications such as After Effects, Photoshop, Resolve.\n- An understanding of compression guidelines to meet proper delivery specifications.\n- Understanding of, and ability to run the creative review process.\n- Knowing how to address creative notes (directly/indirectly) so as not to destroy the underlying structure of what works well.\n- Ability to maintain a highly organized project, from initial edit through various localization deliveries.\n- Expert editor through a wide variety of productions (TV, documentary, marketing/social, corporate).\n- Comfortable with both live action and animation storytelling.\n- Understanding of deliverables across multi-platforms and aspect ratios.\n- Passion for story structure and an eye for detail.\n- Forethought for the end-users’ experience.\n- Strong collaboration skills, team-focused.\n- Strong creative mind to work alone and deliver results.\n- Understanding of time management and project breakdown.\n- Ability to simplify communication (verbally and as a visual storyteller)\n- Passionate about the brand brand and relentless in preserving its authenticity\n\n**Life at Pettah Effect**\n\nWhat we need from Everyone : Join our community and help define it.\n\n**Our values are part of everything we do here**\n\nLive with No-Excuses\n\nDo the brave thing\n\nBe Humble\n\nPlay as a team\n\n**About Pettah Effect**\n\n“Enabling Everything Entertainment”\n\nPettah Effect is a place where extraordinary people gather to do their best work in every aspect of modern entertainment. Together, we “disrupt the status quo and create culture” through the power of artistry. If you're excited by the idea of making a creative impact, and joining a team of entrepreneurs, this is the place for you.\n\n**What we do**\n\n**We provide marketing services for Artists & Labels.**\n\n1. Obsessed with turning artists into extraordinary experiences and icons, we design & build world-class digital products & experiences for artists & labels on the road to a platinum record and beyond. Our services include Strategy, Branding, Social Media, Web and Distribution\n\n**Media Production for fans & businesses**\n\n2. We produce, distribute and promote content to delight and entertain fans around the world. We partner with good brands to create relationships with their customers through Videos & Photographs.\n\n**Bespoke Audio Studio**\n\n3. Petrah Effect has a bespoke audio house that creates content for a wide range of media. Our clients and collaborators call upon us for original music, audio post, sound design, artist collaborations, podcast development, production and mixing.\n\n**Talent Management**\n\n4. Dedicated to introducing fresh and dynamic talent, we empower the same from across the globe to showcase their art and are dedicated to long-term talent development with a global perspective.\n\nPettah Effect works with artists, musicians, labels, brands and businesses in North America, Europe, Middle East and the Asia/Pacific regions.\n\n**Play as a team**\n\nWe believe that each team member makes a significant contribution to our success of “Enabling Everything Entertainment.”\n\nThat contribution should not be limited by the assigned responsibilities outlined in a job description. Therefore, this job description is designed to outline primary duties, and job scope, but not limit the employee or the organisation to just the work identified. It is our expectation that each team member will offer his/her services wherever and whenever necessary to ensure the success of our “Empowering Everything Entertainment” mission and to pursue individual career growth.\n\n**Culture**\n\n- Bring all of you to work; your passions, your hobbies, creative pursuits and side hustles.\n- Always look for ways to improve, better the output and look for innovative solutions.\n- Lead by example, motivating the team by your high standards, reliance and determination.\n- Embody “None of us are as good as all of us” which fosters a comfortable team environment.\n- Bring forward ideas and initiatives, drawing on your experience and knowledge from outside of the industry\n- Contribute to the Pettah Effect mission ““Enabling Everything Entertainment.” beyond delivering within your job role.\n- Use every interaction as an opportunity to impress.\n\n**Key Qualifications to Join the Team**\n\n- Customer and partner needs can often be unique—but, you’re quick on your feet and connect and influence the right people both inside and outside of Pettah Effect. As a go to person with leadership, you are trusted and comfortable in tough situations. You can settle disputes, negotiations and own the hard calls with minimal noise. You step up to conflicts and see them as opportunities to shine.\n- Understand there are many moving parts in an organisation. Navigating the interdependencies within the company, team and partner agencies is needed for success. Understanding how business financials work, and strategies for sustaining profitable growth, are key to staying ahead of the competition. You analyse the market and think beyond the short-term.\n- See the world through the eyes of the customer by deeply understanding their business needs, challenges, and concerns. At Pettah Effect, we obsess over how people experience our products and services. You not only meet our customers’ expectations, but you exceed them.\n- You are only as strong as the people around you, so you know how to contribute to your team\n- Enjoy a collaborative environment with open dialogue and debate. You empower your teammates to do their life’s best work. When projects require extra support, you are eager to step up to the plate and bring your knowledge to the table.\n- No matter the audience, you are an expert at presenting, and you’re cool under pressure. You make the sophisticated, simple and you command an audience by bringing them along for the journey.\n- Strive for excellence in everything you do. Due to changing priorities, urgent customer needs, or a final push to meet a quarterly forecast, you face the daily challenge of where to focus your time and energy. You have a ‘don’t give up’ demeanour and finish, especially in the face of resistance or setbacks.\n- Seize every opportunity and empower others to reach their goals along the way.\n- Do you believe that communication is key to success? You’re an optimist and someone who actively talks and listens through endless possibilities—with customers and teammates alike. To ensure the most innovative ideas become a reality, you recognize perspectives, patiently listen to every detail and commit to what is right, in order to move us forward.\n\n**Additional Information**\n\nAt Pettah Effect we support, celebrate and thrive because of our differences. It benefits our employees, our clients and the work we produce, and we are proud to be an equal opportunities employer. When hiring we do not discriminate based on race, religion, colour, sex, gender identity, sexual orientation, age, physical or mental disability, nationality or any other characteristic covered by law. All employment is decided on the basis of qualifications, merit, and business need.\n\nPlease let us know if there are any particular adjustments we can consider to make the interview more comfortable for you.",
+                "company_id": 290,
+                "job_type": "full-time",
+                "location": "Colombo, Sri Lanka",
+                "department": "Production",
+                "tags": [
+                    "video directing",
+                    "script writing"
+                ],
+                "created_at": "2022-06-04 06:32:39",
+                "updated_at": "2022-06-04 06:32:39",
+                "remote": false,
+                "subclass": "",
+                "company_name": "Pettah Effect",
+                "company_logo_url": "https://rooster-content-s3.s3.amazonaws.com/companyLogos/Pettah_Effect_Logo_2022_500.png_1654295527713",
+                "min_salary": null,
+                "max_salary": null,
+                "salary_frequency": null,
+                "salary_currency": null,
+                "is_premium": true,
+                "class": "Advertising, Arts & Media"
+            },
+            {
+                "id": 15200,
+                "title": "Photographer / Photography Producer",
+                "description": "Starting Salary: LKR 70,000/- (Actual compensation is influenced by a wide array of factors including but not limited to skill set and level of experience)\n\nPettah Effect is seeking a photography professional with significant studio still department experience to join our production team for our content production. In this role, you will work on multiple photography productions at all stages including pre-production, production, release and potential awards windows. The focus of this role is supporting our Unscripted content.\n\nAs a photography producer, your extraordinary aesthetic sense, creative eye and strategic understanding of material help you anticipate the unusual needs of our complex and complicated projects. You are experienced at developing and maintaining valuable relationships with photographers, filmmakers and talent representatives, and you are an excellent teammate.\n\n**Key Qualifications**\n\n- 2 or more years in a studio photo department or related high-performance photo service organization.\n- Hands-on extensive experience editing photographic material for a multitude of purposes including, but not limited to: publicity, creative advertising, social media, partnerships and international needs.\n- Experience with tent pole titles including interaction with all studio departments, talent reps, filmmakers, and post-production departments.\n- You are able to liaise and maintain excellent working relationships with filmmakers, talent reps and vendors.\n- Experience handling special photo shoots.\n- Working knowledge of talent contracts regarding photographic legal and likeness restrictions.\n- Experience with on-line editing programs and ability to pull still frames from features and episodes.\n- You have a deep network and knowledge of event photographers, experience with red carpet set-ups and follow-up of press images.\n- Knowledge of unit photographers worldwide and experience with the hiring process.\n- You handle multiple projects at once while meeting our constantly changing deadlines.\n- You are a consummate teammate with dedication to quality who instills confidence in others at Pettah Effect.\n- High level of energy, passion, leadership and dedication.\n- You are effective in working with our diverse group of people.\n- Basic knowledge of Final Cut Pro and Photoshop with ability to pull frames, edit, adjust, crop and caption images.\n\n**Description**\n\n- Lead unit photographers on assigned projects and liaise unit publicists to make sure all needs are covered.\n- Help oversee talent approvals on all projects.\n- Provide, manage and coordinate selections of photographic material for all marketing departments, as needed, including pulling frames from original content.\n- Work closely with project executives and leadership on photo selections to meet strategic goals.\n- Handle requests for archival material as needed.\n- Help supervise event photographers on all titles and work with house photographer to secure red carpet set-ups and follow-up selection for press.\n\n**Editing (Additional Qualifications)**\n\n- You have a proficiency of editing platforms Davinci Resolve, Premiere, Avid.\n- Experience and understanding of post-production workflows.\n- Proficiency in supporting applications such as After Effects, Photoshop, Resolve.\n- An understanding of compression guidelines to meet proper delivery specifications.\n- Understanding of, and ability to run the creative review process.\n- Knowing how to address creative notes (directly/indirectly) so as not to destroy the underlying structure of what works well.\n- Ability to maintain a highly organized project, from initial edit through various localization deliveries.\n- Expert editor through a wide variety of productions (TV, documentary, marketing/social, corporate).\n- Comfortable with both live action and animation storytelling.\n- Understanding of deliverables across multi-platforms and aspect ratios.\n- Passion for story structure and an eye for detail.\n- Forethought for the end-users’ experience.\n- Strong collaboration skills, team-focused.\n- Strong creative mind to work alone and deliver results.\n- Understanding of time management and project breakdown.\n- Ability to simplify communication (verbally and as a visual storyteller)\n- Passionate about the brand brand and relentless in preserving its authenticity\n\n**Life at Pettah Effect**\n\nWhat we need from Everyone : Join our community and help define it.\n\n**Our values are part of everything we do here**\n\nLive with No-Excuses\n\nDo the brave thing\n\nBe Humble\n\nPlay as a team\n\n**About Pettah Effect**\n\n“Enabling Everything Entertainment”\n\nPettah Effect is a place where extraordinary people gather to do their best work in every aspect of modern entertainment. Together, we “disrupt the status quo and create culture” through the power of artistry. If you're excited by the idea of making a creative impact, and joining a team of entrepreneurs, this is the place for you.\n\n**What we do**\n\n**We provide marketing services for Artists & Labels.**\n\n1. Obsessed with turning artists into extraordinary experiences and icons, we design & build world-class digital products & experiences for artists & labels on the road to a platinum record and beyond. Our services include Strategy, Branding, Social Media, Web and Distribution\n\n**Media Production for fans & businesses**\n\n2. We produce, distribute and promote content to delight and entertain fans around the world. We partner with good brands to create relationships with their customers through Videos & Photographs.\n\n**Bespoke Audio Studio**\n\n3. Petrah Effect has a bespoke audio house that creates content for a wide range of media. Our clients and collaborators call upon us for original music, audio post, sound design, artist collaborations, podcast development, production and mixing.\n\n**Talent Management**\n\n4. Dedicated to introducing fresh and dynamic talent, we empower the same from across the globe to showcase their art and are dedicated to long-term talent development with a global perspective.\n\nPettah Effect works with artists, musicians, labels, brands and businesses in North America, Europe, Middle East and the Asia/Pacific regions.\n\n**Play as a team**\n\nWe believe that each team member makes a significant contribution to our success of “Enabling Everything Entertainment.”\n\nThat contribution should not be limited by the assigned responsibilities outlined in a job description. Therefore, this job description is designed to outline primary duties, and job scope, but not limit the employee or the organisation to just the work identified. It is our expectation that each team member will offer his/her services wherever and whenever necessary to ensure the success of our “Empowering Everything Entertainment” mission and to pursue individual career growth.\n\n**Culture**\n\n- Bring all of you to work; your passions, your hobbies, creative pursuits and side hustles.\n- Always look for ways to improve, better the output and look for innovative solutions.\n- Lead by example, motivating the team by your high standards, reliance and determination.\n- Embody “None of us are as good as all of us” which fosters a comfortable team environment.\n- Bring forward ideas and initiatives, drawing on your experience and knowledge from outside of the industry\n- Contribute to the Pettah Effect mission ““Enabling Everything Entertainment.” beyond delivering within your job role.\n- Use every interaction as an opportunity to impress.\n\n**Key Qualifications to Join the Team**\n\n- Customer and partner needs can often be unique—but, you’re quick on your feet and connect and influence the right people both inside and outside of Pettah Effect. As a go to person with leadership, you are trusted and comfortable in tough situations. You can settle disputes, negotiations and own the hard calls with minimal noise. You step up to conflicts and see them as opportunities to shine.\n- Understand there are many moving parts in an organisation. Navigating the interdependencies within the company, team and partner agencies is needed for success. Understanding how business financials work, and strategies for sustaining profitable growth, are key to staying ahead of the competition. You analyse the market and think beyond the short-term.\n- See the world through the eyes of the customer by deeply understanding their business needs, challenges, and concerns. At Pettah Effect, we obsess over how people experience our products and services. You not only meet our customers’ expectations, but you exceed them.\n- You are only as strong as the people around you, so you know how to contribute to your team\n- Enjoy a collaborative environment with open dialogue and debate. You empower your teammates to do their life’s best work. When projects require extra support, you are eager to step up to the plate and bring your knowledge to the table.\n- No matter the audience, you are an expert at presenting, and you’re cool under pressure. You make the sophisticated, simple and you command an audience by bringing them along for the journey.\n- Strive for excellence in everything you do. Due to changing priorities, urgent customer needs, or a final push to meet a quarterly forecast, you face the daily challenge of where to focus your time and energy. You have a ‘don’t give up’ demeanour and finish, especially in the face of resistance or setbacks.\n- Seize every opportunity and empower others to reach their goals along the way.\n- Do you believe that communication is key to success? You’re an optimist and someone who actively talks and listens through endless possibilities—with customers and teammates alike. To ensure the most innovative ideas become a reality, you recognize perspectives, patiently listen to every detail and commit to what is right, in order to move us forward.\n\n**Additional Information**\n\nAt Pettah Effect we support, celebrate and thrive because of our differences. It benefits our employees, our clients and the work we produce, and we are proud to be an equal opportunities employer. When hiring we do not discriminate based on race, religion, colour, sex, gender identity, sexual orientation, age, physical or mental disability, nationality or any other characteristic covered by law. All employment is decided on the basis of qualifications, merit, and business need.\n\nPlease let us know if there are any particular adjustments we can consider to make the interview more comfortable for you.",
+                "company_id": 290,
+                "job_type": "full-time",
+                "location": "Colombo, Sri Lanka",
+                "department": "Production",
+                "tags": [
+                    "photography",
+                    "editing",
+                    "retouching"
+                ],
+                "created_at": "2022-06-04 06:29:56",
+                "updated_at": "2022-06-04 06:29:56",
+                "remote": false,
+                "subclass": "",
+                "company_name": "Pettah Effect",
+                "company_logo_url": "https://rooster-content-s3.s3.amazonaws.com/companyLogos/Pettah_Effect_Logo_2022_500.png_1654295527713",
+                "min_salary": null,
+                "max_salary": null,
+                "salary_frequency": null,
+                "salary_currency": null,
+                "is_premium": true,
+                "class": "Advertising, Arts & Media"
+            },
+            {
+                "id": 15199,
+                "title": " Video Producer",
+                "description": "Starting Salary: LKR 70,000/- (Actual compensation is influenced by a wide array of factors including but not limited to skill set and level of experience)\n\nAs Video Producer you will guide the development and lead the execution of best-in-class customer-facing video communication in support of clients and our own business goals. Ensure the flawless development and execution of world-class communications.\n\nIn this role, you will be responsible for overseeing development of videos from inception through final delivery. This includes partnering with creative teams during ideation, supporting the strategic and production goals of brand teams, and leading production through all phases, ensuring projects are produced on strategy, within budget, and to the highest levels of creative excellence.\n\nThis role requires working on a range of deliverables across multiple product, content, experiential and communication platforms while collaborating with other creative teams to deliver compelling original content, across multiple brands. You will have a real passion for storytelling, design, media and technology. The video producer role will support a range of briefs, encompassing projects utilizing game capture, to original, short form, and branded motion graphics animation content across Pettah Effect’s media services. The Video Producer will be responsible for manipulating and editing footage together in a way that matches a creative brief and tells a cohesive story.\n\nKey Qualifications\n\n**Production**\n\n- You have at least 2 years of experience in a producer position at an agency, commercial production company, or in-house marketing communications or creative services department.\n- You have relationships with the production community that bring an in-depth knowledge of resources, crew, and production vendors. Work with the team to explore and identify new up and coming directors, vendors, talent and production models. Work with both the most established talent in the industry and discover new alternatives.\n- Lead and motivate teams with both direct and indirect reporting relationships.\n- A strong leader that informally leads multidisciplinary teams and has marketing communication expertise at both a strategic and executional level.\n- Able to workwith multiple partners and negotiate agreements where varying opinions are the norm.\n- Have prior TV commercial, digital, and video and motion graphics production and post-production experience, excellent communication skills, demonstrated project and budget management skills, and a proven track record of influencing the creative output.\n- Solve problems creatively and are able to compromise without impacting the work.\n- Able to work upstream to anticipate and plan for changes.\n- Understand the brand voice and aesthetic and can shape creative work that meets the organization’s expectations.\n- You are comfortable traveling both domestically and internationally, sometimes with minimal notice.\n\n**Editing**\n\n- You have a proficiency of editing platforms Davinci Resolve, Premiere, Avid.\n- Experience and understanding of post-production workflows.\n- Proficiency in supporting applications such as After Effects, Photoshop, Resolve.\n- An understanding of compression guidelines to meet proper delivery specifications.\n- Understanding of, and ability to run the creative review process.\n- Knowing how to address creative notes (directly/indirectly) so as not to destroy the underlying structure of what works well.\n- Ability to maintain a highly organized project, from initial edit through various localization deliveries.\n- Expert editor through a wide variety of productions (TV, documentary, marketing/social, corporate).\n- Comfortable with both live action and animation storytelling.\n- Understanding of deliverables across multi-platforms and aspect ratios.\n- Passion for story structure and an eye for detail.\n- Forethought for the end-users’ experience.\n- Strong collaboration skills, team-focused.\n- Strong creative mind to work alone and deliver results.\n- Understanding of time management and project breakdown.\n- Ability to simplify communication (verbally and as a visual storyteller)\n- Passionate about the brand brand and relentless in preserving its authenticity\n\nDescription\n\n- The Video producer works to build and own effective production strategies for a variety of shoots, locations, and crew sizes.\n- Manage end-to-end video production, executing flawlessly, on time and within budget.\n- Drive clear and consistent communication, helping everyone stay informed without overwhelming the team.\n- Act as a champion of brand standards in all aspects of creative work.\n- We are the bridge between the creative team and Brand and other business partners that have specific business or communication goals.\n- We work to find creative ways to increase efficiency with production dollars and push suppliers and vendors to deliver more exciting work in an optimal way.\n- We track our expenses, show how our costs have evolved, and explain the story behind it.\n\n**Life at Pettah Effect**\n\nWhat we need from Everyone : Join our community and help define it.\n\n**Our values are part of everything we do here**\n\nLive with No-Excuses\n\nDo the brave thing\n\nBe Humble\n\nPlay as a team\n\n**About Pettah Effect**\n\n“Enabling Everything Entertainment”\n\nPettah Effect is a place where extraordinary people gather to do their best work in every aspect of modern entertainment. Together, we “disrupt the status quo and create culture” through the power of artistry. If you're excited by the idea of making a creative impact, and joining a team of entrepreneurs, this is the place for you.\n\n**What we do**\n\n**We provide marketing services for Artists & Labels.**\n\n1. Obsessed with turning artists into extraordinary experiences and icons, we design & build world-class digital products & experiences for artists & labels on the road to a platinum record and beyond. Our services include Strategy, Branding, Social Media, Web and Distribution\n\n**Media Production for fans & businesses**\n\n2. We produce, distribute and promote content to delight and entertain fans around the world. We partner with good brands to create relationships with their customers through Videos & Photographs.\n\n**Bespoke Audio Studio**\n\n3. Petrah Effect has a bespoke audio house that creates content for a wide range of media. Our clients and collaborators call upon us for original music, audio post, sound design, artist collaborations, podcast development, production and mixing.\n\n**Talent Management**\n\n4. Dedicated to introducing fresh and dynamic talent, we empower the same from across the globe to showcase their art and are dedicated to long-term talent development with a global perspective.\n\nPettah Effect works with artists, musicians, labels, brands and businesses in North America, Europe, Middle East and the Asia/Pacific regions.\n\n**Play as a team**\n\nWe believe that each team member makes a significant contribution to our success of “Enabling Everything Entertainment.”\n\nThat contribution should not be limited by the assigned responsibilities outlined in a job description. Therefore, this job description is designed to outline primary duties, and job scope, but not limit the employee or the organisation to just the work identified. It is our expectation that each team member will offer his/her services wherever and whenever necessary to ensure the success of our “Empowering Everything Entertainment” mission and to pursue individual career growth.\n\n**Culture**\n\n- Bring all of you to work; your passions, your hobbies, creative pursuits and side hustles.\n- Always look for ways to improve, better the output and look for innovative solutions.\n- Lead by example, motivating the team by your high standards, reliance and determination.\n- Embody “None of us are as good as all of us” which fosters a comfortable team environment.\n- Bring forward ideas and initiatives, drawing on your experience and knowledge from outside of the industry\n- Contribute to the Pettah Effect mission ““Enabling Everything Entertainment.” beyond delivering within your job role.\n- Use every interaction as an opportunity to impress.\n\n**Key Qualifications to Join the Team**\n\n- Customer and partner needs can often be unique—but, you’re quick on your feet and connect and influence the right people both inside and outside of Pettah Effect. As a go to person with leadership, you are trusted and comfortable in tough situations. You can settle disputes, negotiations and own the hard calls with minimal noise. You step up to conflicts and see them as opportunities to shine.\n- Understand there are many moving parts in an organisation. Navigating the interdependencies within the company, team and partner agencies is needed for success. Understanding how business financials work, and strategies for sustaining profitable growth, are key to staying ahead of the competition. You analyse the market and think beyond the short-term.\n- See the world through the eyes of the customer by deeply understanding their business needs, challenges, and concerns. At Pettah Effect, we obsess over how people experience our products and services. You not only meet our customers’ expectations, but you exceed them.\n- You are only as strong as the people around you, so you know how to contribute to your team\n- Enjoy a collaborative environment with open dialogue and debate. You empower your teammates to do their life’s best work. When projects require extra support, you are eager to step up to the plate and bring your knowledge to the table.\n- No matter the audience, you are an expert at presenting, and you’re cool under pressure. You make the sophisticated, simple and you command an audience by bringing them along for the journey.\n- Strive for excellence in everything you do. Due to changing priorities, urgent customer needs, or a final push to meet a quarterly forecast, you face the daily challenge of where to focus your time and energy. You have a ‘don’t give up’ demeanour and finish, especially in the face of resistance or setbacks.\n- Seize every opportunity and empower others to reach their goals along the way.\n- Do you believe that communication is key to success? You’re an optimist and someone who actively talks and listens through endless possibilities—with customers and teammates alike. To ensure the most innovative ideas become a reality, you recognize perspectives, patiently listen to every detail and commit to what is right, in order to move us forward.\n\n**Additional Information**\n\nAt Pettah Effect we support, celebrate and thrive because of our differences. It benefits our employees, our clients and the work we produce, and we are proud to be an equal opportunities employer. When hiring we do not discriminate based on race, religion, colour, sex, gender identity, sexual orientation, age, physical or mental disability, nationality or any other characteristic covered by law. All employment is decided on the basis of qualifications, merit, and business need.\n\nPlease let us know if there are any particular adjustments we can consider to make the interview more comfortable for you.",
+                "company_id": 290,
+                "job_type": "full-time",
+                "location": "Colombo, Sri Lanka",
+                "department": "Production",
+                "tags": [
+                    "video production",
+                    "directing",
+                    "editing",
+                    "project management"
+                ],
+                "created_at": "2022-06-04 06:16:02",
+                "updated_at": "2022-06-04 06:16:02",
+                "remote": false,
+                "subclass": "Marketing Communications",
+                "company_name": "Pettah Effect",
+                "company_logo_url": "https://rooster-content-s3.s3.amazonaws.com/companyLogos/Pettah_Effect_Logo_2022_500.png_1654295527713",
+                "min_salary": null,
+                "max_salary": null,
+                "salary_frequency": null,
+                "salary_currency": null,
+                "is_premium": true,
+                "class": "Marketing & Communications"
+            },
+            {
+                "id": 15198,
+                "title": "Finance Executive / Accountant",
+                "description": "Starting Salary: LKR 50,000/- (Actual compensation is influenced by a wide array of factors including but not limited to skill set and level of experience)\n\nDo you love thinking analytically? Are you passionate about using your financial knowledge to navigate complex challenges?\n\nYou'll play an integral role in ensuring our day-to-day financial health. You will support Pettah Effects growth, both top and bottom line, by applying the same level of innovation toward financial matters as we do toward our products and services.\n\nYou'll also collaborate with our teams across multiple brands to develop more effective investment strategies and risk management. Finance is critical to upholding our global dedication to excellence, and it is directly responsible for shaping the company's future.\n\nKey Qualifications\n\n- Minimum 1 years + experience in accounting/finance management and reporting\n- Experience with production tax incentives and related filing process\n- Working knowledge and experience with production payroll, EPF, ETF.\n- Proficiency in accounting softwares (Smart Accounting, PSL), Movie Magic Budgeting and Excel\n- Ability to establish partnerships with producers and production team\n- Proactive thinker who is able to prioritize and manage multiple projects and meet deadlines\n- Detail oriented with strong organizational, teamwork, problem solving and communication skills\n\nJob Description\n\n- Assist in the financial management of the budgeting, reporting, forecasting and daily activity.\n- Oversee timely cost reporting and analyze actuals vs budgets cost reports to ensure accuracy and quickly resolve any issues\n- Collaborate with Creative, Business Affairs and Legal in the creation and vetting of budgets and strategically resolve issues to ensure an efficient process\n- Review cash flow projections and funding requests for accuracy and compliance with contracts.\n- Assist in the contract review and cost analysis process in conjunction with Production, Business Affairs and Labor executives\n- Ensure Finance policies and procedures\n- Manage the setup of accounting payroll and systems software\n- Ad hoc financial analysis as needed\n\n**Life at Pettah Effect**\n\nWhat we need from Everyone : Join our community and help define it.\n\n**Our values are part of everything we do here**\n\nLive with No-Excuses\n\nDo the brave thing\n\nBe Humble\n\nPlay as a team\n\n**About Pettah Effect**\n\n“Enabling Everything Entertainment”\n\nPettah Effect is a place where extraordinary people gather to do their best work in every aspect of modern entertainment. Together, we “disrupt the status quo and create culture” through the power of artistry. If you're excited by the idea of making a creative impact, and joining a team of entrepreneurs, this is the place for you.\n\n**What we do**\n\n**We provide marketing services for Artists & Labels.**\n\n1. Obsessed with turning artists into extraordinary experiences and icons, we design & build world-class digital products & experiences for artists & labels on the road to a platinum record and beyond. Our services include Strategy, Branding, Social Media, Web and Distribution\n\n**Media Production for fans & businesses**\n\n2. We produce, distribute and promote content to delight and entertain fans around the world. We partner with good brands to create relationships with their customers through Videos & Photographs.\n\n**Bespoke Audio Studio**\n\n3. Petrah Effect has a bespoke audio house that creates content for a wide range of media. Our clients and collaborators call upon us for original music, audio post, sound design, artist collaborations, podcast development, production and mixing.\n\n**Talent Management**\n\n4. Dedicated to introducing fresh and dynamic talent, we empower the same from across the globe to showcase their art and are dedicated to long-term talent development with a global perspective.\n\nPettah Effect works with artists, musicians, labels, brands and businesses in North America, Europe, Middle East and the Asia/Pacific regions.\n\n**Play as a team**\n\nWe believe that each team member makes a significant contribution to our success of “Enabling Everything Entertainment.”\n\nThat contribution should not be limited by the assigned responsibilities outlined in a job description. Therefore, this job description is designed to outline primary duties, and job scope, but not limit the employee or the organisation to just the work identified. It is our expectation that each team member will offer his/her services wherever and whenever necessary to ensure the success of our “Empowering Everything Entertainment” mission and to pursue individual career growth.\n\n**Culture**\n\n- Bring all of you to work; your passions, your hobbies, creative pursuits and side hustles.\n- Always look for ways to improve, better the output and look for innovative solutions.\n- Lead by example, motivating the team by your high standards, reliance and determination.\n- Embody “None of us are as good as all of us” which fosters a comfortable team environment.\n- Bring forward ideas and initiatives, drawing on your experience and knowledge from outside of the industry\n- Contribute to the Pettah Effect mission ““Enabling Everything Entertainment.” beyond delivering within your job role.\n- Use every interaction as an opportunity to impress.\n\n**Key Qualifications to Join the Team**\n\n- Customer and partner needs can often be unique—but, you’re quick on your feet and connect and influence the right people both inside and outside of Pettah Effect. As a go to person with leadership, you are trusted and comfortable in tough situations. You can settle disputes, negotiations and own the hard calls with minimal noise. You step up to conflicts and see them as opportunities to shine.\n- Understand there are many moving parts in an organisation. Navigating the interdependencies within the company, team and partner agencies is needed for success. Understanding how business financials work, and strategies for sustaining profitable growth, are key to staying ahead of the competition. You analyse the market and think beyond the short-term.\n- See the world through the eyes of the customer by deeply understanding their business needs, challenges, and concerns. At Pettah Effect, we obsess over how people experience our products and services. You not only meet our customers’ expectations, but you exceed them.\n- You are only as strong as the people around you, so you know how to contribute to your team\n- Enjoy a collaborative environment with open dialogue and debate. You empower your teammates to do their life’s best work. When projects require extra support, you are eager to step up to the plate and bring your knowledge to the table.\n- No matter the audience, you are an expert at presenting, and you’re cool under pressure. You make the sophisticated, simple and you command an audience by bringing them along for the journey.\n- Strive for excellence in everything you do. Due to changing priorities, urgent customer needs, or a final push to meet a quarterly forecast, you face the daily challenge of where to focus your time and energy. You have a ‘don’t give up’ demeanour and finish, especially in the face of resistance or setbacks.\n- Seize every opportunity and empower others to reach their goals along the way.\n- Do you believe that communication is key to success? You’re an optimist and someone who actively talks and listens through endless possibilities—with customers and teammates alike. To ensure the most innovative ideas become a reality, you recognize perspectives, patiently listen to every detail and commit to what is right, in order to move us forward.\n\n**Additional Information**\n\nAt Pettah Effect we support, celebrate and thrive because of our differences. It benefits our employees, our clients and the work we produce, and we are proud to be an equal opportunities employer. When hiring we do not discriminate based on race, religion, colour, sex, gender identity, sexual orientation, age, physical or mental disability, nationality or any other characteristic covered by law. All employment is decided on the basis of qualifications, merit, and business need.\n\nPlease let us know if there are any particular adjustments we can consider to make the interview more comfortable for you.",
+                "company_id": 290,
+                "job_type": "full-time",
+                "location": "Colombo, Sri Lanka",
+                "department": "Operations",
+                "tags": [
+                    "accounting",
+                    "finance",
+                    "budgeting"
+                ],
+                "created_at": "2022-06-03 22:14:17",
+                "updated_at": "2022-06-03 22:14:17",
+                "remote": false,
+                "subclass": "Financial Accounting & Reporting",
+                "company_name": "Pettah Effect",
+                "company_logo_url": "https://roosterpaladinstoragebucket.s3.amazonaws.com/companyLogos/logo_1593409292754_Pettah Effect Logo Logos All-01.png",
+                "min_salary": null,
+                "max_salary": null,
+                "salary_frequency": null,
+                "salary_currency": null,
+                "is_premium": true,
+                "class": "Accounting"
+            },
+            {
+                "id": 15197,
+                "title": "Writer",
+                "description": "Starting Salary: LKR 70,000/- (Actual compensation is influenced by a wide array of factors including but not limited to skill set and level of experience)\n\nAs a Writer on the team, you be an integral member of the process, creating innovative and compelling work from ideation to execution. For any given project, you may be called on to write headlines, both short form and long form product copy, or supply some fresh, creative ideas. And to bring these ideas to life, you’ll collaborate with a world-class Design team.\n\nKey Qualifications\n\n- 2-5 years at minimum as a copywriter. Client side experience a plus.\n- The ability to collaborate well with Art Directors and Graphic Designers.\n- You are a strong communicator that is able to articulate ideas in a clear manner, engage in healthy debate, and accept directional feedback.\n- Good organization skills to file work in a manner that can be shared with the team.\n- Understanding of graphic design and design trends is a bonus.\n\nDescription\n\n- You will be a vital part of the team — concepting, coordinating, and collaborating on launches, event and branding identities, campaigns and signage, packaging design, and special occasion projects.\n- Work with Creative leadership to craft messaging for new and existing products and services. Partner with Designers and Art Directors to develop concepts and messaging for launches.\n- Write headlines in the Pettah Effect voice that are unexpected, fresh, distinctive, and push the brand forward. Create body copy that’s simple and understandable, but also inspiring and unmistakably Pettah Effect.\n- Become really knowledgeable about the latest Pettah Effect products, services, solutions, and related technologies. Work to turn technical features into meaningful customer benefits.\n\n**Life at Pettah Effect**\n\nWhat we need from Everyone : Join our community and help define it.\n\n**Our values are part of everything we do here**\n\nLive with No-Excuses\n\nDo the brave thing\n\nBe Humble\n\nPlay as a team\n\n**About Pettah Effect**\n\n“Enabling Everything Entertainment”\n\nPettah Effect is a place where extraordinary people gather to do their best work in every aspect of modern entertainment. Together, we “disrupt the status quo and create culture” through the power of artistry. If you're excited by the idea of making a creative impact, and joining a team of entrepreneurs, this is the place for you.\n\n**What we do**\n\n**We provide marketing services for Artists & Labels.**\n\n1. Obsessed with turning artists into extraordinary experiences and icons, we design & build world-class digital products & experiences for artists & labels on the road to a platinum record and beyond. Our services include Strategy, Branding, Social Media, Web and Distribution\n\n**Media Production for fans & businesses**\n\n2. We produce, distribute and promote content to delight and entertain fans around the world. We partner with good brands to create relationships with their customers through Videos & Photographs.\n\n**Bespoke Audio Studio**\n\n3. Petrah Effect has a bespoke audio house that creates content for a wide range of media. Our clients and collaborators call upon us for original music, audio post, sound design, artist collaborations, podcast development, production and mixing.\n\n**Talent Management**\n\n4. Dedicated to introducing fresh and dynamic talent, we empower the same from across the globe to showcase their art and are dedicated to long-term talent development with a global perspective.\n\nPettah Effect works with artists, musicians, labels, brands and businesses in North America, Europe, Middle East and the Asia/Pacific regions.\n\n**Play as a team**\n\nWe believe that each team member makes a significant contribution to our success of “Enabling Everything Entertainment.”\n\nThat contribution should not be limited by the assigned responsibilities outlined in a job description. Therefore, this job description is designed to outline primary duties, and job scope, but not limit the employee or the organisation to just the work identified. It is our expectation that each team member will offer his/her services wherever and whenever necessary to ensure the success of our “Empowering Everything Entertainment” mission and to pursue individual career growth.\n\n**Culture**\n\n- Bring all of you to work; your passions, your hobbies, creative pursuits and side hustles.\n- Always look for ways to improve, better the output and look for innovative solutions.\n- Lead by example, motivating the team by your high standards, reliance and determination.\n- Embody “None of us are as good as all of us” which fosters a comfortable team environment.\n- Bring forward ideas and initiatives, drawing on your experience and knowledge from outside of the industry\n- Contribute to the Pettah Effect mission ““Enabling Everything Entertainment.” beyond delivering within your job role.\n- Use every interaction as an opportunity to impress.\n\n**Key Qualifications to Join the Team**\n\n- Customer and partner needs can often be unique—but, you’re quick on your feet and connect and influence the right people both inside and outside of Pettah Effect. As a go to person with leadership, you are trusted and comfortable in tough situations. You can settle disputes, negotiations and own the hard calls with minimal noise. You step up to conflicts and see them as opportunities to shine.\n- Understand there are many moving parts in an organisation. Navigating the interdependencies within the company, team and partner agencies is needed for success. Understanding how business financials work, and strategies for sustaining profitable growth, are key to staying ahead of the competition. You analyse the market and think beyond the short-term.\n- See the world through the eyes of the customer by deeply understanding their business needs, challenges, and concerns. At Pettah Effect, we obsess over how people experience our products and services. You not only meet our customers’ expectations, but you exceed them.\n- You are only as strong as the people around you, so you know how to contribute to your team\n- Enjoy a collaborative environment with open dialogue and debate. You empower your teammates to do their life’s best work. When projects require extra support, you are eager to step up to the plate and bring your knowledge to the table.\n- No matter the audience, you are an expert at presenting, and you’re cool under pressure. You make the sophisticated, simple and you command an audience by bringing them along for the journey.\n- Strive for excellence in everything you do. Due to changing priorities, urgent customer needs, or a final push to meet a quarterly forecast, you face the daily challenge of where to focus your time and energy. You have a ‘don’t give up’ demeanour and finish, especially in the face of resistance or setbacks.\n- Seize every opportunity and empower others to reach their goals along the way.\n- Do you believe that communication is key to success? You’re an optimist and someone who actively talks and listens through endless possibilities—with customers and teammates alike. To ensure the most innovative ideas become a reality, you recognize perspectives, patiently listen to every detail and commit to what is right, in order to move us forward.\n\n**Additional Information**\n\nAt Pettah Effect we support, celebrate and thrive because of our differences. It benefits our employees, our clients and the work we produce, and we are proud to be an equal opportunities employer. When hiring we do not discriminate based on race, religion, colour, sex, gender identity, sexual orientation, age, physical or mental disability, nationality or any other characteristic covered by law. All employment is decided on the basis of qualifications, merit, and business need.\n\nPlease let us know if there are any particular adjustments we can consider to make the interview more comfortable for you.",
+                "company_id": 290,
+                "job_type": "full-time",
+                "location": "Colombo, Sri Lanka",
+                "department": "Marketing",
+                "tags": [
+                    "copywriting"
+                ],
+                "created_at": "2022-06-03 21:57:31",
+                "updated_at": "2022-06-03 21:57:31",
+                "remote": false,
+                "subclass": "",
+                "company_name": "Pettah Effect",
+                "company_logo_url": "https://roosterpaladinstoragebucket.s3.amazonaws.com/companyLogos/logo_1593409292754_Pettah Effect Logo Logos All-01.png",
+                "min_salary": null,
+                "max_salary": null,
+                "salary_frequency": null,
+                "salary_currency": null,
+                "is_premium": true,
+                "class": "Marketing & Communications"
+            },
+            {
+                "id": 15196,
+                "title": "Design Producer / Graphics Designer",
+                "description": "Starting Salary: LKR 70,000/- (Actual compensation is influenced by a wide array of factors including but not limited to skill set and level of experience)\n\nThe Design Producer is a critical role in our growth as a company that delivers Design services for Brands. It is important that they act as the bridge between the conceptual design work and the production of the design/integrated assets. They should relish being a team player and actively look for ways to elevate Design and the Design Studio throughout the agency.\n\nThe Designer is an integral member of the team creating innovative and compelling work that meets the requirements outlined in our creative briefs—from ideation to execution. In this role, you will be instrumental in developing work that inspires both current and potential customers.\n\nKey Qualifications\n\n- 2-4 years of design experience with a growing ability to develop innovative creative work across a broad range of media. Must have a working knowledge of graphic design, branding, photography, and art direction as it pertains to print, digital, and motion.\n- You are naturally curious and passionate about design — with a keen awareness of the evolving landscape of available tools, technologies, resources, and trends.\n- You are a motivated and driven designer that collaborates well with a team to find simple solutions to complex problems.\n- You are a strong communicator that is able to articulate ideas in a clear manner, engage in healthy debate, and accept directional feedback.\n- Good organization skills to file work in a manner that can be shared with the team.\n- Excellent skills with design software, primarily the Adobe Creative Suite.\n- Experience with 3D software is a plus.\n\nDescription\n\n- You will be a vital member of the team — brainstorming, coordinating, and collaborating frequently in order to bring to life our key elements of design and art direction.\n- With an appreciation for your craft, you will dive deep into the details while understanding how your work contributes to bigger-picture objectives.\n- Able to multi-task on design projects that require both conceptual and functional thinking with a tireless work ethic.\n- React quickly to new information, opinions, and direction to strategically pivot when necessary.\n\n**Life at Pettah Effect**\n\nWhat we need from Everyone : Join our community and help define it.\n\n**Our values are part of everything we do here**\n\nLive with No-Excuses\n\nDo the brave thing\n\nBe Humble\n\nPlay as a team\n\n**About Pettah Effect**\n\n“Enabling Everything Entertainment”\n\nPettah Effect is a place where extraordinary people gather to do their best work in every aspect of modern entertainment. Together, we “disrupt the status quo and create culture” through the power of artistry. If you're excited by the idea of making a creative impact, and joining a team of entrepreneurs, this is the place for you.\n\n**What we do**\n\n**We provide marketing services for Artists & Labels.**\n\n1. Obsessed with turning artists into extraordinary experiences and icons, we design & build world-class digital products & experiences for artists & labels on the road to a platinum record and beyond. Our services include Strategy, Branding, Social Media, Web and Distribution\n\n**Media Production for fans & businesses**\n\n2. We produce, distribute and promote content to delight and entertain fans around the world. We partner with good brands to create relationships with their customers through Videos & Photographs.\n\n**Bespoke Audio Studio**\n\n3. Petrah Effect has a bespoke audio house that creates content for a wide range of media. Our clients and collaborators call upon us for original music, audio post, sound design, artist collaborations, podcast development, production and mixing.\n\n**Talent Management**\n\n4. Dedicated to introducing fresh and dynamic talent, we empower the same from across the globe to showcase their art and are dedicated to long-term talent development with a global perspective.\n\nPettah Effect works with artists, musicians, labels, brands and businesses in North America, Europe, Middle East and the Asia/Pacific regions.\n\n**Play as a team**\n\nWe believe that each team member makes a significant contribution to our success of “Enabling Everything Entertainment.”\n\nThat contribution should not be limited by the assigned responsibilities outlined in a job description. Therefore, this job description is designed to outline primary duties, and job scope, but not limit the employee or the organisation to just the work identified. It is our expectation that each team member will offer his/her services wherever and whenever necessary to ensure the success of our “Empowering Everything Entertainment” mission and to pursue individual career growth.\n\n**Culture**\n\n- Bring all of you to work; your passions, your hobbies, creative pursuits and side hustles.\n- Always look for ways to improve, better the output and look for innovative solutions.\n- Lead by example, motivating the team by your high standards, reliance and determination.\n- Embody “None of us are as good as all of us” which fosters a comfortable team environment.\n- Bring forward ideas and initiatives, drawing on your experience and knowledge from outside of the industry\n- Contribute to the Pettah Effect mission ““Enabling Everything Entertainment.” beyond delivering within your job role.\n- Use every interaction as an opportunity to impress.\n\n**Key Qualifications to Join the Team**\n\n- Customer and partner needs can often be unique—but, you’re quick on your feet and connect and influence the right people both inside and outside of Pettah Effect. As a go to person with leadership, you are trusted and comfortable in tough situations. You can settle disputes, negotiations and own the hard calls with minimal noise. You step up to conflicts and see them as opportunities to shine.\n- Understand there are many moving parts in an organisation. Navigating the interdependencies within the company, team and partner agencies is needed for success. Understanding how business financials work, and strategies for sustaining profitable growth, are key to staying ahead of the competition. You analyse the market and think beyond the short-term.\n- See the world through the eyes of the customer by deeply understanding their business needs, challenges, and concerns. At Pettah Effect, we obsess over how people experience our products and services. You not only meet our customers’ expectations, but you exceed them.\n- You are only as strong as the people around you, so you know how to contribute to your team\n- Enjoy a collaborative environment with open dialogue and debate. You empower your teammates to do their life’s best work. When projects require extra support, you are eager to step up to the plate and bring your knowledge to the table.\n- No matter the audience, you are an expert at presenting, and you’re cool under pressure. You make the sophisticated, simple and you command an audience by bringing them along for the journey.\n- Strive for excellence in everything you do. Due to changing priorities, urgent customer needs, or a final push to meet a quarterly forecast, you face the daily challenge of where to focus your time and energy. You have a ‘don’t give up’ demeanour and finish, especially in the face of resistance or setbacks.\n- Seize every opportunity and empower others to reach their goals along the way.\n- Do you believe that communication is key to success? You’re an optimist and someone who actively talks and listens through endless possibilities—with customers and teammates alike. To ensure the most innovative ideas become a reality, you recognize perspectives, patiently listen to every detail and commit to what is right, in order to move us forward.\n\n**Additional Information**\n\nAt Pettah Effect we support, celebrate and thrive because of our differences. It benefits our employees, our clients and the work we produce, and we are proud to be an equal opportunities employer. When hiring we do not discriminate based on race, religion, colour, sex, gender identity, sexual orientation, age, physical or mental disability, nationality or any other characteristic covered by law. All employment is decided on the basis of qualifications, merit, and business need.\n\nPlease let us know if there are any particular adjustments we can consider to make the interview more comfortable for you.",
+                "company_id": 290,
+                "job_type": "full-time",
+                "location": "Colombo, Sri Lanka",
+                "department": "Marketing",
+                "tags": [
+                    "graphic design",
+                    "3d",
+                    "typography"
+                ],
+                "created_at": "2022-06-03 21:46:34",
+                "updated_at": "2022-06-03 21:46:34",
+                "remote": false,
+                "subclass": "Graphic Design",
+                "company_name": "Pettah Effect",
+                "company_logo_url": "https://roosterpaladinstoragebucket.s3.amazonaws.com/companyLogos/logo_1593409292754_Pettah Effect Logo Logos All-01.png",
+                "min_salary": null,
+                "max_salary": null,
+                "salary_frequency": null,
+                "salary_currency": null,
+                "is_premium": true,
+                "class": "Design & Architecture"
+            },
+            {
+                "id": 15195,
+                "title": "Brand Executive - Communications Specialist",
+                "description": "**About the Job**\n_Starting Salary: LKR 90,000/- (Actual compensation is influenced by a wide array of factors including but not limited to skill set and level of experience)_\nPettah Effect team is looking for an experienced marketing communications specialist to provide strategic and executional leadership across multiple brands with a focus on creative content.\n\nKey Qualifications\n\n- You have 2 to 3 years experience in digital media preferably at a creatively driven ad agency or in-house marketing communications department developing and presenting communication plans and strategies\n- You are able to plan, manage, and implement marketing communications efforts.\n- Proven ability to manage multiple projects across a wide range of partners.\n- Excellent partner management skills and demonstrated ability to grow internal relationships, while driving alignment towards a common goal.\n- Tech-savvy, familiarity with OS and iOS, and comfortable with navigating web-publishing systems to produce high quality communications.\n- Excellent writing skills that can deliver clear messages that motivate behavior change while meeting business goals.\n- Proven ability to work as a member of a team, and maintain positivity and composure under pressure.\n- Exceptional attention to detail, and ability to prioritize key work in a fast-paced environment.\n- Experience working with international teams, and demonstrated empathy for regional needs and preferences.\n- Solid understanding and grounding in U.S. English style, usage, grammar, and punctuation.\n- You have expertise in managing the creative development process across a variety of communication vehicles, including interactive, print, and PR.\n- You will support, understand, and enhance the creative development process across multiple media and functional teams.\n- You can balance working in a fast-paced, creatively driven organization with an analytical and focused approach to marketing.\n- You are resourceful, adaptable, creative, and results oriented with high energy, a positive attitude, and the ability to contribute in a team environment.\n\nKey Responsibilities.\n\nCommunications Specialists work at the intersection of many subject areas at Pettah Effect, and are a key player in shaping the narrative and actions to support our business development teams.\n\nSynthesize large amounts of information into key insights that are compelling.\n\nProduce concise briefs and clear, well-written communications under tight deadlines.\n\nWork with multiple business partners to connect the dots and develop thoughtful and creatively-driven engagement strategies for various roles and regions.\n\nInform and influence communication plans across the organization by leveraging your knowledge of the audience needs and business acumen.\n\nHelp build out an operational planning process, analyze content metrics and influence editorial standards.\n\nSupport the creation and creative development of content for use across teams multiple brands. This content may include video, photography, demo content, third-party content, partner content, illustrations, screens, hardware, and animations.\n\nParticipate in creative reviews to ensure the content strategy is on brief and the content story is carried across marketing materials.\n\nEstablish processes and documentation to track legal clearances, usages, and placements of key assets across all marketing touchpoints.\n\nKeeps all teams apprised of any product line-up and software updates that may impact content.\n\n**Life at Pettah Effect**\n\nWhat we need from Everyone : Join our community and help define it.\n\n**Our values are part of everything we do here**\n\nLive with No-Excuses\n\nDo the brave thing\n\nBe Humble\n\nPlay as a team\n\n**About Pettah Effect**\n\n“Enabling Everything Entertainment”\n\nPettah Effect is a place where extraordinary people gather to do their best work in every aspect of modern entertainment. Together, we “disrupt the status quo and create culture” through the power of artistry. If you're excited by the idea of making a creative impact, and joining a team of entrepreneurs, this is the place for you.\n\n**What we do**\n\n**We provide marketing services for Artists & Labels.**\n\n1. Obsessed with turning artists into extraordinary experiences and icons, we design & build world-class digital products & experiences for artists & labels on the road to a platinum record and beyond. Our services include Strategy, Branding, Social Media, Web and Distribution\n\n**Media Production for fans & businesses**\n\n2. We produce, distribute and promote content to delight and entertain fans around the world. We partner with good brands to create relationships with their customers through Videos & Photographs.\n\n**Bespoke Audio Studio**\n\n3. Petrah Effect has a bespoke audio house that creates content for a wide range of media. Our clients and collaborators call upon us for original music, audio post, sound design, artist collaborations, podcast development, production and mixing.\n\n**Talent Management**\n\n4. Dedicated to introducing fresh and dynamic talent, we empower the same from across the globe to showcase their art and are dedicated to long-term talent development with a global perspective.\n\nPettah Effect works with artists, musicians, labels, brands and businesses in North America, Europe, Middle East and the Asia/Pacific regions.\n\n**Play as a team**\n\nWe believe that each team member makes a significant contribution to our success of “Enabling Everything Entertainment.”\n\nThat contribution should not be limited by the assigned responsibilities outlined in a job description. Therefore, this job description is designed to outline primary duties, and job scope, but not limit the employee or the organisation to just the work identified. It is our expectation that each team member will offer his/her services wherever and whenever necessary to ensure the success of our “Empowering Everything Entertainment” mission and to pursue individual career growth.\n\n**Culture**\n\n- Bring all of you to work; your passions, your hobbies, creative pursuits and side hustles.\n- Always look for ways to improve, better the output and look for innovative solutions.\n- Lead by example, motivating the team by your high standards, reliance and determination.\n- Embody “None of us are as good as all of us” which fosters a comfortable team environment.\n- Bring forward ideas and initiatives, drawing on your experience and knowledge from outside of the industry\n- Contribute to the Pettah Effect mission ““Enabling Everything Entertainment.” beyond delivering within your job role.\n- Use every interaction as an opportunity to impress.\n\n**Key Qualifications to Join the Team**\n\n- Customer and partner needs can often be unique—but, you’re quick on your feet and connect and influence the right people both inside and outside of Pettah Effect. As a go to person with leadership, you are trusted and comfortable in tough situations. You can settle disputes, negotiations and own the hard calls with minimal noise. You step up to conflicts and see them as opportunities to shine.\n- Understand there are many moving parts in an organisation. Navigating the interdependencies within the company, team and partner agencies is needed for success. Understanding how business financials work, and strategies for sustaining profitable growth, are key to staying ahead of the competition. You analyse the market and think beyond the short-term.\n- See the world through the eyes of the customer by deeply understanding their business needs, challenges, and concerns. At Pettah Effect, we obsess over how people experience our products and services. You not only meet our customers’ expectations, but you exceed them.\n- You are only as strong as the people around you, so you know how to contribute to your team\n- Enjoy a collaborative environment with open dialogue and debate. You empower your teammates to do their life’s best work. When projects require extra support, you are eager to step up to the plate and bring your knowledge to the table.\n- No matter the audience, you are an expert at presenting, and you’re cool under pressure. You make the sophisticated, simple and you command an audience by bringing them along for the journey.\n- Strive for excellence in everything you do. Due to changing priorities, urgent customer needs, or a final push to meet a quarterly forecast, you face the daily challenge of where to focus your time and energy. You have a ‘don’t give up’ demeanour and finish, especially in the face of resistance or setbacks.\n- Seize every opportunity and empower others to reach their goals along the way.\n- Do you believe that communication is key to success? You’re an optimist and someone who actively talks and listens through endless possibilities—with customers and teammates alike. To ensure the most innovative ideas become a reality, you recognize perspectives, patiently listen to every detail and commit to what is right, in order to move us forward.\n\n**Additional Information**\n\nAt Pettah Effect we support, celebrate and thrive because of our differences. It benefits our employees, our clients and the work we produce, and we are proud to be an equal opportunities employer. When hiring we do not discriminate based on race, religion, colour, sex, gender identity, sexual orientation, age, physical or mental disability, nationality or any other characteristic covered by law. All employment is decided on the basis of qualifications, merit, and business need.\n\nPlease let us know if there are any particular adjustments we can consider to make the interview more comfortable for you.",
+                "company_id": 290,
+                "job_type": "full-time",
+                "location": "Colombo, Sri Lanka",
+                "department": "Marketing",
+                "tags": [
+                    "digital marketing",
+                    "writing",
+                    "content development"
+                ],
+                "created_at": "2022-06-03 21:25:32",
+                "updated_at": "2022-06-03 21:44:14",
+                "remote": false,
+                "subclass": "Marketing Communications",
+                "company_name": "Pettah Effect",
+                "company_logo_url": "https://roosterpaladinstoragebucket.s3.amazonaws.com/companyLogos/logo_1593409292754_Pettah Effect Logo Logos All-01.png",
+                "min_salary": null,
+                "max_salary": null,
+                "salary_frequency": null,
+                "salary_currency": null,
+                "is_premium": true,
+                "class": "Marketing & Communications"
+            },
+            {
+                "id": 15191,
+                "title": "Account Executive - New Business Development",
+                "description": "**About the Job**\n_Starting Salary: LKR 70,000/- (Actual compensation is influenced by a wide array of factors including but not limited to skill set and level of experience)_\n\n**Preferred qualifications:**\n\n- Experience in building a pipeline through prospecting and cold calling customers.\n- Experience in planning, delivering, and implementing marketing campaigns.\n- Experience in campaign measurement and creative strategy.\n- Ability to think strategically about challenges and to develop recommendations and action plans.\n- Ability to present comprehensive solutions for all customers in a constantly-evolving environment.\n- Excellent communication and influencing skills.\n\nResponsibilities\n\n**Business Development & Relationship Management**\n\n1. Build a pipeline of business by proactively identifying and initiating relationships with new customers, working in close partnership with our marketing teams.\n2. Acquire high value business agreements.\n3. Consult with customers to achieve international marketing and business goals.\n4. Design marketing strategies using product knowledge to drive customer success.\n5. Support the expansion of new markets, product features, pricing and commercial programs crafted to accelerate the growth of Pettah Effect.\n6. Build deep relationships with customers.\n7. Work in close partnership with internal stakeholders and team members.\n8. Work with partner agencies and teams to develop and deliver new business through trust and value-led relationships with the key client stakeholders.\n\n**Primary Functions**\n\n- Assumes role of main day-to-day client contact\n- Researches and understands the brand, its category and its competitors to provide added value for the client while staying well-informed on marketing and media trends\n- Collaborates with the team to write a strong, inspiring agency brief and concept based on the client’s initial brief\n- Influences the development of the highest quality of creative work by sharing knowledge of the client/business/brand and demonstrating strong creative judgement and basic strategic recommendations\n- Presents production estimates for client approval\n- Protects client and agency interests by thoughtfully managing resources and identifying new opportunities for growth\n- Issues and updates written weekly status and conference call reports following meetings to ensure client and agency are in agreement\n- Attends shoots and edits to ensure client approval and satisfaction\n- Effectively facilitates the communication between Pettah Effect, client and our partner agencies (media, retail, digital) to ensure seamless creative outcome and media placement\n- Works with studio, producers and project management to create schedules and open and close job numbers\n- Problem solves potential timing, casting and budgetary concerns for production\n- Uses knowledge of advertising production processes in all media (TV, print, radio, outdoor, digital, branded content), both technically and in terms of time and cost to benefit clients’ budgetary goals\n\n**Life at Pettah Effect**\n\nWhat we need from Everyone : Join our community and help define it.\n\n**Our values are part of everything we do here**\n\nLive with No-Excuses\n\nDo the brave thing\n\nBe Humble\n\nPlay as a team\n\n**About Pettah Effect**\n\n“Enabling Everything Entertainment”\n\nPettah Effect is a place where extraordinary people gather to do their best work in every aspect of modern entertainment. Together, we “disrupt the status quo and create culture” through the power of artistry. If you're excited by the idea of making a creative impact, and joining a team of entrepreneurs, this is the place for you.\n\n**What we do**\n\n**We provide marketing services for Artists & Labels.**\n\n1. Obsessed with turning artists into extraordinary experiences and icons, we design & build world-class digital products & experiences for artists & labels on the road to a platinum record and beyond. Our services include Strategy, Branding, Social Media, Web and Distribution\n\n**Media Production for fans & businesses**\n\n2. We produce, distribute and promote content to delight and entertain fans around the world. We partner with good brands to create relationships with their customers through Videos & Photographs.\n\n**Bespoke Audio Studio**\n\n3. Petrah Effect has a bespoke audio house that creates content for a wide range of media. Our clients and collaborators call upon us for original music, audio post, sound design, artist collaborations, podcast development, production and mixing.\n\n**Talent Management**\n\n4. Dedicated to introducing fresh and dynamic talent, we empower the same from across the globe to showcase their art and are dedicated to long-term talent development with a global perspective.\n\nPettah Effect works with artists, musicians, labels, brands and businesses in North America, Europe, Middle East and the Asia/Pacific regions.\n\n**Play as a team**\n\nWe believe that each team member makes a significant contribution to our success of “Enabling Everything Entertainment.”\n\nThat contribution should not be limited by the assigned responsibilities outlined in a job description. Therefore, this job description is designed to outline primary duties, and job scope, but not limit the employee or the organisation to just the work identified. It is our expectation that each team member will offer his/her services wherever and whenever necessary to ensure the success of our “Empowering Everything Entertainment” mission and to pursue individual career growth.\n\n**Culture**\n\n- Bring all of you to work; your passions, your hobbies, creative pursuits and side hustles.\n- Always look for ways to improve, better the output and look for innovative solutions.\n- Lead by example, motivating the team by your high standards, reliance and determination.\n- Embody “None of us are as good as all of us” which fosters a comfortable team environment.\n- Bring forward ideas and initiatives, drawing on your experience and knowledge from outside of the industry\n- Contribute to the Pettah Effect mission ““Enabling Everything Entertainment.” beyond delivering within your job role.\n- Use every interaction as an opportunity to impress.\n\n**Key Qualifications to Join the Team**\n\n- Customer and partner needs can often be unique—but, you’re quick on your feet and connect and influence the right people both inside and outside of Pettah Effect. As a go to person with leadership, you are trusted and comfortable in tough situations. You can settle disputes, negotiations and own the hard calls with minimal noise. You step up to conflicts and see them as opportunities to shine.\n- Understand there are many moving parts in an organisation. Navigating the interdependencies within the company, team and partner agencies is needed for success. Understanding how business financials work, and strategies for sustaining profitable growth, are key to staying ahead of the competition. You analyse the market and think beyond the short-term.\n- See the world through the eyes of the customer by deeply understanding their business needs, challenges, and concerns. At Pettah Effect, we obsess over how people experience our products and services. You not only meet our customers’ expectations, but you exceed them.\n- You are only as strong as the people around you, so you know how to contribute to your team\n- Enjoy a collaborative environment with open dialogue and debate. You empower your teammates to do their life’s best work. When projects require extra support, you are eager to step up to the plate and bring your knowledge to the table.\n- No matter the audience, you are an expert at presenting, and you’re cool under pressure. You make the sophisticated, simple and you command an audience by bringing them along for the journey.\n- Strive for excellence in everything you do. Due to changing priorities, urgent customer needs, or a final push to meet a quarterly forecast, you face the daily challenge of where to focus your time and energy. You have a ‘don’t give up’ demeanour and finish, especially in the face of resistance or setbacks.\n- Seize every opportunity and empower others to reach their goals along the way.\n- Do you believe that communication is key to success? You’re an optimist and someone who actively talks and listens through endless possibilities—with customers and teammates alike. To ensure the most innovative ideas become a reality, you recognize perspectives, patiently listen to every detail and commit to what is right, in order to move us forward.\n\n**Additional Information**\n\nAt Pettah Effect we support, celebrate and thrive because of our differences. It benefits our employees, our clients and the work we produce, and we are proud to be an equal opportunities employer. When hiring we do not discriminate based on race, religion, colour, sex, gender identity, sexual orientation, age, physical or mental disability, nationality or any other characteristic covered by law. All employment is decided on the basis of qualifications, merit, and business need.\n\nPlease let us know if there are any particular adjustments we can consider to make the interview more comfortable for you.\n\n",
+                "company_id": 290,
+                "job_type": "full-time",
+                "location": "Colombo, Sri Lanka",
+                "department": "Sales and Business Development",
+                "tags": [],
+                "created_at": "2022-06-03 15:42:21",
+                "updated_at": "2022-06-03 21:22:46",
+                "remote": false,
+                "subclass": "New Business Development",
+                "company_name": "Pettah Effect",
+                "company_logo_url": "https://roosterpaladinstoragebucket.s3.amazonaws.com/companyLogos/logo_1593409292754_Pettah Effect Logo Logos All-01.png",
+                "min_salary": null,
+                "max_salary": null,
+                "salary_frequency": null,
+                "salary_currency": null,
+                "is_premium": true,
+                "class": "Sales"
+            },
+            {
+                "id": 15190,
+                "title": "Implemenation Specialist",
+                "description": "Our client is looking for. an Implementation Specialist in Boston Texas, USA for a remote permanent role. This is a full-time position and can work remotely from Boston. An applicant has to have  work experience as a implementation specialist with senior position experience . must have a  bachelor degree.and work authorization to work in USA.",
+                "company_id": 10374,
+                "job_type": "full-time",
+                "location": null,
+                "department": "Administrations",
+                "tags": [
+                    "engineering"
+                ],
+                "created_at": "2022-06-03 06:35:51",
+                "updated_at": "2022-06-03 06:35:51",
+                "remote": true,
+                "subclass": "Other",
+                "company_name": "Frannie Jobs",
+                "company_logo_url": "https://rooster-content-s3.s3.amazonaws.com/companyLogos/IMG_20210708_005402_279.jpg_1625694884573",
+                "min_salary": 60000,
+                "max_salary": 90000,
+                "salary_frequency": "year",
+                "salary_currency": "USD",
+                "is_premium": false,
+                "class": "Accounting"
+            },
+            {
+                "id": 15189,
+                "title": "Full Stack Engineer",
+                "description": "We’re looking for software engineers, computer scientists and self taught developers with plenty of experience that are eager to join our company in Sri Lanka. In this role you will be responsible for creating and maintaining a web application for our customers to view our video analytics data. We value your time and will always strive to have you working on meaningful and exciting work where you shape the current and future direction of our products. The role will be remote so you have the flexibility to work wherever you feel most comfortable. We cannot wait to meet you!Requirements:\n\n- BSc in Computer Science, Engineering or equivalent\n- Minimum 5 years experience in Full Stack Development\n- Experience in UI Front end development\n- Minimum 3 years experience with Microsoft Azure core services\n- Proficient in both written and verbal English",
+                "company_id": 9601,
+                "job_type": "full-time",
+                "location": "Colombo, Sri Lanka",
+                "department": "Development",
+                "tags": [
+                    "front-end development",
+                    "full stack",
+                    "azure"
+                ],
+                "created_at": "2022-06-03 02:59:32",
+                "updated_at": "2022-06-03 10:10:57",
+                "remote": true,
+                "subclass": "Engineering - Software",
+                "company_name": "D.D.I LABS PVT LTD",
+                "company_logo_url": "https://rooster-content-s3.s3.amazonaws.com/companyLogos/DDILKWhatsapp.png_1621985797622",
+                "min_salary": null,
+                "max_salary": null,
+                "salary_frequency": null,
+                "salary_currency": null,
+                "is_premium": false,
+                "class": "Information & Communication Technology"
+            },
+            {
+                "id": 15188,
+                "title": "Flutter Developer",
+                "description": "We’re looking for software engineers, computer scientists and self taught developers with plenty of experience that are eager to join our company in Sri Lanka. In this role you will be responsible for creating and maintaining a web application for our customers to view our video analytics data. We value your time and will always strive to have you working on meaningful and exciting work where you shape the current and future direction of our products. The role will be remote so you have the flexibility to work wherever you feel most comfortable. We cannot wait to meet you!Requirements:\n\n- BSc in Computer Science, Engineering or equivalent\n- Minimum 2-3 years experience in Flutter Development\n- State management using provider package, BLoC and Redux\n- Navigation with MaterialPageRoutes, static and dynamic navigation with NamedRoutes\n- proficient in written and verbal English",
+                "company_id": 9601,
+                "job_type": "full-time",
+                "location": "Colombo, Sri Lanka",
+                "department": "Development",
+                "tags": [
+                    "flutter development"
+                ],
+                "created_at": "2022-06-03 02:55:36",
+                "updated_at": "2022-06-03 10:11:15",
+                "remote": true,
+                "subclass": "Engineering - Software",
+                "company_name": "D.D.I LABS PVT LTD",
+                "company_logo_url": "https://rooster-content-s3.s3.amazonaws.com/companyLogos/DDILKWhatsapp.png_1621985797622",
+                "min_salary": null,
+                "max_salary": null,
+                "salary_frequency": null,
+                "salary_currency": null,
+                "is_premium": false,
+                "class": "Information & Communication Technology"
+            },
+            {
+                "id": 15187,
+                "title": "Application Engineer (C#/.NET/MSSQL)",
+                "description": "#### **Hiring Company**\n\nA technology company based out of North America with a mission to help hotels drive operational efficiencies through innovation and advanced technologies delivering an end-to-end hospitality information management platform.\n\nThe core product is a cloud-based information management platform that brings together data from multiple hotel systems, enabling hospitality professionals to access their hotel data from one place and in real-time, thus, helping hotel owners, operators, franchisees and hospitality REITs automate the hotel back office and manage property portfolio performance to a tee.\n\n#### **The Role**\n\nThe role involves providing development and support for C#/.NET based myPerspective application. The ideal candidate will possess a broad skill set covering C# development, with extended exposure to MSSQL scripting, automation, release management and systems administration. The role is most suited to candidates willing to embrace a demanding and varied but balanced and flexible work pattern, which would include covering US shifts.\n\n#### **Responsibilities**\n\n- Producing clean, efficient code based on specifications that is well-designed and testable.\n- Be accountable for the Task, performance, scalability and accuracy of dashboards & reports.\n- Hands-on involvement in all aspects of the software development lifecycle\n- Create documents outlining and recommending operating models and processes based on collaborations (Design documents, UML diagrams, Best Practices, Troubleshooting guidelines, Release guide and notes).\n- Build the capacity to scale and onboard hotels quickly and efficiently.\n- Assess an existing implementation along the dimensions of security, availability, and performance and then make recommendations to align with best practice.\n- Work with internal customers to document and assess reporting requirements. Additionally, the candidate should have a strong knowledge of analytic data architectures to assist in the development of a multi-tenant reporting environment.\n- Assist the team in identifying core test cases for UAT work with Product Owners to ensure test results are consistently documented and reviewed.\n- Form operational objectives by studying business and technical functions; gathering information; evaluating output requirements and formats.\n- Actively contribute and provide clear communication at daily meetings, daily scrum, refinement meetings, and retrospectives.\n\n#### **Requirements**\n\n- Minimum 2-5 years of experience in C#/.NET development environment.\n- Bachelor’s degree in Computer Science, Information Systems, RDBMS or any other related field\n- Strong knowledge in C# programming languages is a must, with exposure to .NET Framework, .NET Core, LINQ, Generics, Threading/Task, Entity Framework and other .NET related components.\n- Experience in database design and DBMS systems like MSSQL, and MySQL as well as knowledge in Triggers, Views, Functions and Stored Procedures.\n- Experience in MSSQL replication will be an added advantage.\n- Experienced in querying data from multiple platforms/tools including SQL sources, JSON, XML, CSV, REST APIs\n- Development experience in ASP.NET, MVC, WebAPI, HTML, HTML5, CSS, JavaScript, and JQuery web technologies\n- Experience and/or knowledge of Bootstrap and popular JS frameworks\n- Full exposure to SDLC including understanding requirements, OO design, design patterns, unit test, integration test, bug fix and deployment.\n- Be able to test systems and find issues and bugs – white box testing from a development point of view.\n- Be able to provide development support\n- Experience in the development of file processing, task automation, software robots, and machine learning applications will be an advantage.\n- Hands-on experience working with AWS, MSSQL, and GitHub will be a key advantage.\n- Excellent communication skills (written and verbal).\n- Excellent Interpersonal skills for developing partnerships/alliances.\n\n#### **Benefits**\n\n- An attractive remuneration package is on offer.\n- Exposure to working with industry-leading technology stacks.\n- Fun, flexible work culture with performance-based rewards and challenging tasks.\n- Annual Bonus and other allowances/incentives etc.",
+                "company_id": 721,
+                "job_type": "full-time",
+                "location": "Colombo, Sri Lanka",
+                "department": "Technical Recruitment",
+                "tags": [
+                    ".net",
+                    "c#"
+                ],
+                "created_at": "2022-06-02 21:33:42",
+                "updated_at": "2022-06-03 17:32:54",
+                "remote": false,
+                "subclass": "Engineering - Software",
+                "company_name": "Nextjob",
+                "company_logo_url": "https://rooster-content-s3.s3.amazonaws.com/companyLogos/logo_1599509863177_110249304_2562480780521285_4255240891083017277_o.jpg",
+                "min_salary": null,
+                "max_salary": null,
+                "salary_frequency": null,
+                "salary_currency": null,
+                "is_premium": true,
+                "class": "Information & Communication Technology"
+            },
+            {
+                "id": 15186,
+                "title": "Senior QA Engineer (Cypress/Selenium/JMeter)",
+                "description": "#### **Hiring Company**\n\nAn expert Software R&D company with locations in Stockholm, Paris and Colombo, that help clients build and test innovative scalable concepts using Web, IoT, Artificial Intelligence, Machine Learning, Blockchain, and Mobile technologies.\n\nTheir team of 140+ experts craft innovative, robust solutions for Startups and Enterprises with a growing list of clients including Expedia, Sinorbis, Wesfarmers, New Zealand Safety, Mabi Sweden, Stockholm Public Transport and many more.\n\n#### **Qualifications & Experience**\n\n- B.Sc. in Computer Science or related discipline or equivalent professional qualification.\n- 5+ years QA experience with good skill in Test case automation, Functional, UI, Web services and Performance testing capabilities.\n- Experience working with automation frameworks and automating functional test cases using automation frameworks such as Cypress, Selenium, etc.\n- A solid practical understanding of Agile Software Quality Assurance and Software Engineering concepts.\n- An ability to create detailed, comprehensive and well-structured test plans and test cases.\n- An ability to estimate, prioritize, plan and coordinate testing activities\n- Track quality assurance metrics, like defect densities and open defect counts\n- Knowledge in Object Oriented Concepts and programming languages such as Java.\n- Strong problem-solving skills and ability to troubleshoot issues on the application and its environment.\n- Experience with performance testing using JMeter would be an added advantage.\n- Experience in security testing and security testing tools will be a benefit.\n- Experience in using JIRA, Scrum Process and Test Management tools would be advantageous.\n- Create detailed, comprehensive and well-structured test plans and test cases.\n\n#### **Skills & Personal Characteristics**\n\n- Good oral and written communication skills.\n- Should be an outstanding player with a self-driven and self-motivated attitude.\n- Ability to work within deadlines individually and as a team.\n- Ability to carry out research and learn new technologies quickly.\n- Ability to understand the importance of customer service.\n- Creative/Innovative and out of the box thinking.\n\n#### **Benefits**\n\n- Work with fortune 500 clients and expand your exposure internationally.\n- Obtain new opportunities to work with newly acquired clients.\n- Earn an attractive remuneration package with multiple benefits.\n- Annual Bonus and other allowances/incentives etc.\n- A fun, flexible work environment with performance-based rewards and appraisals.",
+                "company_id": 721,
+                "job_type": "full-time",
+                "location": "Colombo, Sri Lanka",
+                "department": "Technical Recruitment",
+                "tags": [
+                    "qat",
+                    "test automation",
+                    "cypress",
+                    "selenium",
+                    "agile",
+                    "oop",
+                    "java",
+                    "jmeter",
+                    "jira"
+                ],
+                "created_at": "2022-06-02 20:43:00",
+                "updated_at": "2022-06-03 17:35:02",
+                "remote": false,
+                "subclass": "Testing & Quality Assurance",
+                "company_name": "Nextjob",
+                "company_logo_url": "https://rooster-content-s3.s3.amazonaws.com/companyLogos/logo_1599509863177_110249304_2562480780521285_4255240891083017277_o.jpg",
+                "min_salary": null,
+                "max_salary": null,
+                "salary_frequency": null,
+                "salary_currency": null,
+                "is_premium": true,
+                "class": "Information & Communication Technology"
+            },
+            {
+                "id": 15185,
+                "title": "Content Writer",
+                "description": "### About TechVariable\n\nA-Tech Consulting company with end-to-end product development services utilizing experience in Design, Data, and Deep Tech.\n\nCombining design experience and innovation-led engineering for modern businesses, we help customers innovate and create the best digital products suited for tomorrow by providing superior-tech consulting and IT services best suited for their business success all the while being fulfilled every day. Our clients benefit by getting to work with our top-rated global talents to work alongside their core teams while aligning with their goals to engineer at speed. Our proven framework for success built and improved over the years brings together and aligns people, processes, technology, and design to improve engineering and increase business value.\n\nTechVariable seeks a team-member desiring a career, motivated by goal and quota attainment, and somebody who understands and accepts the challenges involved with new business development.\n\n**Roles and Responsibilities**\n\n· Performing exhaustive and extensive research.\n\n· Creating specifications and content appropriate for the company\n\n· Strategizing content pillars and sub pillars\n\n· Planning the editorial calendar and content proposition\n\n· Identify gaps in our content and recommend new topics\n\n· Proofread and edit written pieces before publication\n\n· Coordinate with marketing and design teams to illustrate articles\n\n· Follow industry-related news and generate ideas around trending topics\n\n· Ensuring that content strategy meets business objectives\n\n· Strategizing and improving content delivery and promotion\n\n**Skills**\n\n· Bachelor’s degree in marketing, communications, or related field; or equivalent in experience\n\n· Solid writing and editing skills in English\n\n· Need excellent copywriting skills to be able to plan, direct, design, and edit content that get results.\n\n· Should be able to determine how content should be packaged for new and existing consumers to induce them to take business actions.\n\n· You should have experience/knowledge in handling and strategizing marketing campaigns.\n\n· Will have to handle several types of projects and people regularly\n\n· Good analytical abilities to spot patterns and trends in content marketing data\n\n· Having a keen interest in organizational goals and targets",
+                "company_id": 11636,
+                "job_type": "full-time",
+                "location": "Guwahati, Assam, India",
+                "department": "Marketing",
+                "tags": [],
+                "created_at": "2022-06-02 11:41:33",
+                "updated_at": "2022-06-02 11:41:33",
+                "remote": false,
+                "subclass": "Engineering - Software",
+                "company_name": "TechVariable",
+                "company_logo_url": "https://rooster-content-s3.s3.amazonaws.com/companyLogos/LOGO1.png_1639031731848",
+                "min_salary": null,
+                "max_salary": null,
+                "salary_frequency": null,
+                "salary_currency": null,
+                "is_premium": true,
+                "class": "Information & Communication Technology"
+            },
+            {
+                "id": 15184,
+                "title": "Inside Sales Manager",
+                "description": "### About TechVariable\n\nA-Tech Consulting company with end-to-end product development services utilizing experience in Design, Data, and Deep Tech.\n\nCombining design experience and innovation-led engineering for modern businesses, we help customers innovate and create the best digital products suited for tomorrow by providing superior-tech consulting and IT services best suited for their business success all the while being fulfilled every day. Our clients benefit by getting to work with our top-rated global talents to work alongside their core teams while aligning with their goals to engineer at speed. Our proven framework for success built and improved over the years brings together and aligns people, processes, technology, and design to improve engineering and increase business value.\n\nTechVariable seeks a team-member desiring a career, motivated by goal and quota attainment, and somebody who understands and accepts the challenges involved with new business development.\n\n### If you join us as Inside Sales Manager, your responsibilities will center around\n\n- Using marketing channels, like automation tools, cold calling, email marketing, and social media to generate new leads.\n- Managing the database of prospects to ensure the validity of each to enable efficient and effective outbound sales and marketing activity.\n- To convert opportunities into sales, must build prospect relationships through initiating communications and conducting follow-up communications.\n- To recognize potential prospects by following up on leads and conducting research.\n- Represent TechVariable at corporate events or sales meetings independently or with colleagues.\n- Interact via phone, email, telephone conferencing, webinars, and face-to-face with potential customers and discover their business needs.\n- Must provide accurate and timely information and work closely within a small sales & marketing team.\n- Preparation of proposals and presentations professional product demonstrations, via webinars or face-to-face meetings.\n\n### This is what we are looking for: Must-haves\n\n- Must be passionate about being a part of a startup and contributing to Assam.\n- Proactive and ready to take new initiatives.\n- Desire to constantly grow and manage a pipeline of opportunities.\n- Integrity, Persistence, Creativity, Curiosity & Competitiveness.\n- Willingness to travel and work with global professionals.\n- Top-notch communication skills.\n- Networking skills.\n- Analytical skills.\n\n[Apply Now](https://boards.rooster.jobs/11636)",
+                "company_id": 11636,
+                "job_type": "full-time",
+                "location": "Guwahati, Assam, India",
+                "department": "Marketing",
+                "tags": [],
+                "created_at": "2022-06-02 11:38:39",
+                "updated_at": "2022-06-02 11:38:39",
+                "remote": false,
+                "subclass": "Engineering - Software",
+                "company_name": "TechVariable",
+                "company_logo_url": "https://rooster-content-s3.s3.amazonaws.com/companyLogos/LOGO1.png_1639031731848",
+                "min_salary": null,
+                "max_salary": null,
+                "salary_frequency": null,
+                "salary_currency": null,
+                "is_premium": true,
+                "class": "Information & Communication Technology"
+            },
+            {
+                "id": 15176,
+                "title": "Senior Software Engineer / Associate Tech Lead / Tech Lead",
+                "description": "Founded in 2014, SmashTaps Pvt Ltd is a _Great Place To Work® Certified,_ Digital Product Studio based in Colombo. We build & launch our own products that can make a meaningful impact on the world, while serving international Startups and Enterprises with innovative custom software solutions. Our clients include some of the world’s leading brands from Middleware, Enterprise Artificial Intelligence, MarTech and FinTech industries. \n\n**Requirements:**\n\n- Minimum 2 years of **industrial** experience with **ReactJS** or **React Native** is a must\n- Minimum 3 years of **industrial** experience as a Software Engineer\n- Experience in CSS/LESS/SASS\n- Passionate about learning new web technologies\n- Ability to follow coding best practices to craft clean and maintainable code\n- Experience in working in an Agile environment\n- Experience in ExpressJS or any backend programming language will be a plus\n- Experience in AWS Technologies will be a plus\n\n**Why us:**\n\n1. Startup culture\n2. Medical Insurance\n3. Ability to work from home\n4. Flexible work hours\n5. Small teams of smart, friendly, talented, hardworking and enthusiastic individuals per project who are fun to work with!\n6. Global exposure - directly work with our client teams overseas\n7. Opportunity to use the latest tech\n8. Access to most popular learning platforms\n9. Sponsorship for professional certifications\n10. Highly competitive salary\n11. Salary fully pegged to USD",
+                "company_id": 8986,
+                "job_type": "full-time",
+                "location": "Nugegoda, Sri Lanka",
+                "department": "Development",
+                "tags": [
+                    "reactjs",
+                    "react native",
+                    "javascript",
+                    "nodejs",
+                    "expressjs",
+                    "web development",
+                    "html",
+                    "css",
+                    "aws"
+                ],
+                "created_at": "2022-06-02 03:49:27",
+                "updated_at": "2022-06-02 04:08:44",
+                "remote": true,
+                "subclass": "Engineering - Software",
+                "company_name": "SmashTaps Pvt Ltd",
+                "company_logo_url": "https://rooster-content-s3.s3.amazonaws.com/companyLogos/logo_1618336102281_smashtaps-logo-large.png",
+                "min_salary": null,
+                "max_salary": null,
+                "salary_frequency": null,
+                "salary_currency": null,
+                "is_premium": false,
+                "class": "Information & Communication Technology"
+            },
+            {
+                "id": 15175,
+                "title": "Computer Vision Engineer - AI (OpenCV)",
+                "description": "#### **Requirement**\n\n- A solid engineering background with hands-on experience developing\ncomputer vision solutions.\n- Algorithms, Data Structure & Programming exposure in ML.\nStrong knowledge of OpenCV/PILLOW.\n- Strong knowledge of Python.\n- Knowledge of frameworks like Keras/PyTorch/Tensorflow.\n-  Knowledge of Docker.\n- Research latest technologies and develop a proof of concepts (POCs).\n- The candidate should have a strong understanding of Deep Learning and\nshould have a minimum working experience of 2 years in the field of\nOCR\n- Can Work From Home",
+                "company_id": 11091,
+                "job_type": "full-time",
+                "location": null,
+                "department": "IT",
+                "tags": [
+                    "opencv",
+                    "ai",
+                    "machine learning",
+                    "artificial intelligence",
+                    "image processing"
+                ],
+                "created_at": "2022-06-01 20:27:47",
+                "updated_at": "2022-06-01 20:27:47",
+                "remote": true,
+                "subclass": "Engineering - Software",
+                "company_name": "Alcaline Solutions (PVT) LTD",
+                "company_logo_url": "https://rooster-content-s3.s3.amazonaws.com/companyLogos/New_Logo.jpg_1631208757931",
+                "min_salary": null,
+                "max_salary": null,
+                "salary_frequency": null,
+                "salary_currency": null,
+                "is_premium": false,
+                "class": "Information & Communication Technology"
+            }
+        ]
+    }
+}
