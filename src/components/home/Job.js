@@ -22,7 +22,7 @@ export const Job = memo((props) => {
       onClick={selectJob}
     >
       <div className={styles.logoWrapper}>
-        <img className={styles.logo} src={companyLogo} alt="logo" />
+        <img className={styles.logo} src={props.job.company_logo} alt="logo" />
         <img
           onClick={props.toggleSave}
           className={styles.save}
@@ -32,12 +32,12 @@ export const Job = memo((props) => {
       </div>
       <p className={styles.jobTitle}>{props.job.title}</p>
       <div className={styles.jobTags}>
-        <div className={styles.tag}>{props.job.tags.type}</div>
-        <div className={styles.tag}>{props.job.tags.seniority}</div>
-        <div className={styles.tag}>{props.job.tags.salary}</div>
+        <div className={styles.tag}>{props.job.job_type.replace("_",'-')}</div>
+        <div className={styles.tag}>{props.job.category}</div>
+        <div className={styles.tag}>{props.job.candidate_required_location}</div>
       </div>
       <p className={styles.jobDescription}>
-        {props.job.extraDetails.description}
+        {props.job.description.substr(0, 180)}
       </p>
       <div className={styles.buttons}>
         <button>Apply Now</button>
