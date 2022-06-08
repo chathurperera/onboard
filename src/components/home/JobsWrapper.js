@@ -1,15 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./jobsWrapper.module.scss";
 import Job from "../home/Job.js";
 import jobs from "../../job.json";
 import MoreDetails from "./MoreDetails";
 import JobAlert from "./JobAlert";
+import axios from "axios";
 
 export const JobsWrapper = () => {
   const [expandDetails, setExpandDetails] = useState(false);
   const [listings, setListings] = useState(jobs.jobs);
   const [selectedJob, setSelectedJob] = useState({});
-  console.log("selectedJob", selectedJob);
+  const [fetchedJobs, setFetchedJobs] = useState(null);
+  
+  //FETCH JOBS
+  useEffect(() => {
+    axios.get('https://data.usajobs.gov/api/search?ResultsPerPage=20',{
+      headers:{
+        "Host": "data.usajobs.gov",          
+        "User-Agent": "chathuraperera007@gmail.com",          
+        "Authorization-Key": "HkTFjHkMQq7GxG4w/xfmMgnTOFgpbXtUeQ2GdN2etfQ="      
+      }
+    }).then((res) => {
+      setFetchedJobs(res.data.SearchResult.SearchResultItems);
+    })
+    
+  },[])
+  //TOGGLES SAVE ICON 
   function toggleSave(id) {
     setListings((prevListings) => {
       return prevListings.map((listing) => {
@@ -19,12 +35,15 @@ export const JobsWrapper = () => {
       });
     });
   }
+
+  //OPENS AND CLOSES MORE DETAILS SECTION
   function toggleMoreDetails(id) {
     return (
       setSelectedJob(listings.find((listing) => listing.id === id)),
       setExpandDetails((prevState) => !prevState)
     );
   }
+
   const wrapperStyles = {
     width: "100%",
     display: expandDetails ? "grid" : "block",
