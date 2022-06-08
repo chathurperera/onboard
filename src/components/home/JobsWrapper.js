@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styles from "./jobsWrapper.module.scss";
 import Job from "../home/Job.js";
-import data from "../../data.json";
 import jobs from "../../job.json";
 import MoreDetails from "./MoreDetails";
 import JobAlert from "./JobAlert";

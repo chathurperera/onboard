@@ -46,7 +46,7 @@ export default function MoreDetails(props) {
         </div> */}
         <div className={styles.detail}>
           <p className={styles.label}>Employee type</p>
-          <p className={styles.value}>Full time job</p>
+          <p className={styles.value}>{props.moreDetails.job_type === 'full_time' ? 'Full Time' : 'Contract'}</p>
         </div>
         {props.moreDetails.salary && (
           <div className={styles.detail}>
