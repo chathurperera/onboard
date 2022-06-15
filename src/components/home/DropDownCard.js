@@ -13,7 +13,10 @@ const DropDownPanel = () => {
           <img src={apps} alt="Dashboard" />
           <span>Dashboard</span>
         </p>
-        <p className={styles.dashboard}>
+        <p
+          className={styles.dashboard}
+          onClick={() => logout({ returnTo: window.location.origin })}
+        >
           <img src={signOut} alt="Dashboard" />
           <span>Logout</span>
         </p>
