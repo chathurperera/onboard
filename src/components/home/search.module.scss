@@ -19,8 +19,42 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      padding-right: 20px;
       border-right: 1px solid rgba(196, 196, 196, 0.87);
+      padding: 10px;
+      padding-right: 20px;
+      
+      input{
+        width: 200px;
+        &:focus{
+          border: none;
+          outline: none;
+        }
+      }
+    }
+    .inputWrap{
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      .selectedTerm{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background: teal;
+        color: #fff;
+        padding: 5px 8px ;
+        border-radius: 30px;
+        width: max-content;
+        text-align: center;
+        p{
+          font-size: 14px;
+        }
+        img{
+          width: 18px;
+          cursor: pointer;
+        }
+
+      }
     }
     .location {
       padding: 15px;

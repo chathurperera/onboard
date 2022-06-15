@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./search.module.scss";
 import Select from "react-select";
 import categories from "../../categories.json";
+import close from "../../images/close.png";
 import location from "../../images/location.png";
 import search from "../../images/search.png";
 import "./_custom-select.scss";
@@ -9,6 +10,8 @@ import axios from "axios";
 export default function Search({ setFetchedJobs }) {
   const [occupationalSeries, setOccupationalSeries] = useState(null);
   const [codes, setCodes] = useState([]);
+  const [searchTerms, setSearchTerms] = useState([]);
+  const [typingText, setTypingText] = useState("");
 
   //FETCHING OCCUPATION CODES
   useEffect(() => {
@@ -25,16 +28,26 @@ export default function Search({ setFetchedJobs }) {
     return { value: job.Code, label: job.Value };
   });
 
-  //HANDLES THE USER INPUT
-  function handleChange(e) {
-    console.log(e);
-    setCodes(e.filter((code) => code.value));
-  }
-
   const chipStyles = {
     background: "transparent",
     border: "1px solid rgb(199, 199, 199)",
     borderRadius: "5px",
+  };
+
+  //HANDLE INPUT KEY WORDS
+  const handleSearchTerm = (e) => {
+    console.log(e.target.value);
+    setSearchTerms((prevTerms) => {
+      return [...prevTerms, e.target.value];
+    });
+    setTypingText("");
+  };
+
+  //HANDLE KEY PRESS
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleSearchTerm(e);
+    }
   };
 
   function searchJobs(code) {
@@ -59,15 +72,32 @@ export default function Search({ setFetchedJobs }) {
       <div className={styles.searchWrap}>
         <div className={styles.selectWrap}>
           <img src={search} alt="" />
-          <Select
-            onChange={handleChange}
-            styles={chipStyles}
-            isMulti
-            name="colors"
-            options={categoriesList}
-            className={styles.customSelect}
-            classNamePrefix="select"
-          />
+          <div className={styles.inputWrap}>
+            { searchTerms.slice(0,2).map((term, index) => {
+              return (<span className={styles.selectedTerm} key={index}>
+              <img src={close} alt="close icon" /> {term}
+            </span>)
+            })}
+            {searchTerms.length > 2 && (
+              <span className={styles.selectedTerm} >
+                <img src={close} alt="close icon" /> + {searchTerms.length}.. 
+              </span>
+            )}
+            <input
+              type="text"
+              placeholder="job title or keywords"
+              name="searchQuery"
+              id=""
+              onChange={(e) => setTypingText(e.target.value)}
+              value={typingText}
+              onKeyPress={handleKeyPress}
+            />
+          </div>
+          <div className={styles.options}>
+            <div className={styles.option}>
+              <p></p>
+            </div>
+          </div>
         </div>
         <div className={styles.location}>
           <img src={location} alt="" />
