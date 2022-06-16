@@ -51,7 +51,7 @@ export const Job = memo((props) => {
         {props.job.MatchedObjectDescriptor.UserArea.Details.JobSummary.substr(
           0,
           180
-        )}
+        )}...
       </p>
       {/* <div className={styles.buttons}>
         <button>Apply Now</button>

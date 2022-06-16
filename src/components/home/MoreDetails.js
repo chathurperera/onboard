@@ -12,24 +12,24 @@ export default function MoreDetails(props) {
         alt=""
         onClick={() => props.setExpandDetails(false)}
       />
-      <div className={styles.logoWrapper}>
+      {/* <div className={styles.logoWrapper}>
         <img src={props.moreDetails.company_logo} alt="company logo" />
-      </div>
+      </div> */}
       <div className={styles.jobTitle}>
-        <h2>{props.moreDetails.title}</h2>
+        <h2>{props.moreDetails.MatchedObjectDescriptor?.PositionTitle}</h2>
         <img src={shareIcon} alt="share" />
       </div>
       <div className={styles.companyDetails}>
         <p>
           <span className={styles.companyName}>
-            {props.moreDetails.company_name}
+            {props.moreDetails.MatchedObjectDescriptor?.OrganizationName}
           </span>
         </p>
         <p>
           <span className={styles.postedDate}>
             Posted on{" "}
             <Moment format="YYYY/MM/DD">
-              {props.moreDetails.publication_date}
+              {props.moreDetails.MatchedObjectDescriptor?.PublicationStartDate}
             </Moment>
           </span>
           {/* <span className={styles.applicantsCount}>98 Applicants</span> */}
@@ -38,22 +38,26 @@ export default function MoreDetails(props) {
       <div className={styles.roleDetails}>
         <div className={styles.detail}>
           <p className={styles.label}>Category</p>
-          <p className={styles.value}>{props.moreDetails.category}</p>
+          <p className={styles.value}>
+            {props.moreDetails.MatchedObjectDescriptor?.JobCategory[0].Name}
+          </p>
         </div>
-        {/* <div className={styles.detail}>
-          <p className={styles.label}>Work Level</p>
-          <p className={styles.value}>Senior Level</p>
-        </div> */}
         <div className={styles.detail}>
           <p className={styles.label}>Employee type</p>
-          <p className={styles.value}>{props.moreDetails.job_type === 'full_time' ? 'Full Time' : 'Contract'}</p>
+          <p className={styles.value}>
+            {props.moreDetails.MatchedObjectDescriptor?.PositionSchedule[0].Name}
+          </p>
         </div>
-        {props.moreDetails.salary && (
           <div className={styles.detail}>
             <p className={styles.label}>Offer Salary</p>
-            <p className={styles.value}>{props.moreDetails.salary}</p>
+            <p className={styles.value}>
+              {
+                props.moreDetails.MatchedObjectDescriptor?.PositionRemuneration[0].MinimumRange
+              }$
+              /{props.moreDetails.MatchedObjectDescriptor?.PositionRemuneration[0].RateIntervalCode}
+            </p>
           </div>
-        )}
+        
       </div>
       <div className={styles.details}>
         <div className={styles.overView}>
