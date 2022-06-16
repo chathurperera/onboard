@@ -23,6 +23,7 @@ export default function Search({ setFetchedJobs }) {
       });
   }, []);
 
+
   //SET SELECT OPTIONS
   const categoriesList = occupationalSeries?.map((job) => {
     return { value: job.Code, label: job.Value };
@@ -50,21 +51,19 @@ export default function Search({ setFetchedJobs }) {
     }
   };
 
-  function searchJobs(code) {
-    axios
-      .get(
-        "https://data.usajobs.gov/api/search?ResultsPerPage=20&JobCategoryCode=2210;0308",
-        {
-          headers: {
-            Host: "data.usajobs.gov",
-            "User-Agent": "chathuraperera007@gmail.com",
-            "Authorization-Key": "HkTFjHkMQq7GxG4w/xfmMgnTOFgpbXtUeQ2GdN2etfQ=",
-          },
-        }
-      )
-      .then((res) => {
-        setFetchedJobs(res.data.SearchResult.SearchResultItems);
-      });
+  //FETCHING JOBS
+  function searchJobs(keywords) {
+    console.log('search called')
+    const keywordsStringValue = keywords.join("%");
+    axios.get(`https://data.usajobs.gov/api/search?Keyword=${keywordsStringValue}`,{
+      headers:{
+        "Host": "data.usajobs.gov",          
+        "User-Agent": "chathuraperera007@gmail.com",          
+        "Authorization-Key": "HkTFjHkMQq7GxG4w/xfmMgnTOFgpbXtUeQ2GdN2etfQ="      
+      }
+    }).then((res) => {
+      setFetchedJobs(res.data.SearchResult.SearchResultItems);
+    })      
   }
 
   return (
@@ -103,7 +102,7 @@ export default function Search({ setFetchedJobs }) {
           <img src={location} alt="" />
         </div>
         <div className={styles.searchButton}>
-          <button>Search</button>
+          <button onClick={() => searchJobs(searchTerms)}>Search</button>
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ export default function HomePage() {
     const [fetchedJobs, setFetchedJobs] = useState(null);
         
     useEffect(() => {
-      axios.get('https://data.usajobs.gov/api/search?Keyword=Agriculture',{
+      axios.get('https://data.usajobs.gov/api/search?Keyword=Software',{
         headers:{
           "Host": "data.usajobs.gov",          
           "User-Agent": "chathuraperera007@gmail.com",          
