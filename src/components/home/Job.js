@@ -39,10 +39,10 @@ export const Job = memo((props) => {
       <p className={styles.jobDescription}>
         {props.job.description.substr(0, 180)}
       </p>
-      <div className={styles.buttons}>
+      {/* <div className={styles.buttons}>
         <button>Apply Now</button>
         <button>Learn More</button>
-      </div>
+      </div> */}
     </div>
   );
 });

@@ -10,21 +10,7 @@ export const JobsWrapper = () => {
   const [expandDetails, setExpandDetails] = useState(false);
   const [listings, setListings] = useState(jobs.jobs);
   const [selectedJob, setSelectedJob] = useState({});
-  const [fetchedJobs, setFetchedJobs] = useState(null);
-  
-  //FETCH JOBS
-  useEffect(() => {
-    axios.get('https://data.usajobs.gov/api/search?ResultsPerPage=20',{
-      headers:{
-        "Host": "data.usajobs.gov",          
-        "User-Agent": "chathuraperera007@gmail.com",          
-        "Authorization-Key": "HkTFjHkMQq7GxG4w/xfmMgnTOFgpbXtUeQ2GdN2etfQ="      
-      }
-    }).then((res) => {
-      setFetchedJobs(res.data.SearchResult.SearchResultItems);
-    })
-    
-  },[])
+
   //TOGGLES SAVE ICON 
   function toggleSave(id) {
     setListings((prevListings) => {
