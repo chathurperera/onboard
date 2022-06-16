@@ -6,7 +6,7 @@ import MoreDetails from "./MoreDetails";
 import JobAlert from "./JobAlert";
 import axios from "axios";
 
-export const JobsWrapper = () => {
+export const JobsWrapper = ({fetchedJobs}) => {
   const [expandDetails, setExpandDetails] = useState(false);
   const [listings, setListings] = useState(jobs.jobs);
   const [selectedJob, setSelectedJob] = useState({});
@@ -45,7 +45,7 @@ export const JobsWrapper = () => {
     gridTemplateColumns: expandDetails ? "1fr" : "1fr",
     gridGap: "20px",
   };
-  const jobsList = listings.map((job) => {
+  const jobsList = fetchedJobs?.map((job) => {
     return (
       <Job
         job={job}

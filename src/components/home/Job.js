@@ -15,14 +15,20 @@ export const Job = memo((props) => {
   return (
     <div
       className={
-        props.selectedJob.id === props.job.id && props.expandDetails
+        props.selectedJob.MatchedObjectId === props.job.MatchedObjectId && props.expandDetails
           ? `${styles.job} ${styles.focused}`
           : `${styles.job}`
       }
       onClick={selectJob}
     >
       <div className={styles.logoWrapper}>
-        <img className={styles.logo} src={props.job.company_logo} alt="logo" />
+        {/* <img className={styles.logo} src={props.job.company_logo} alt="logo" /> */}
+        <div>
+          <p className={styles.jobTitle}>
+            {props.job.MatchedObjectDescriptor.PositionTitle}
+          </p>
+          <p className={styles.OrganizationName}>{props.job.MatchedObjectDescriptor.OrganizationName}</p>
+        </div>
         <img
           onClick={props.toggleSave}
           className={styles.save}
@@ -30,14 +36,22 @@ export const Job = memo((props) => {
           alt="logo"
         />
       </div>
-      <p className={styles.jobTitle}>{props.job.title}</p>
       <div className={styles.jobTags}>
-        <div className={styles.tag}>{props.job.job_type.replace("_",'-')}</div>
-        <div className={styles.tag}>{props.job.category}</div>
-        <div className={styles.tag}>{props.job.candidate_required_location}</div>
+        <div className={styles.tag}>
+          {props.job.MatchedObjectDescriptor.PositionSchedule[0].Name}
+        </div>
+        <div className={styles.tag}>
+          {props.job.MatchedObjectDescriptor.JobCategory[0].Name}
+        </div>
+        <div className={styles.tag}>
+          {props.job.MatchedObjectDescriptor.PositionLocationDisplay}
+        </div>
       </div>
       <p className={styles.jobDescription}>
-        {props.job.description.substr(0, 180)}
+        {props.job.MatchedObjectDescriptor.UserArea.Details.JobSummary.substr(
+          0,
+          180
+        )}
       </p>
       {/* <div className={styles.buttons}>
         <button>Apply Now</button>
@@ -46,4 +60,4 @@ export const Job = memo((props) => {
     </div>
   );
 });
-export default Job
+export default Job;

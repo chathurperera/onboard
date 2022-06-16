@@ -25,7 +25,7 @@ export default function HomePage() {
   return (
     <div className="main-content">
       <Search setFetchedJobs={setFetchedJobs} />
-      <JobsWrapper />
+      <JobsWrapper  fetchedJobs={fetchedJobs}/>
     </div>
   );
 }

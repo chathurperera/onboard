@@ -51,7 +51,7 @@ export default function Search({ setFetchedJobs }) {
     }
   };
 
-  //FETCHING JOBS
+  //SEARCH JOBS
   function searchJobs(keywords) {
     console.log('search called')
     const keywordsStringValue = keywords.join("%");
@@ -102,7 +102,7 @@ export default function Search({ setFetchedJobs }) {
           <img src={location} alt="" />
         </div>
         <div className={styles.searchButton}>
-          <button onClick={() => searchJobs(searchTerms)}>Search</button>
+          <button  onClick={() => searchJobs(searchTerms)}>Search</button>
         </div>
       </div>
     </div>
