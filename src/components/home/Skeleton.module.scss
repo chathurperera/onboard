@@ -1,0 +1,67 @@
+.skeleton {
+  max-width: 480px;
+  min-height: 250px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.048) 0px 5px 15px 0px;
+}
+.skeleton {
+    position: relative;
+  }
+  
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background-color: rgba(256, 256, 256, 0.3);
+  box-shadow: 0px 0px 20px 30px rgba(256, 256, 256, 0.2);
+  animation: slider 1.2s infinite;
+}
+@keyframes slider {
+
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(500%);
+    }
+  
+  }
+
+.title {
+  height: 20px;
+  margin-bottom: 10px;
+  width: 95%;
+  border-radius: 10px;
+  background-color: #dee2e6;
+}
+.companyName {
+  margin-bottom: 25px;
+  background-color: #dee2e6;
+  height: 10px;
+  width: 50px;
+  border-radius: 5px;
+}
+.moreDetails {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 40px;
+}
+.detail {
+  width: 80px;
+  background-color: #dee2e6;
+  height: 30px;
+  border-radius: 4px;
+}
+.para {
+  margin-bottom: 12px;
+  border-radius: 8px;
+  width: 95%;
+  background-color: #dee2e6;
+  height: 12px;
+}

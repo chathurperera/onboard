@@ -5,8 +5,9 @@ import jobs from "../../job.json";
 import MoreDetails from "./MoreDetails";
 import JobAlert from "./JobAlert";
 import axios from "axios";
+import { Skeleton } from "./Skeleton";
 
-export const JobsWrapper = ({fetchedJobs}) => {
+export const JobsWrapper = ({fetchedJobs ,isEmpty}) => {
   const [expandDetails, setExpandDetails] = useState(false);
   const [listings, setListings] = useState(jobs.jobs);
   const [selectedJob, setSelectedJob] = useState({});
@@ -59,10 +60,13 @@ export const JobsWrapper = ({fetchedJobs}) => {
       />
     );
   });
+  const skeletonLoaders = [1,2,3,4,5,6,7,8,].map((box) => {
+    return <Skeleton />
+  })
   return (
     <div className={styles.jobsWrapper}>
       <div style={wrapperStyles}>
-        <div style={jobsContainer}>{jobsList}</div>
+        <div style={jobsContainer}>{isEmpty ? skeletonLoaders : jobsList }</div>
       </div>
       <MoreDetails
         styles={expandJobInfo}

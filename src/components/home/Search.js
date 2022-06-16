@@ -7,7 +7,7 @@ import location from "../../images/location.png";
 import search from "../../images/search.png";
 import "./_custom-select.scss";
 import axios from "axios";
-export default function Search({ setFetchedJobs }) {
+export default function Search({ setFetchedJobs , isEmpty , setIsEmpty }) {
   const [occupationalSeries, setOccupationalSeries] = useState(null);
   const [codes, setCodes] = useState([]);
   const [searchTerms, setSearchTerms] = useState([]);
@@ -54,6 +54,7 @@ export default function Search({ setFetchedJobs }) {
   //SEARCH JOBS
   function searchJobs(keywords) {
     console.log('search called')
+    setIsEmpty(true);
     const keywordsStringValue = keywords.join("%");
     axios.get(`https://data.usajobs.gov/api/search?Keyword=${keywordsStringValue}`,{
       headers:{
@@ -63,6 +64,7 @@ export default function Search({ setFetchedJobs }) {
       }
     }).then((res) => {
       setFetchedJobs(res.data.SearchResult.SearchResultItems);
+      setIsEmpty(false);
     })      
   }
 

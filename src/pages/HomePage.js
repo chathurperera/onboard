@@ -5,9 +5,11 @@ import JobsWrapper from "../components/home/JobsWrapper.js";
 import axios from "axios";
 import { useState } from "react";
 
+
 export default function HomePage() {
-    //FETCH JOBS
+    
     const [fetchedJobs, setFetchedJobs] = useState(null);
+    const [isEmpty, setIsEmpty] = useState(true);
         
     useEffect(() => {
       axios.get('https://data.usajobs.gov/api/search?Keyword=Software',{
@@ -18,14 +20,15 @@ export default function HomePage() {
         }
       }).then((res) => {
         setFetchedJobs(res.data.SearchResult.SearchResultItems);
+        setIsEmpty(false);
         console.log('setFetchedJobs',fetchedJobs)
       })      
     },[])
   
   return (
     <div className="main-content">
-      <Search setFetchedJobs={setFetchedJobs} />
-      <JobsWrapper  fetchedJobs={fetchedJobs}/>
+      <Search isEmpty={isEmpty} setIsEmpty={setIsEmpty}  setFetchedJobs={setFetchedJobs} />
+      <JobsWrapper isEmpty={isEmpty}  fetchedJobs={fetchedJobs}/>
     </div>
   );
 }
