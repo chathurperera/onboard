@@ -61,7 +61,7 @@ export const JobsWrapper = ({fetchedJobs ,isEmpty}) => {
     );
   });
   const skeletonLoaders = [1,2,3,4,5,6,7,8,].map((box) => {
-    return <Skeleton />
+    return <Skeleton key={box} />
   })
   return (
     <div className={styles.jobsWrapper}>

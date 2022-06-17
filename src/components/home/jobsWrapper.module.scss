@@ -2,7 +2,7 @@
 @import "/src/variables";
 .jobsWrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns:2fr 3fr;
   column-gap: 20px;
   @include section-width;
   padding-bottom:50px;

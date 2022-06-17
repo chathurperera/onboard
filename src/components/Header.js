@@ -6,12 +6,16 @@ import signOut from "../images/sign-out.png";
 import userPlaceholder from "../images/user.png";
 import { useAuth0 } from "@auth0/auth0-react";
 import DropDownPanel from "../components/home/DropDownCard";
+import { NavLink ,useLocation } from "react-router-dom";
+
 
 export const Header = () => {
   const { loginWithRedirect } = useAuth0();
   const { user, isAuthenticated, logout } = useAuth0();
   const [login, setLoggedIn] = useState(false);
   const [expandPanel, setExpandPanel] = useState(false);
+  const location = useLocation();
+  console.log(location.pathname);
 
   const getAuthStatus = () => {
     console.log(isAuthenticated);
@@ -22,6 +26,17 @@ export const Header = () => {
         <div className={styles.logo}>
           <h1>ONBOARD</h1>
         </div>
+        <ul className={styles.navLinks}>
+          <li>
+            <NavLink to="/">Find Jobs</NavLink>
+          </li>
+          <li>
+            <NavLink to="/">Company Reviews</NavLink>
+          </li>
+          <li>
+            <NavLink to="/">Find Salaries</NavLink>
+          </li>
+        </ul>
         <div className={styles.profile}>
           {!isAuthenticated && (
             <>
