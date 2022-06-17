@@ -3,6 +3,10 @@ import styles from "./jobsWrapper.module.scss";
 import companyLogo from "../../images/companyLogo.png";
 import save from "../../images/save.png";
 import saved from "../../images/saved.png";
+import unclickedHeartWhite from "../../images/unclickedHeartWhite.png";
+import unclickedHeartBlack from "../../images/unclickedHeartBlack.png";
+import clickedHeartWhite from "../../images/clickedHeartWhite.png";
+import clickedHeartRed from "../../images/clickedHeartRed.png";
 
 export const Job = memo((props) => {
   const [focused, setFocused] = useState(false);
@@ -15,26 +19,31 @@ export const Job = memo((props) => {
   return (
     <div
       className={
-        props.selectedJob.MatchedObjectId === props.job.MatchedObjectId && props.expandDetails
+        props.selectedJob.MatchedObjectId === props.job.MatchedObjectId &&
+        props.expandDetails
           ? `${styles.job} ${styles.focused}`
           : `${styles.job}`
       }
       onClick={selectJob}
     >
       <div className={styles.logoWrapper}>
-        {/* <img className={styles.logo} src={props.job.company_logo} alt="logo" /> */}
+        <img className={styles.logo} src={companyLogo} alt="logo" />
         <div>
           <p className={styles.jobTitle}>
             {props.job.MatchedObjectDescriptor.PositionTitle}
           </p>
-          <p className={styles.OrganizationName}>{props.job.MatchedObjectDescriptor.OrganizationName}</p>
+          <p className={styles.OrganizationName}>
+            {props.job.MatchedObjectDescriptor.OrganizationName}
+          </p>
         </div>
-        <img
-          onClick={props.toggleSave}
-          className={styles.save}
-          src={props.job.save ? saved : save}
-          alt="logo"
-        />
+        <div className={styles.saveWrap} >
+          <img
+            onClick={props.toggleSave}
+            className={styles.save}
+            src={props.job.save ? clickedHeartRed : unclickedHeartBlack}
+            alt="logo"
+          />
+        </div>
       </div>
       <div className={styles.jobTags}>
         <div className={styles.tag}>
@@ -43,16 +52,16 @@ export const Job = memo((props) => {
         <div className={styles.tag}>
           {props.job.MatchedObjectDescriptor.JobCategory[0].Name}
         </div>
-        <div className={styles.tag}>
+        {/* <div className={styles.tag}>
           {props.job.MatchedObjectDescriptor.PositionLocationDisplay}
-        </div>
+        </div> */}
       </div>
-      <p className={styles.jobDescription}>
+      {/* <p className={styles.jobDescription}>
         {props.job.MatchedObjectDescriptor.UserArea.Details.JobSummary.substr(
           0,
           180
         )}...
-      </p>
+      </p> */}
       {/* <div className={styles.buttons}>
         <button>Apply Now</button>
         <button>Learn More</button>

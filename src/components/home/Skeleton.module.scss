@@ -1,6 +1,6 @@
 .skeleton {
   max-width: 480px;
-  min-height: 250px;
+  // min-height: 250px;
   width: 100%;
   padding: 15px;
   border-radius: 8px;
@@ -11,7 +11,17 @@
 .skeleton {
     position: relative;
   }
-  
+  .logoWrap{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    .logo{
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      background-color: #dee2e6;
+    }
+  }
 .overlay {
   position: absolute;
   top: 0;
@@ -37,8 +47,8 @@
 .title {
   height: 20px;
   margin-bottom: 10px;
-  width: 95%;
-  border-radius: 10px;
+  width: 200px;
+  border-radius: 5px;
   background-color: #dee2e6;
 }
 .companyName {
@@ -49,7 +59,7 @@
   border-radius: 5px;
 }
 .moreDetails {
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
   display: flex;
   gap: 40px;
 }

@@ -51,6 +51,7 @@
     border: 2px solid #010203;
   }
   .job {
+    cursor: pointer;
     max-width: 480px;
     width: 100%;
     padding: 20px;
@@ -62,11 +63,27 @@
     }
     .logoWrapper{
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
       align-items: flex-start;
+      gap: 15px;
+      position: relative;
       .logo {
         width: 60px;
         border-radius: 5px;
+      }
+      .saveWrap{
+        border: 1px solid #7b7b8541;
+        width: 25px;
+        height: 25px;
+        border-radius: 5px;
+        display: grid;
+        place-items: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        img{
+          width: 13px;
+        }
       }
       .save{
         cursor: pointer;
@@ -76,8 +93,11 @@
     .jobTitle {
       font-weight: 600;
       font-size: 19px;
+      max-width: 330px;
+      word-break: break-word;
     }
     .OrganizationName{
+      max-width: 330px;
       font-weight: 600;
       margin-bottom: 20px;
       font-size: 14px;
