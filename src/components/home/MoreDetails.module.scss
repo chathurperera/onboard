@@ -9,6 +9,21 @@
   background-color: #fff;
   padding: 0 30px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  padding-bottom: 20px;
+  .applyBtn{
+    background: #010203c7;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 50px;
+    transition: all ease .2s;
+    &:hover{
+      background: #010203;
+
+    }
+  }
   .logoWrapper {
     padding: 15px 0;
     img {
@@ -121,15 +136,18 @@
       color: #696971;
       font-size: 15px;
       position: relative;
+      padding-left: 20px;
       &::before{
         content: '';
         width: 12px;
         height: 12px;
         left: -15px;
         top: 5px;
+        background-color: #000;
         position: absolute;
         border: 2px solid #59b9ff;
         border-radius: 50%;
+        z-index: 999;
       }
     }
   }

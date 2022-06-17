@@ -43,61 +43,51 @@ export default function MoreDetails(props) {
           </p>
         </div>
         <div className={styles.detail}>
-          <p className={styles.label}>Employee type</p>
+          <p className={styles.label}>Location</p>
           <p className={styles.value}>
-            {props.moreDetails.MatchedObjectDescriptor?.PositionSchedule[0].Name}
+            {props.moreDetails.MatchedObjectDescriptor?.PositionLocationDisplay}
           </p>
         </div>
-          <div className={styles.detail}>
-            <p className={styles.label}>Offer Salary</p>
-            <p className={styles.value}>
-              {
-                props.moreDetails.MatchedObjectDescriptor?.PositionRemuneration[0].MinimumRange
-              }$
-              /{props.moreDetails.MatchedObjectDescriptor?.PositionRemuneration[0].RateIntervalCode}
-            </p>
-          </div>
-        
+        <div className={styles.detail}>
+          <p className={styles.label}>Offer Salary</p>
+          <p className={styles.value}>
+            {
+              props.moreDetails.MatchedObjectDescriptor?.PositionRemuneration[0]
+                .MinimumRange
+            }
+            $ /
+            {
+              props.moreDetails.MatchedObjectDescriptor?.PositionRemuneration[0]
+                .RateIntervalCode
+            }
+          </p>
+        </div>
       </div>
       <div className={styles.details}>
         <div className={styles.overView}>
           <h2>Overview</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-            reprehenderit sint? Reiciendis nam doloribus necessitatibus
-            dignissimos tempora ipsum deserunt sit, pariatur nostrum saepe unde
-            deleniti sapiente id voluptatum totam et repellat exercitationem
-            voluptas corporis voluptate accusantium labore illum? Reiciendis
-            ipsa autem porro debitis magnam mollitia eum atque laborum nemo
-            eligendi!
+            {
+              props.moreDetails.MatchedObjectDescriptor?.UserArea.Details
+                .AgencyMarketingStatement
+            }
           </p>
         </div>
 
-        <div className={styles.description}>
-          <h2>Job Description</h2>
-          <ul>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem cumque ad amet natus ipsa perferendis magni.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem cumque ad amet natus ipsa perferendis magni.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem cumque ad amet natus ipsa perferendis magni.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem cumque ad amet natus ipsa perferendis magni.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem cumque ad amet natus ipsa perferendis magni.
-            </li>
-          </ul>
-        </div>
+        {props.moreDetails.MatchedObjectDescriptor?.UserArea.Details
+          .KeyRequirements !== [] && (
+          <div className={styles.description}>
+            <h2>Requirements</h2>
+            <ul>
+              {props.moreDetails.MatchedObjectDescriptor?.UserArea.Details.KeyRequirements.map(
+                (point) => {
+                  return <li>{point}</li>;
+                }
+              )}
+            </ul>
+          </div>
+        )}
+        <a className={styles.applyBtn} href={props.moreDetails.MatchedObjectDescriptor?.ApplyURI[0]}>Apply now</a>
       </div>
     </div>
   );
