@@ -1,14 +1,32 @@
-import React , { useState } from "react";
+import React, { useState } from "react";
 import LoginHeader from "../components/login/LoginHeader";
 import styles from "../pages/Register.module.scss";
 import show from "../images/show.png";
 import hide from "../images/hide.png";
-
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../firebase-config";
 
 function Register() {
-    const [showPassword, setShowPassword] = useState(false);
- 
-    return (
+  const [showPassword, setShowPassword] = useState(false);
+
+  const register = async (e) => {
+    e.preventDefault();
+    try {
+      const user = await createUserWithEmailAndPassword(
+        auth,
+        registerEmail,
+        registerPassword
+      );
+      console.log("user", user);
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
+  const [registerEmail, setRegisterEmail] = useState("");
+  const [registerPassword, setRegisterPassword] = useState("");
+
+  return (
     <div className={styles.register}>
       <LoginHeader />
       <div className={styles.registerWrap}>
@@ -26,7 +44,10 @@ function Register() {
           </div>
           <div className={styles.inputBox}>
             <label>Email address</label>
-            <input type="email" />
+            <input
+              type="email"
+              onChange={(e) => setRegisterEmail(e.target.value)}
+            />
           </div>
           <div className={styles.inputBox}>
             <label>Phone</label>
@@ -39,9 +60,13 @@ function Register() {
               onClick={() => setShowPassword((prevState) => !prevState)}
             />
             <label>Password</label>
-            <input type={showPassword ? "text" : "password"} />
+            <input
+              type={showPassword ? "text" : "password"}
+              onChange={(e) => setRegisterPassword(e.target.value)}
+            />
           </div>
-          <button>Create Profile</button>
+          {auth.currentUser?.email}
+          <button onClick={(e) => register(e)}>Create Profile</button>
         </form>
       </div>
     </div>

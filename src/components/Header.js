@@ -10,16 +10,12 @@ import { NavLink ,useLocation } from "react-router-dom";
 
 
 export const Header = () => {
-  const { loginWithRedirect } = useAuth0();
-  const { user, isAuthenticated, logout } = useAuth0();
+  
   const [login, setLoggedIn] = useState(false);
   const [expandPanel, setExpandPanel] = useState(false);
   const location = useLocation();
   console.log(location.pathname);
 
-  const getAuthStatus = () => {
-    console.log(isAuthenticated);
-  };
   return (
     <header className={styles.header}>
       <div className={styles.headerWrap}>
@@ -38,24 +34,14 @@ export const Header = () => {
           </li>
         </ul>
         <div className={styles.profile}>
-          {!isAuthenticated && (
             <>
-              <img
-                onClick={() => loginWithRedirect()}
-                src={userPlaceholder}
-                className={styles.loginUserImage}
-                alt=""
-              />
-              <button>Login</button>
+              <nav>
+              <NavLink to='/login'>Login</NavLink>
+              <NavLink to='/login'>Sign up</NavLink>
+              </nav>
             </>
-          )}
-          {isAuthenticated ? (
+          {/* {isAuthenticated ? (
             <>
-              {/* <button
-                onClick={() => logout({ returnTo: window.location.origin })}
-              >
-                LOGOUT
-              </button> */}
               {user?.picture && (
                 <img
                   className={styles.profileImage}
@@ -64,8 +50,6 @@ export const Header = () => {
                 />
               )}
               <h2 className={styles.userName}>{user?.name}</h2>
-
-              {/* <h2>{user && user}</h2> */}
             </>
           ) : (
             ""
@@ -77,7 +61,7 @@ export const Header = () => {
               alt=""
               onClick={() => setExpandPanel(!expandPanel)}
             />
-          )}
+          )} */}
         </div>
         {expandPanel && <DropDownPanel />}
       </div>
