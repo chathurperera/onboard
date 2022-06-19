@@ -87,7 +87,7 @@ export default function MoreDetails(props) {
             </ul>
           </div>
         )}
-        <a className={styles.applyBtn} href={props.moreDetails.MatchedObjectDescriptor?.ApplyURI[0]}>Apply now</a>
+        <a className={styles.applyBtn} target="_blank" rel="noopener noreferrer" href={props.moreDetails.MatchedObjectDescriptor?.ApplyURI[0]}>Apply now</a>
       </div>
     </div>
   );

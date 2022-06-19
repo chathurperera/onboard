@@ -1,6 +1,13 @@
 @import "/src/mixins";
 @import "/src/variables";
+.jobsCount{
+  font-weight: 600;
+ padding-left: 80px;
+ font-size: 18px;
+ padding-bottom: 10px;
+}
 .jobsWrapper {
+  position: relative;
   display: grid;
   grid-template-columns:2fr 3fr;
   column-gap: 20px;

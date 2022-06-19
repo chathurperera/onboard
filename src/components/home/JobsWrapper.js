@@ -31,12 +31,6 @@ export const JobsWrapper = ({fetchedJobs ,isEmpty}) => {
     );
   }
 
-  const wrapperStyles = {
-    width: "100%",
-    display: expandDetails ? "grid" : "block",
-    gridTemplateColumns: "1fr ",
-    gridGap: "20px",
-  };
   const expandJobInfo = {
     display: expandDetails ? "block" : "none",
     width: "100%",
@@ -64,8 +58,11 @@ export const JobsWrapper = ({fetchedJobs ,isEmpty}) => {
     return <Skeleton key={box} />
   })
   return (
+    <>
+    {!isEmpty && <h1 className={styles.jobsCount} >Jobs {jobsList.length}</h1>}
     <div className={styles.jobsWrapper}>
-      <div style={wrapperStyles}>
+
+      <div >
         <div style={jobsContainer}>{isEmpty ? skeletonLoaders : jobsList }</div>
       </div>
       <MoreDetails
@@ -75,6 +72,7 @@ export const JobsWrapper = ({fetchedJobs ,isEmpty}) => {
       />
       <JobAlert showAlert={expandDetails} />
     </div>
+    </>
   );
 }
 export default JobsWrapper
