@@ -3,8 +3,9 @@ import LoginHeader from "../components/login/LoginHeader";
 import styles from "../pages/login.module.scss";
 import show from "../images/show.png";
 import hide from "../images/hide.png";
-import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../firebase-config";
+import google from "../images/google.png";
+import { signInWithEmailAndPassword  } from "firebase/auth";
+import { auth , signInWithGoogle } from "../firebase-config";
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -48,6 +49,10 @@ function Login() {
             <input onChange={(e) => setLoginPassword(e.target.value)} type={showPassword ? "text" : "password"} />
           </div>
           <button onClick={(e) => login(e)}>Sign in</button>
+          <div className={styles.googleLogin} onClick={signInWithGoogle}>
+            <img src={google} alt="google" />
+            <p>Sign in with Google</p> 
+        </div>
           <p>
             Forgot password? <span>Reset Here</span>
           </p>
@@ -55,6 +60,7 @@ function Login() {
             New to ONBORAD? <span>Register Now</span>
           </p>
         </form>
+
       </div>
     </div>
   );
