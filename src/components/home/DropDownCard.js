@@ -4,7 +4,7 @@ import signOutIcon from "../../images/sign-out.png";
 import styles from "./dropDown.module.scss";
 import { useAuth0 } from "@auth0/auth0-react";
 import { auth } from "../../firebase-config";
-import { createUserWithEmailAndPassword , signOut } from "firebase/auth";
+import { signOut } from "firebase/auth";
 
 const DropDownPanel = () => {
   
@@ -23,12 +23,9 @@ const DropDownPanel = () => {
           className={styles.dashboard}
           onClick={logout}
         >
-          <img src={signOutIcon} alt="Dashboard" />
+          <img src={signOutIcon} alt="logout icon " />
           <span>Logout</span>
         </p>
-        {/* <div className={styles.buttonwrap}>
-          <button>Logout</button>
-        </div> */}
       </div>
   );
 };

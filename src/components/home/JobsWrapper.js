@@ -40,7 +40,7 @@ export const JobsWrapper = ({fetchedJobs ,isEmpty}) => {
     gridTemplateColumns: expandDetails ? "1fr" : "1fr",
     gridGap: "20px",
   };
-  const jobsList = fetchedJobs?.map((job) => {
+  const jobsList = fetchedJobs?.map((job,index) => {
     return (
       <Job
         job={job}
@@ -48,7 +48,7 @@ export const JobsWrapper = ({fetchedJobs ,isEmpty}) => {
         selectedJob={selectedJob}
         setExpandDetails={setExpandDetails}
         expandDetails={expandDetails}
-        key={job.id}
+        key={index}
         toggleSave={() => toggleSave(job.id)}
         toggleMoreDetails={() => toggleMoreDetails(job.id)}
       />

@@ -6,16 +6,33 @@ import signOut from "../images/sign-out.png";
 import userPlaceholder from "../images/user.png";
 import { useAuth0 } from "@auth0/auth0-react";
 import DropDownPanel from "../components/home/DropDownCard";
-import { NavLink ,useLocation } from "react-router-dom";
-
+import { NavLink, useLocation , } from "react-router-dom";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { useEffect } from "react";
 
 export const Header = () => {
-  
-  const [login, setLoggedIn] = useState(false);
+  const [LoggedIn, setLoggedIn] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [profilePic, setProfilePic] = useState("");
   const [expandPanel, setExpandPanel] = useState(false);
   const location = useLocation();
-  console.log(location.pathname);
+  const auth = getAuth();
 
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setLoggedIn(true);
+        setName(localStorage.getItem("name"));
+        setEmail(localStorage.getItem("email"));
+        setProfilePic(localStorage.getItem("profilePic"));
+      } else {
+        setLoggedIn(false);
+      }
+    });
+  }, []);
+
+  console.log(location.pathname);
   return (
     <header className={styles.header}>
       <div className={styles.headerWrap}>
@@ -34,34 +51,32 @@ export const Header = () => {
           </li>
         </ul>
         <div className={styles.profile}>
-            <>
+          <>
+            {!LoggedIn && (
               <nav>
-              <NavLink to='/login'>Login</NavLink>
-              <NavLink to='/login'>Sign up</NavLink>
+                <NavLink to="/login">Login</NavLink>
+                <NavLink to="/Register">Sign up</NavLink>
               </nav>
-            </>
-          {/* {isAuthenticated ? (
+            )}
+          </>
+          {LoggedIn && (
             <>
-              {user?.picture && (
-                <img
-                  className={styles.profileImage}
-                  src={user.picture}
-                  alt={user.name}
-                />
-              )}
-              <h2 className={styles.userName}>{user?.name}</h2>
+              <img
+                className={styles.profileImage}
+                src={profilePic}
+                alt={name}
+              />
+              <h2 className={styles.userName}>{name}</h2>
             </>
-          ) : (
-            ""
           )}
-          {isAuthenticated && (
+          {LoggedIn && (
             <img
               src={downArrow}
               className={expandPanel ? styles.upArrow : styles.downArrow}
               alt=""
               onClick={() => setExpandPanel(!expandPanel)}
             />
-          )} */}
+          )}
         </div>
         {expandPanel && <DropDownPanel />}
       </div>

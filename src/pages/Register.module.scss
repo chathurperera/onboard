@@ -60,6 +60,8 @@
       font-size: 14px;
       font-weight: 600;
       transform: all ease 0.3s;
+      display: flex;
+      justify-content: center;
       &:hover {
         background-color: #0c409b;
       }
