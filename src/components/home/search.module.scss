@@ -57,6 +57,31 @@
 
       }
     }
+    .locationInputWrap{
+      width: 100%;
+      margin-left: 12px;
+      position: relative;
+      input{
+        width: 100%;
+        &:focus{
+          border: none;
+          outline: none;
+        }
+      }
+    }
+    .suggestionsWrap{
+      border-radius: 4px;
+      position: absolute;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      z-index: 9999;
+      top: 35px;
+      width: 100%;
+    }
+    .suggestion{
+      padding: 5px;
+      font-size: 15px;
+      font-weight: 600;
+    }
     .location {
       padding: 15px;
       display: flex;

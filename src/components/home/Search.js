@@ -53,7 +53,7 @@ function Search({
     const keywordsStringValue = keywords.join("%");
     axios
       .get(
-        `https://data.usajobs.gov/api/search?Keyword=${keywordsStringValue}`,
+        `https://data.usajobs.gov/api/search?Keyword=${keywordsStringValue}&LocationName=${address}`,
         {
           headers: {
             Host: "data.usajobs.gov",
@@ -119,14 +119,26 @@ function Search({
                 getSuggestionItemProps,
                 loading,
               }) => (
-                <div>
+                <div className={styles.locationInputWrap}>
                   <input
                     {...getInputProps({
                       placeholder: "Anywhere",
                       // className: "location-search-input",
                     })}
                   />
-                  <div>{loading && <div>Loading...</div>}</div>
+                  <div className={styles.suggestionsWrap}>
+                    {loading && <div>Loading...</div>}
+                    {suggestions.map((suggestion,index) => {
+                      const style = suggestion.active
+                        ? { backgroundColor: "#F5F3F3", cursor: "pointer" }
+                        : { backgroundColor: "#fff", cursor: "pointer" };
+                      return (
+                        <div className={styles.suggestion} key={index} {...getSuggestionItemProps(suggestion, { style })}>
+                          {suggestion.description}
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               )}
             </PlacesAutocomplete>
@@ -142,5 +154,5 @@ function Search({
   );
 }
 export default scriptLoader([
-  `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_MAP_API}&libraries=places`,
+  `https://maps.googleapis.com/maps/api/js?key=AIzaSyDSVCY5D7FvXBSoL20O6nxBAWrUsQrnvk0&libraries=places`,
 ])(Search);
