@@ -28,8 +28,8 @@ export default function HomePage() {
   return (
     <div className="main-content">
       <Search isEmpty={isEmpty} setIsEmpty={setIsEmpty}  setFetchedJobs={setFetchedJobs} />
-      
       <JobsWrapper isEmpty={isEmpty}  fetchedJobs={fetchedJobs}/>
+      
     </div>
   );
 }

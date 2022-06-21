@@ -6,13 +6,14 @@ import MoreDetails from "./MoreDetails";
 import JobAlert from "./JobAlert";
 import axios from "axios";
 import { Skeleton } from "./Skeleton";
+import { NoResults } from "./NoResults";
 
-export const JobsWrapper = ({fetchedJobs ,isEmpty}) => {
+export const JobsWrapper = ({ fetchedJobs, isEmpty }) => {
   const [expandDetails, setExpandDetails] = useState(false);
   const [listings, setListings] = useState(jobs.jobs);
   const [selectedJob, setSelectedJob] = useState({});
 
-  //TOGGLES SAVE ICON 
+  //TOGGLES SAVE ICON
   function toggleSave(id) {
     setListings((prevListings) => {
       return prevListings.map((listing) => {
@@ -40,7 +41,7 @@ export const JobsWrapper = ({fetchedJobs ,isEmpty}) => {
     gridTemplateColumns: expandDetails ? "1fr" : "1fr",
     gridGap: "20px",
   };
-  const jobsList = fetchedJobs?.map((job,index) => {
+  const jobsList = fetchedJobs?.map((job, index) => {
     return (
       <Job
         job={job}
@@ -54,25 +55,34 @@ export const JobsWrapper = ({fetchedJobs ,isEmpty}) => {
       />
     );
   });
-  const skeletonLoaders = [1,2,3,4,5,6,7,8,].map((box) => {
-    return <Skeleton key={box} />
-  })
+  const skeletonLoaders = [1, 2, 3, 4, 5, 6, 7, 8].map((box) => {
+    return <Skeleton key={box} />;
+  });
   return (
     <>
-    {!isEmpty && <h1 className={styles.jobsCount} >Jobs {jobsList.length}</h1>}
-    <div className={styles.jobsWrapper}>
-
-      <div >
-        <div style={jobsContainer}>{isEmpty ? skeletonLoaders : jobsList }</div>
+      {!isEmpty && jobsList?.length > 0 && <h1 className={styles.jobsCount}>Jobs {jobsList.length}</h1>}
+      <div
+        className={styles.jobsWrapper}
+        style={
+          !isEmpty && fetchedJobs?.length === 0
+            ? { display: "block" }
+            : { display: "grid" }
+        }
+      >
+        <div>
+          <div style={jobsContainer}>
+            {isEmpty ? skeletonLoaders : jobsList}
+          </div>
+        </div>
+        {!isEmpty && fetchedJobs.length === 0 ? <NoResults /> : ""}
+        <MoreDetails
+          styles={expandJobInfo}
+          setExpandDetails={setExpandDetails}
+          moreDetails={selectedJob}
+        />
+       {jobsList?.length > 0 && <JobAlert showAlert={expandDetails} />}
       </div>
-      <MoreDetails
-        styles={expandJobInfo}
-        setExpandDetails={setExpandDetails}
-        moreDetails={selectedJob}
-      />
-      <JobAlert showAlert={expandDetails} />
-    </div>
     </>
   );
-}
-export default JobsWrapper
+};
+export default JobsWrapper;

@@ -1,0 +1,20 @@
+.noResultsContainer {
+  padding: 20px;
+  .imageWrap {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .text {
+    padding: 10px 0;
+    text-align: center;
+    h1 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #000;
+    }
+    p {
+      font-size: 15px;
+      color: #a2adb4;
+    }
+  }
+}
