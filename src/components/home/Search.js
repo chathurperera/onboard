@@ -1,17 +1,24 @@
 import React, { useEffect, useState } from "react";
 import styles from "./search.module.scss";
-import Select from "react-select";
-import categories from "../../categories.json";
 import close from "../../images/close.png";
 import location from "../../images/location.png";
 import search from "../../images/search.png";
-import "./_custom-select.scss";
 import axios from "axios";
-export default function Search({ setFetchedJobs , isEmpty , setIsEmpty }) {
+import PlacesAutocomplete from "react-places-autocomplete";
+import scriptLoader from "react-async-script-loader";
+
+function Search({
+  setFetchedJobs,
+  isEmpty,
+  setIsEmpty,
+  isScriptLoaded,
+  isScriptLoadSucceed,
+}) {
   const [occupationalSeries, setOccupationalSeries] = useState(null);
   const [codes, setCodes] = useState([]);
   const [searchTerms, setSearchTerms] = useState([]);
   const [typingText, setTypingText] = useState("");
+  const [address, setAddress] = useState("");
 
   //FETCHING OCCUPATION CODES
   useEffect(() => {
@@ -22,18 +29,6 @@ export default function Search({ setFetchedJobs , isEmpty , setIsEmpty }) {
         // console.log("occupationalSeries",res.data.CodeList[0].ValidValue );
       });
   }, []);
-
-
-  //SET SELECT OPTIONS
-  const categoriesList = occupationalSeries?.map((job) => {
-    return { value: job.Code, label: job.Value };
-  });
-
-  const chipStyles = {
-    background: "transparent",
-    border: "1px solid rgb(199, 199, 199)",
-    borderRadius: "5px",
-  };
 
   //HANDLE INPUT KEY WORDS
   const handleSearchTerm = (e) => {
@@ -53,35 +48,45 @@ export default function Search({ setFetchedJobs , isEmpty , setIsEmpty }) {
 
   //SEARCH JOBS
   function searchJobs(keywords) {
-    console.log('search called')
+    console.log("search called");
     setIsEmpty(true);
     const keywordsStringValue = keywords.join("%");
-    axios.get(`https://data.usajobs.gov/api/search?Keyword=${keywordsStringValue}`,{
-      headers:{
-        "Host": "data.usajobs.gov",          
-        "User-Agent": "chathuraperera007@gmail.com",          
-        "Authorization-Key": "HkTFjHkMQq7GxG4w/xfmMgnTOFgpbXtUeQ2GdN2etfQ="      
-      }
-    }).then((res) => {
-      setFetchedJobs(res.data.SearchResult.SearchResultItems);
-      setIsEmpty(false);
-    })      
+    axios
+      .get(
+        `https://data.usajobs.gov/api/search?Keyword=${keywordsStringValue}`,
+        {
+          headers: {
+            Host: "data.usajobs.gov",
+            "User-Agent": "chathuraperera007@gmail.com",
+            "Authorization-Key": "HkTFjHkMQq7GxG4w/xfmMgnTOFgpbXtUeQ2GdN2etfQ=",
+          },
+        }
+      )
+      .then((res) => {
+        setFetchedJobs(res.data.SearchResult.SearchResultItems);
+        setIsEmpty(false);
+      });
   }
 
+  const handleChange = (value) => {
+    setAddress(value);
+  };
   return (
     <div className={styles.search}>
       <div className={styles.searchWrap}>
         <div className={styles.selectWrap}>
           <img src={search} alt="" />
           <div className={styles.inputWrap}>
-            { searchTerms.slice(0,2).map((term, index) => {
-              return (<span className={styles.selectedTerm} key={index}>
-              <img src={close} alt="close icon" /> {term}
-            </span>)
+            {searchTerms.slice(0, 2).map((term, index) => {
+              return (
+                <span className={styles.selectedTerm} key={index}>
+                  <img src={close} alt="close icon" /> {term}
+                </span>
+              );
             })}
             {searchTerms.length > 2 && (
-              <span className={styles.selectedTerm} >
-                <img src={close} alt="close icon" /> + {searchTerms.length}.. 
+              <span className={styles.selectedTerm}>
+                <img src={close} alt="close icon" /> + {searchTerms.length}..
               </span>
             )}
             <input
@@ -102,11 +107,40 @@ export default function Search({ setFetchedJobs , isEmpty , setIsEmpty }) {
         </div>
         <div className={styles.location}>
           <img src={location} alt="" />
+          {isScriptLoaded && isScriptLoadSucceed ? (
+            <PlacesAutocomplete
+              value={address}
+              onChange={handleChange}
+              onSelect={handleChange}
+            >
+              {({
+                getInputProps,
+                suggestions,
+                getSuggestionItemProps,
+                loading,
+              }) => (
+                <div>
+                  <input
+                    {...getInputProps({
+                      placeholder: "Anywhere",
+                      // className: "location-search-input",
+                    })}
+                  />
+                  <div>{loading && <div>Loading...</div>}</div>
+                </div>
+              )}
+            </PlacesAutocomplete>
+          ) : (
+            <></>
+          )}
         </div>
         <div className={styles.searchButton}>
-          <button  onClick={() => searchJobs(searchTerms)}>Search</button>
+          <button onClick={() => searchJobs(searchTerms)}>Search</button>
         </div>
       </div>
     </div>
   );
 }
+export default scriptLoader([
+  `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_MAP_API}&libraries=places`,
+])(Search);
