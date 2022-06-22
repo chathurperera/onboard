@@ -68,9 +68,10 @@ function Login() {
             <label>Email</label>
             <input
               className={styles.input}
+              required
               type="email"
               onChange={(e) => setLoginEmail(e.target.value)}
-            />
+              />
           </div>
             {loginFailed && (
               <span className={styles.authError}>
@@ -87,10 +88,11 @@ function Login() {
               />
               <label>Password</label>
               <input
-                className={styles.input}
-                onChange={(e) => setLoginPassword(e.target.value)}
+              required
+              className={styles.input}
+              onChange={(e) => setLoginPassword(e.target.value)}
                 type={showPassword ? "text" : "password"}
-              />
+                />
             </div>
             {loginFailed && (
               <span className={styles.authError}>

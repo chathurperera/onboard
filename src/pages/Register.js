@@ -55,6 +55,7 @@ function Register() {
             <div className={styles.inputBox}>
               <label>First name</label>
               <input
+              required
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
                 type="text"
@@ -63,6 +64,7 @@ function Register() {
             <div className={styles.inputBox}>
               <label>Last name</label>
               <input
+              required
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
                 type="text"
@@ -72,6 +74,7 @@ function Register() {
           <div className={styles.inputBox}>
             <label>Email address</label>
             <input
+            required
               type="email"
               value={registerEmail}
               onChange={(e) => setRegisterEmail(e.target.value)}
@@ -80,6 +83,7 @@ function Register() {
           <div className={styles.inputBox}>
             <label>Phone</label>
             <input
+            required
               type="tel"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
@@ -93,6 +97,7 @@ function Register() {
             />
             <label>Password</label>
             <input
+            required
               type={showPassword ? "text" : "password"}
               onChange={(e) => setRegisterPassword(e.target.value)}
             />
