@@ -5,6 +5,14 @@
     justify-content: center;
     align-items: center;
   }
+  .authError{
+    position: absolute;
+    bottom: -10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: red;
+    
+  }
   .googleLogin{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 5px;
@@ -72,6 +80,9 @@
         font-size: 14px;
         font-weight: 600;
         transform: all ease .3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         &:hover{
             background-color: #0c409b;
         }
