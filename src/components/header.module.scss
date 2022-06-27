@@ -16,15 +16,20 @@
         gap: 20px;
         // border: 1px solid black;
         padding: 10px;
+        .routeStyles{
+            a{
+                color: #0062ff;
+            }
+        }
         a{
             font-size: 14px;
             // padding-right: 15px;
             transition: all ease .2s;
             font-weight: 600;
             &:hover{
+                color: #0062ff;
                 cursor: pointer;
                 font-weight: 600;
-                color: #0062ff;
             }
             &:focus{
                 color: #0062ff;

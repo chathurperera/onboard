@@ -40,17 +40,22 @@ export const Header = () => {
         <div className={styles.logo}>
           <h1>ONBOARD</h1>
         </div>
-        <ul className={styles.navLinks}>
-          <li>
-            <NavLink to="/">Find Jobs</NavLink>
-          </li>
-          <li>
-            <NavLink to="/">Company Reviews</NavLink>
-          </li>
-          <li>
-            <NavLink to="/">Find Salaries</NavLink>
-          </li>
-        </ul>
+        {LoggedIn && (
+          <ul className={styles.navLinks}>
+            <li className={location.pathname === "/" && styles.routeStyles}>
+              <NavLink to="/">Jobs</NavLink>
+            </li>
+            <li className={location.pathname === "/requests" && styles.routeStyles}>
+              <NavLink to="/requests">Requests</NavLink>
+            </li>
+            <li className={location.pathname === "/applications" && styles.routeStyles}>
+              <NavLink to="/applications">Applications</NavLink>
+            </li>
+            <li className={location.pathname === "/applications" && styles.routeStyles}>
+              <NavLink to="/profile">Profile</NavLink>
+            </li>
+          </ul>
+        )}
         <div className={styles.profile}>
           <>
             {!LoggedIn && (
