@@ -59,6 +59,13 @@ function Search({
       });
   }
 
+  //REMOVE SEARCH TERM
+  function removeSearchTerm(index) {
+    setSearchTerms((prevTerms) =>
+      prevTerms.filter((term, termIndex) => termIndex !== index)
+    );
+  }
+
   const handleChange = (value) => {
     setAddress(value);
   };
@@ -71,7 +78,12 @@ function Search({
             {searchTerms.slice(0, 2).map((term, index) => {
               return (
                 <span className={styles.selectedTerm} key={index}>
-                  <img src={close} alt="close icon" /> {term}
+                  <img
+                    src={close}
+                    alt="close icon"
+                    onClick={() => removeSearchTerm(index)}
+                  />{" "}
+                  {term}
                 </span>
               );
             })}
@@ -143,7 +155,7 @@ function Search({
         </div>
         <div className={styles.searchButton}>
           <button onClick={() => searchJobs(searchTerms)}>
-            {loading ? <Loader /> : 'Search'}
+            {loading ? <Loader /> : "Search"}
           </button>
         </div>
       </div>
