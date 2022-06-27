@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "./search.module.scss";
 import close from "../../images/close.png";
 import location from "../../images/location.png";
@@ -6,6 +6,7 @@ import search from "../../images/search.png";
 import axios from "axios";
 import PlacesAutocomplete from "react-places-autocomplete";
 import scriptLoader from "react-async-script-loader";
+import Loader from "../common/Loader";
 
 function Search({
   setFetchedJobs,
@@ -14,21 +15,10 @@ function Search({
   isScriptLoaded,
   isScriptLoadSucceed,
 }) {
-  const [occupationalSeries, setOccupationalSeries] = useState(null);
-  const [codes, setCodes] = useState([]);
   const [searchTerms, setSearchTerms] = useState([]);
   const [typingText, setTypingText] = useState("");
   const [address, setAddress] = useState("");
-
-  //FETCHING OCCUPATION CODES
-  useEffect(() => {
-    axios
-      .get("https://data.usajobs.gov/api/codelist/occupationalseries")
-      .then((res) => {
-        setOccupationalSeries(res.data.CodeList[0].ValidValue);
-        // console.log("occupationalSeries",res.data.CodeList[0].ValidValue );
-      });
-  }, []);
+  const [loading, setLoading] = useState(false);
 
   //HANDLE INPUT KEY WORDS
   const handleSearchTerm = (e) => {
@@ -48,8 +38,8 @@ function Search({
 
   //SEARCH JOBS
   function searchJobs(keywords) {
-    console.log("search called");
     setIsEmpty(true);
+    setLoading(true);
     const keywordsStringValue = keywords.join("%");
     axios
       .get(
@@ -64,6 +54,7 @@ function Search({
       )
       .then((res) => {
         setFetchedJobs(res.data.SearchResult.SearchResultItems);
+        setLoading(false);
         setIsEmpty(false);
       });
   }
@@ -75,7 +66,7 @@ function Search({
     <div className={styles.search}>
       <div className={styles.searchWrap}>
         <div className={styles.selectWrap}>
-          <img src={search} alt="" />
+          <img src={search} alt="search icon" />
           <div className={styles.inputWrap}>
             {searchTerms.slice(0, 2).map((term, index) => {
               return (
@@ -128,12 +119,16 @@ function Search({
                   />
                   <div className={styles.suggestionsWrap}>
                     {loading && <div>Loading...</div>}
-                    {suggestions.map((suggestion,index) => {
+                    {suggestions.map((suggestion, index) => {
                       const style = suggestion.active
                         ? { backgroundColor: "#F5F3F3", cursor: "pointer" }
                         : { backgroundColor: "#fff", cursor: "pointer" };
                       return (
-                        <div className={styles.suggestion} key={index} {...getSuggestionItemProps(suggestion, { style })}>
+                        <div
+                          className={styles.suggestion}
+                          key={index}
+                          {...getSuggestionItemProps(suggestion, { style })}
+                        >
                           {suggestion.description}
                         </div>
                       );
@@ -147,7 +142,9 @@ function Search({
           )}
         </div>
         <div className={styles.searchButton}>
-          <button onClick={() => searchJobs(searchTerms)}>Search</button>
+          <button onClick={() => searchJobs(searchTerms)}>
+            {loading ? <Loader /> : 'Search'}
+          </button>
         </div>
       </div>
     </div>
