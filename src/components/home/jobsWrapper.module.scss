@@ -11,8 +11,8 @@
   display: grid;
   grid-template-columns:2fr 3fr;
   column-gap: 20px;
-  @include section-width;
   padding-bottom:50px;
+  @include section-width;
   .alertCreate {
     background-color: #e6e7e7;
     border-radius: 8px;
