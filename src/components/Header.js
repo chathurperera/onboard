@@ -51,7 +51,7 @@ export const Header = () => {
             <li className={location.pathname === "/applications" && styles.routeStyles}>
               <NavLink to="/applications">Applications</NavLink>
             </li>
-            <li className={location.pathname === "/applications" && styles.routeStyles}>
+            <li className={location.pathname === "/profile" && styles.routeStyles}>
               <NavLink to="/profile">Profile</NavLink>
             </li>
           </ul>

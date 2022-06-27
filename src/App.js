@@ -6,9 +6,8 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import SharedLayout from "./pages/SharedLayout";
 import Requests from "./pages/Requests";
-
-import { Applications } from "./pages/Applications";
-import { Profile } from "./pages/Profile";
+import  Applications  from "./pages/Applications";
+import  Profile  from "./pages/Profile";
 export default function App() {
   return (
     <div>
