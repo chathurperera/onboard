@@ -8,7 +8,7 @@ import expand from "../../images/angle-small-down.png";
 import collapse from "../../images/angle-small-up.png";
 
 const Request = () => {
-  const [expandInfo, setExpandInfo] = useState(true);
+  const [expandInfo, setExpandInfo] = useState(false);
   return (
     <div className={styles.requestCard}>
       <div className={styles.requestCardTop}>
@@ -19,7 +19,6 @@ const Request = () => {
           <div className={styles.details}>
             <h2 className={styles.jobTitle}>Job title</h2>
             <p className={styles.companyName}>Company Name</p>
-            {/* ApplicationCloseDate , location , PositionRemuneration */}
           </div>
         </div>
         <div className={styles.btnWrap}>
@@ -42,24 +41,35 @@ const Request = () => {
             Salary
           </div>
         </div>
-        <div className={styles.toggle} onClick={() => setExpandInfo(prevState => !prevState )}>
+        <div
+          className={styles.toggle}
+          onClick={() => setExpandInfo((prevState) => !prevState)}
+        >
           {!expandInfo ? "Expand" : "Hide"}{" "}
           <img src={!expandInfo ? expand : collapse} alt="toggle icon" />
         </div>
       </div>
-      {expandInfo && <div className={styles.requestCardBottom}>
-        <div>
+      {expandInfo && (
+        <div className={styles.requestCardBottom}>
+          <div>
+            <h2>Overview</h2>
+            <p className={styles.overview}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              quisquam doloribus iusto omnis ipsum quo praesentium?
+              Exercitationem id, hic nesciunt repellat ab tempora recusandae
+              molestiae! Quis distinctio ut illum necessitatibus!
+            </p>
             <h2>Requirements</h2>
             <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
             </ul>
+          </div>
         </div>
-
-        </div>}
+      )}
     </div>
   );
 };
