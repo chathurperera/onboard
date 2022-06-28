@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../../pages/requests.module.scss";
+import styles from "../../pages/application.module.scss";
 import companyLogo from "../../images/companyLogo.png";
 import clock from "../../images/clock.png";
 import marker from "../../images/marker.png";
@@ -7,10 +7,10 @@ import money from "../../images/money.png";
 import expand from "../../images/angle-small-down.png";
 import collapse from "../../images/angle-small-up.png";
 
-const Request = () => {
+const Application = () => {
   const [expandInfo, setExpandInfo] = useState(false);
   return (
-    <div className={styles.requestCard}>
+    <div className={styles.applicationCard}>
       <div className={styles.requestCardTop}>
         <div className={styles.detailsWrap}>
           <div className={styles.companyLogo}>
@@ -47,7 +47,7 @@ const Request = () => {
           <img src={!expandInfo ? expand : collapse} alt="toggle icon" />
         </div>
       </div>
-      {expandInfo && <div className={styles.requestCardBottom}>
+      {expandInfo && <div className={styles.applicationCardBottom}>
         <div>
             <h2>Requirements</h2>
             <ul>
@@ -64,4 +64,4 @@ const Request = () => {
   );
 };
 
-export default Request;
+export default Application;
