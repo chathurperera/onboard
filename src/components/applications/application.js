@@ -22,10 +22,6 @@ const Application = () => {
             {/* ApplicationCloseDate , location , PositionRemuneration */}
           </div>
         </div>
-        <div className={styles.btnWrap}>
-          <button className={styles.acceptBtn}>Accept</button>
-          <button className={styles.rejectBtn}>Reject</button>
-        </div>
       </div>
       <div className={styles.pointsWrap}>
         <div className={styles.points}>
