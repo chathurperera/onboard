@@ -4,6 +4,8 @@ import profileImage from "../images/profileImage.png";
 import userNoPic from "../images/userNoPic.png";
 import downArrow from "../images/downArrow.png";
 import signOut from "../images/sign-out.png";
+import hamburgerIcon from "../images/hamburgerIcon.png";
+import cross from "../images/cross.png";
 import userPlaceholder from "../images/user.png";
 import { useAuth0 } from "@auth0/auth0-react";
 import DropDownPanel from "../components/home/DropDownCard";
@@ -17,6 +19,7 @@ export const Header = () => {
   const [email, setEmail] = useState("");
   const [profilePic, setProfilePic] = useState("");
   const [expandPanel, setExpandPanel] = useState(false);
+  const [expandMobileMenu, setExpandMobileMenu] = useState(false);
   const location = useLocation();
   const auth = getAuth();
 
@@ -41,32 +44,67 @@ export const Header = () => {
           <h1>ONBOARD</h1>
         </div>
         {LoggedIn && (
-          <ul className={styles.navLinks}>
-            <li className={location.pathname === "/" ? styles.routeStyles : undefined}>
+          <ul className={expandMobileMenu ? `${styles.navLinks} ${styles.showMenu} ` : styles.navLinks}>
+            <div className={styles.mobileUserDetails}>
+              <h2 className={styles.userName}>
+                <img
+                  className={styles.profileImage}
+                  src={profilePic ? profilePic : userNoPic}
+                  alt={name}
+                />
+                {name ? name : email}
+              </h2>
+            </div>
+            <li
+              className={
+                location.pathname === "/" ? styles.routeStyles : undefined
+              }
+            >
               <NavLink to="/">Jobs</NavLink>
             </li>
-            <li className={location.pathname === "/requests" ?  styles.routeStyles : undefined}>
+            <li
+              className={
+                location.pathname === "/requests"
+                  ? styles.routeStyles
+                  : undefined
+              }
+            >
               <NavLink to="/requests">Requests</NavLink>
             </li>
-            <li className={location.pathname === "/applications" ?  styles.routeStyles : undefined}>
+            <li
+              className={
+                location.pathname === "/applications"
+                  ? styles.routeStyles
+                  : undefined
+              }
+            >
               <NavLink to="/applications">Applications</NavLink>
             </li>
-            <li className={location.pathname === "/profile" ? styles.routeStyles : undefined}>
+            <li
+              className={
+                location.pathname === "/profile"
+                  ? styles.routeStyles
+                  : undefined
+              }
+            >
               <NavLink to="/profile">Profile</NavLink>
             </li>
+            <div className={styles.mobileLogOut}>
+              <img src={signOut} alt="sign out icon" /> Signout
+            </div>
           </ul>
         )}
         <div className={styles.profile}>
           <>
             {!LoggedIn && (
-              <nav>
+              <div className={styles.loginBtns}>
                 <NavLink to="/login">Login</NavLink>
                 <NavLink to="/Register">Sign up</NavLink>
-              </nav>
+              </div>
             )}
           </>
           {LoggedIn && (
-            <>
+            <div className={styles.loggedInUserDetails}>
               <img
                 className={styles.profileImage}
                 src={profilePic ? profilePic : userNoPic}
@@ -84,8 +122,14 @@ export const Header = () => {
                 alt=""
                 onClick={() => setExpandPanel(!expandPanel)}
               />
-            </>
+            </div>
           )}
+          <img
+          className={styles.hamburgerIconStyles}
+            src={expandMobileMenu ? cross : hamburgerIcon}
+            onClick={() => setExpandMobileMenu((prevState) => !prevState)}
+            alt="hamburger icon"
+          />
           {/* {LoggedIn && (
             <img
               src={downArrow}
