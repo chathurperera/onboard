@@ -42,16 +42,16 @@ export const Header = () => {
         </div>
         {LoggedIn && (
           <ul className={styles.navLinks}>
-            <li className={location.pathname === "/" && styles.routeStyles}>
+            <li className={location.pathname === "/" ? styles.routeStyles : undefined}>
               <NavLink to="/">Jobs</NavLink>
             </li>
-            <li className={location.pathname === "/requests" && styles.routeStyles}>
+            <li className={location.pathname === "/requests" ?  styles.routeStyles : undefined}>
               <NavLink to="/requests">Requests</NavLink>
             </li>
-            <li className={location.pathname === "/applications" && styles.routeStyles}>
+            <li className={location.pathname === "/applications" ?  styles.routeStyles : undefined}>
               <NavLink to="/applications">Applications</NavLink>
             </li>
-            <li className={location.pathname === "/profile" && styles.routeStyles}>
+            <li className={location.pathname === "/profile" ? styles.routeStyles : undefined}>
               <NavLink to="/profile">Profile</NavLink>
             </li>
           </ul>

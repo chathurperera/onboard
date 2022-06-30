@@ -13,6 +13,11 @@
   column-gap: 20px;
   padding-bottom:50px;
   @include section-width;
+  
+  @media (max-width:978px) {
+    grid-template-columns:1fr;
+    
+  }
   .alertCreate {
     background-color: #e6e7e7;
     border-radius: 8px;
@@ -65,6 +70,9 @@
     border-radius: 8px;
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.048) 0px 5px 15px 0px;
+    @media (max-width:978px){
+      max-width: none;
+    }
     h1 {
       font-size: 50px;
     }
