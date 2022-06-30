@@ -56,6 +56,7 @@ export const Header = () => {
               </h2>
             </div>
             <li
+            onClick={() => setExpandMobileMenu(false)}
               className={
                 location.pathname === "/" ? styles.routeStyles : undefined
               }
@@ -63,6 +64,7 @@ export const Header = () => {
               <NavLink to="/">Jobs</NavLink>
             </li>
             <li
+            onClick={() => setExpandMobileMenu(false)}
               className={
                 location.pathname === "/requests"
                   ? styles.routeStyles
@@ -72,6 +74,7 @@ export const Header = () => {
               <NavLink to="/requests">Requests</NavLink>
             </li>
             <li
+            onClick={() => setExpandMobileMenu(false)}
               className={
                 location.pathname === "/applications"
                   ? styles.routeStyles
@@ -81,6 +84,7 @@ export const Header = () => {
               <NavLink to="/applications">Applications</NavLink>
             </li>
             <li
+            onClick={() => setExpandMobileMenu(false)}
               className={
                 location.pathname === "/profile"
                   ? styles.routeStyles
