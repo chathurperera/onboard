@@ -2,7 +2,6 @@ import React from "react";
 import apps from "../../images/apps.png";
 import signOutIcon from "../../images/sign-out.png";
 import styles from "./dropDown.module.scss";
-import { useAuth0 } from "@auth0/auth0-react";
 import { auth } from "../../firebase-config";
 import { signOut } from "firebase/auth";
 

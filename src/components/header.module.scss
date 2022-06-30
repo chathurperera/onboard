@@ -10,9 +10,9 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  .showMenu{
+  .showMenu {
     display: block !important;
-}
+  }
   .navLinks {
     display: flex;
     gap: 20px;
@@ -25,7 +25,7 @@
     }
 
     @media (max-width: 978px) {
-        display: none;
+      display: none;
       position: absolute;
       bottom: -250px;
       z-index: 999999;
@@ -71,6 +71,42 @@
       }
     }
   }
+  .mobileLoginButtons {
+    @media (min-width: 978px) {
+      display: none !important;
+    }
+    display: none;
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+    background: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    padding: 10px;
+    .btnWrap {
+      display: flex;
+      gap: 10px;
+      a {
+        border: 1px solid rgba(0, 0, 0, 0.137);
+        padding: 5px 10px;
+        font-weight: 500;
+        background-color: #0062ffd8;
+        color: #fff;
+        display: inline-block;
+        font-size: 14px;
+        transition: all ease 0.2s;
+        border-radius: 3px;
+        &:hover {
+          background-color: #0062ff;
+        }
+      }
+      a:nth-child(1) {
+        background-color: transparent;
+        color: #010203;
+        border: none;
+      }
+    }
+  }
   .logo {
     h1 {
       font-size: 30px;
@@ -81,45 +117,49 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    .hamburgerIconStyles{
-        display: none;
+    .hamburgerIconStyles {
+      display: none;
     }
-    .hamburgerIconStyles{
-        display: none;
-        width: 22px;
-        @media (max-width:978px) {
-            display: block;
-        }
+    .hamburgerIconStyles {
+      display: none;
+      width: 22px;
+      @media (max-width: 978px) {
+        display: block;
+      }
     }
-    
-    .loggedInUserDetails{
-        display: flex;
-        align-items: center;
-        @media (max-width:978px) {
-            display: none;    
-        }
+
+    .loggedInUserDetails {
+      display: flex;
+      align-items: center;
+      @media (max-width: 978px) {
+        display: none;
+      }
     }
     .loginBtns {
-        display: flex;
-        gap: 10px;
+      display: flex;
+      gap: 10px;
+      @media (max-width:978px) {
+          display: none;
         
-        a {
-            border: 1px solid rgba(0, 0, 0, 0.137);
-            padding: 5px 10px;
-            font-weight: 500;
-            background-color: #0062ffd8;
-            color: #fff;
-            display: inline-block;
-            font-size: 14px;
-            transition: all ease 0.2s;
-            border-radius: 3px;
-            &:hover {
-                background-color: #0062ff;
-            }
+      }
+
+      a {
+        border: 1px solid rgba(0, 0, 0, 0.137);
+        padding: 5px 10px;
+        font-weight: 500;
+        background-color: #0062ffd8;
+        color: #fff;
+        display: inline-block;
+        font-size: 14px;
+        transition: all ease 0.2s;
+        border-radius: 3px;
+        &:hover {
+          background-color: #0062ff;
         }
-        a:nth-child(1) {
-            background-color: transparent;
-            color: #010203;
+      }
+      a:nth-child(1) {
+        background-color: transparent;
+        color: #010203;
         border: none;
       }
     }

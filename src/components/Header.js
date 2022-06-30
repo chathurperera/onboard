@@ -3,7 +3,7 @@ import styles from "../components/header.module.scss";
 import profileImage from "../images/profileImage.png";
 import userNoPic from "../images/userNoPic.png";
 import downArrow from "../images/downArrow.png";
-import signOut from "../images/sign-out.png";
+import signOutIcon from "../images/sign-out.png";
 import hamburgerIcon from "../images/hamburgerIcon.png";
 import cross from "../images/cross.png";
 import userPlaceholder from "../images/user.png";
@@ -12,6 +12,8 @@ import DropDownPanel from "../components/home/DropDownCard";
 import { NavLink, useLocation } from "react-router-dom";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useEffect } from "react";
+import { auth } from "../firebase-config";
+import { signOut } from "firebase/auth";
 
 export const Header = () => {
   const [LoggedIn, setLoggedIn] = useState(false);
@@ -36,7 +38,10 @@ export const Header = () => {
     });
   }, []);
 
-  console.log(location.pathname);
+  const logout = async () => {
+    setExpandMobileMenu(false);
+    await signOut(auth);
+  };
   return (
     <header className={styles.header}>
       <div className={styles.headerWrap}>
@@ -44,7 +49,13 @@ export const Header = () => {
           <h1>ONBOARD</h1>
         </div>
         {LoggedIn && (
-          <ul className={expandMobileMenu ? `${styles.navLinks} ${styles.showMenu} ` : styles.navLinks}>
+          <ul
+            className={
+              expandMobileMenu
+                ? `${styles.navLinks} ${styles.showMenu} `
+                : styles.navLinks
+            }
+          >
             <div className={styles.mobileUserDetails}>
               <h2 className={styles.userName}>
                 <img
@@ -56,7 +67,7 @@ export const Header = () => {
               </h2>
             </div>
             <li
-            onClick={() => setExpandMobileMenu(false)}
+              onClick={() => setExpandMobileMenu(false)}
               className={
                 location.pathname === "/" ? styles.routeStyles : undefined
               }
@@ -64,7 +75,7 @@ export const Header = () => {
               <NavLink to="/">Jobs</NavLink>
             </li>
             <li
-            onClick={() => setExpandMobileMenu(false)}
+              onClick={() => setExpandMobileMenu(false)}
               className={
                 location.pathname === "/requests"
                   ? styles.routeStyles
@@ -74,7 +85,7 @@ export const Header = () => {
               <NavLink to="/requests">Requests</NavLink>
             </li>
             <li
-            onClick={() => setExpandMobileMenu(false)}
+              onClick={() => setExpandMobileMenu(false)}
               className={
                 location.pathname === "/applications"
                   ? styles.routeStyles
@@ -84,7 +95,7 @@ export const Header = () => {
               <NavLink to="/applications">Applications</NavLink>
             </li>
             <li
-            onClick={() => setExpandMobileMenu(false)}
+              onClick={() => setExpandMobileMenu(false)}
               className={
                 location.pathname === "/profile"
                   ? styles.routeStyles
@@ -93,11 +104,23 @@ export const Header = () => {
             >
               <NavLink to="/profile">Profile</NavLink>
             </li>
-            <div className={styles.mobileLogOut}>
-              <img src={signOut} alt="sign out icon" /> Signout
+            <div className={styles.mobileLogOut} onClick={logout}>
+              <img src={signOutIcon} alt="sign out icon" /> Signout
             </div>
           </ul>
         )}
+        <div
+          className={
+            expandMobileMenu
+              ? `${styles.mobileLoginButtons} ${styles.showMenu} `
+              : styles.mobileLoginButtons
+          }
+        >
+          <div className={styles.btnWrap}>
+            <NavLink to="/login">Login</NavLink>
+            <NavLink to="/Register">Sign up</NavLink>
+          </div>
+        </div>
         <div className={styles.profile}>
           <>
             {!LoggedIn && (
@@ -129,7 +152,7 @@ export const Header = () => {
             </div>
           )}
           <img
-          className={styles.hamburgerIconStyles}
+            className={styles.hamburgerIconStyles}
             src={expandMobileMenu ? cross : hamburgerIcon}
             onClick={() => setExpandMobileMenu((prevState) => !prevState)}
             alt="hamburger icon"
