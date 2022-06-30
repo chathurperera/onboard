@@ -13,6 +13,11 @@
     border-bottom-right-radius: 5px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    @media (max-width:798px) {
+      display: flex;
+      flex-wrap: wrap;
+      
+    }
 
     .selectWrap {
       margin: 15px;
@@ -22,7 +27,10 @@
       border-right: 1px solid rgba(196, 196, 196, 0.87);
       padding: 5px;
       padding-right: 20px;
-      
+      @media (max-width:768px) {
+        width: 100%;
+        border: none;
+      }
       input{
         // width: 200px;
         flex: auto;
@@ -61,6 +69,8 @@
       width: 100%;
       margin-left: 5px;
       position: relative;
+
+     
       input{
         width: 100%;
         &:focus{
@@ -86,6 +96,10 @@
       display: flex;
       padding: 15px;
       align-items: center;
+      @media (max-width:768px) {
+        width: 100%;
+        border: none;
+      }
     }
     .searchButton {
       button{
@@ -103,7 +117,16 @@
         &:hover{
           background: #075ce4;
         }
-
+        
+      }
+      @media (max-width:768px) {
+        margin:15px;
+        width: 100%;
+        button{
+          padding: 10px;
+          border-radius: 5px;
+          
+        }
       }
     }
   }
