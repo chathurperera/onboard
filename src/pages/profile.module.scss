@@ -1,0 +1,57 @@
+@import "/src/mixins";
+@import "/src/variables";
+
+.profile{
+    @include section-width;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.detailsSection{
+    .detailsTitle{
+        font-size: 20px;
+        color: #0c203a;
+        margin-bottom: 10px;
+    }
+    .inputBox{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        label{
+            font-size: 15px;
+            color: #0c203a;
+            font-weight: 500;
+        }
+        input , .openRoles{
+            background: #0c4bb50d;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #959aa3;
+            &:hover{
+                border: 1px solid #2d68c2;
+            }
+            &:focus{
+                border: 1px solid #2d68c2;
+            }
+        }
+        .openRoles{
+            display: flex;
+            flex-wrap: wrap;
+            .role{
+                background: #e0e8f4;
+                border-radius: 4px;
+                padding: 5px;
+                color: #2a53b1;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                img{
+                    cursor: pointer;
+                    width: 10px;
+                }
+            }
+        }
+    }
+}
