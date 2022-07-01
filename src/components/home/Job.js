@@ -100,20 +100,36 @@ export const Job = memo((props) => {
                 }
               </p>
             </div>
-
-            {props.job.MatchedObjectDescriptor?.UserArea.Details
-              .KeyRequirements !== [] && (
+            {props.job.MatchedObjectDescriptor?.UserArea.Details.KeyRequirements
+              .length !== 0 ||
+            props.job.MatchedObjectDescriptor?.UserArea.Details.Requirements ? (
               <div className={moreDetailsStyles.description}>
                 <h2>Requirements</h2>
                 <ul>
-                  {props.job.MatchedObjectDescriptor?.UserArea.Details.KeyRequirements.map(
-                    (point) => {
-                      return <li>{point}</li>;
+                  {props.job.MatchedObjectDescriptor?.UserArea.Details
+                    .KeyRequirements.length !== 0
+                    ? props.job.MatchedObjectDescriptor?.UserArea.Details.KeyRequirements.map(
+                        (point) => {
+                          return <li>{point}</li>;
+                        }
+                      )
+                    : props.job.MatchedObjectDescriptor?.UserArea.Details
+                        .Requirements}
+                </ul>
+              </div>
+            ) : (
+              <div className={moreDetailsStyles.description}>
+                <h2>Duties</h2>
+                <ul>
+                  {props.job.MatchedObjectDescriptor?.UserArea.Details.MajorDuties.map(
+                    (duty) => {
+                      return <li>{duty}</li>;
                     }
                   )}
                 </ul>
               </div>
             )}
+
             <a
               className={moreDetailsStyles.applyBtn}
               target="_blank"

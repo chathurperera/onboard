@@ -75,19 +75,30 @@ export default function MoreDetails(props) {
         </div>
 
         {props.moreDetails.MatchedObjectDescriptor?.UserArea.Details
-          .KeyRequirements !== [] && (
+          .KeyRequirements.length !== 0 && (
           <div className={styles.description}>
             <h2>Requirements</h2>
             <ul>
-              {props.moreDetails.MatchedObjectDescriptor?.UserArea.Details.KeyRequirements.map(
-                (point) => {
-                  return <li>{point}</li>;
-                }
-              )}
+              {props.moreDetails.MatchedObjectDescriptor?.UserArea.Details
+                .KeyRequirements !== []
+                ? props.moreDetails.MatchedObjectDescriptor?.UserArea.Details.KeyRequirements.map(
+                    (point) => {
+                      return <li>{point}</li>;
+                    }
+                  )
+                : props.moreDetails.MatchedObjectDescriptor?.UserArea.Details
+                    .Requirements}
             </ul>
           </div>
         )}
-        <a className={styles.applyBtn} target="_blank" rel="noopener noreferrer" href={props.moreDetails.MatchedObjectDescriptor?.ApplyURI[0]}>Apply now</a>
+        <a
+          className={styles.applyBtn}
+          target="_blank"
+          rel="noopener noreferrer"
+          href={props.moreDetails.MatchedObjectDescriptor?.ApplyURI[0]}
+        >
+          Apply now
+        </a>
       </div>
     </div>
   );
