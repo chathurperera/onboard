@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./jobsWrapper.module.scss";
 import Job from "../home/Job.js";
-import jobs from "../../job.json";
+
 import MoreDetails from "./MoreDetails";
 import JobAlert from "./JobAlert";
 import axios from "axios";
@@ -10,27 +10,27 @@ import { NoResults } from "./NoResults";
 
 export const JobsWrapper = ({ fetchedJobs, isEmpty }) => {
   const [expandDetails, setExpandDetails] = useState(false);
-  const [listings, setListings] = useState(jobs.jobs);
+  // const [listings, setListings] = useState(jobs.jobs);
   const [selectedJob, setSelectedJob] = useState({});
 
   //TOGGLES SAVE ICON
-  function toggleSave(id) {
-    setListings((prevListings) => {
-      return prevListings.map((listing) => {
-        return listing.id === id
-          ? { ...listing, save: !listing.save }
-          : listing;
-      });
-    });
-  }
+  // function toggleSave(id) {
+  //   setListings((prevListings) => {
+  //     return prevListings.map((listing) => {
+  //       return listing.id === id
+  //         ? { ...listing, save: !listing.save }
+  //         : listing;
+  //     });
+  //   });
+  // }
 
   //OPENS AND CLOSES MORE DETAILS SECTION
-  function toggleMoreDetails(id) {
-    return (
-      setSelectedJob(listings.find((listing) => listing.id === id)),
-      setExpandDetails((prevState) => !prevState)
-    );
-  }
+  // function toggleMoreDetails(id) {
+  //   return (
+  //     setSelectedJob(listings.find((listing) => listing.id === id)),
+  //     setExpandDetails((prevState) => !prevState)
+  //   );
+  // }
 
   const expandJobInfo = {
     display: expandDetails ? "block" : "none",
@@ -50,8 +50,8 @@ export const JobsWrapper = ({ fetchedJobs, isEmpty }) => {
         setExpandDetails={setExpandDetails}
         expandDetails={expandDetails}
         key={index}
-        toggleSave={() => toggleSave(job.id)}
-        toggleMoreDetails={() => toggleMoreDetails(job.id)}
+        // toggleSave={() => toggleSave(job.id)}
+        // toggleMoreDetails={() => toggleMoreDetails(job.id)}
       />
     );
   });
