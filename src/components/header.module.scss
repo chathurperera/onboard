@@ -1,104 +1,198 @@
 @import "/src/mixins";
 
-
-.header{
-    padding: 8px 0;
-    background-color: #fff;
+.header {
+  padding: 8px 0;
+  background-color: #fff;
 }
-.headerWrap{
-    @include section-width;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    .navLinks{
-        display: flex;
-        gap: 20px;
-        // border: 1px solid black;
-        padding: 10px;
-        .routeStyles{
-            a{
-                color: #0062ff;
-            }
-        }
-        a{
-            font-size: 14px;
-            // padding-right: 15px;
-            transition: all ease .2s;
-            font-weight: 600;
-            &:hover{
-                color: #0062ff;
-                cursor: pointer;
-                font-weight: 600;
-            }
-            &:focus{
-                color: #0062ff;
+.headerWrap {
+  @include section-width;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  .showMenu {
+    display: block !important;
+  }
+  .navLinks {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    .mobileLogOut {
+      display: none;
+    }
+    .mobileUserDetails {
+      display: none;
+    }
 
-            }
-        }
-    }
-    .logo{
-        h1{
-            font-size: 30px;
-            width:100px;
-        }
-    }
-    .profile{
+    @media (max-width: 978px) {
+      display: none;
+      position: absolute;
+      bottom: -250px;
+      z-index: 999999;
+      width: 100%;
+      border-radius: 5px;
+      padding-right: 20px;
+      padding-left: 20px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      background-color: #fff;
+
+      .mobileUserDetails {
+        display: block;
+      }
+      .mobileLogOut {
+        display: block;
+        margin: 15px 0;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        cursor: pointer;
-        nav{
-            display: flex;
-            gap: 10px;
-            
-            a{
-                border: 1px solid rgba(0, 0, 0, 0.137);
-                padding: 5px 10px;
-                font-weight: 500;
-                background-color: #0062ffd8;
-                color: #fff;
-                display: inline-block;
-                font-size: 14px;
-                transition: all ease .2s;
-                border-radius: 3px;
-                &:hover{
-                    background-color: #0062ff;
-
-                }
-            }
-            a:nth-child(1){
-                background-color: transparent;
-                color: #010203;
-                border: none;
-            }
+        gap: 5px;
+        font-weight: 500;
+        img {
+          width: 17px;
         }
-        .userName{
-            font-size: 14px;
-        }
-        .profileImage{
-            width:30px;
-            border-radius: 50%;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            margin-right: 10px;
-        }
-        .loginUserImage{
-            width:20px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-        .downArrow{
-            margin-left: 5px;
-            width: 12px;
-        }
-        .upArrow{
-            margin-left: 5px;
-            width: 12px;
-            transform: rotate(180deg);
-            
-        }
-        p{
-            font-weight: 600;
-        }
+      }
     }
-}   
+    .routeStyles {
+      a {
+        color: #0062ff;
+      }
+    }
+    a {
+      font-size: 14px;
+      // padding-right: 15px;
+      transition: all ease 0.2s;
+      font-weight: 600;
+      &:hover {
+        color: #0062ff;
+        cursor: pointer;
+        font-weight: 600;
+      }
+      &:focus {
+        color: #0062ff;
+      }
+    }
+  }
+  .mobileLoginButtons {
+    @media (min-width: 978px) {
+      display: none !important;
+    }
+    display: none;
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+    background: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    padding: 10px;
+    .btnWrap {
+      display: flex;
+      gap: 10px;
+      a {
+        border: 1px solid rgba(0, 0, 0, 0.137);
+        padding: 5px 10px;
+        font-weight: 500;
+        background-color: #0062ffd8;
+        color: #fff;
+        display: inline-block;
+        font-size: 14px;
+        transition: all ease 0.2s;
+        border-radius: 3px;
+        &:hover {
+          background-color: #0062ff;
+        }
+      }
+      a:nth-child(1) {
+        background-color: transparent;
+        color: #010203;
+        border: none;
+      }
+    }
+  }
+  .logo {
+    h1 {
+      font-size: 30px;
+    }
+  }
+  .profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    .hamburgerIconStyles {
+      display: none;
+    }
+    .hamburgerIconStyles {
+      display: none;
+      width: 22px;
+      @media (max-width: 978px) {
+        display: block;
+      }
+    }
+
+    .loggedInUserDetails {
+      display: flex;
+      align-items: center;
+      @media (max-width: 978px) {
+        display: none;
+      }
+    }
+    .loginBtns {
+      display: flex;
+      gap: 10px;
+      @media (max-width:978px) {
+          display: none;
+        
+      }
+
+      a {
+        border: 1px solid rgba(0, 0, 0, 0.137);
+        padding: 5px 10px;
+        font-weight: 500;
+        background-color: #0062ffd8;
+        color: #fff;
+        display: inline-block;
+        font-size: 14px;
+        transition: all ease 0.2s;
+        border-radius: 3px;
+        &:hover {
+          background-color: #0062ff;
+        }
+      }
+      a:nth-child(1) {
+        background-color: transparent;
+        color: #010203;
+        border: none;
+      }
+    }
+  }
+  .userName {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    @media (max-width: 978px) {
+      margin: 15px 0;
+    }
+  }
+  .profileImage {
+    width: 30px;
+    border-radius: 50%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-right: 10px;
+  }
+  .loginUserImage {
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .downArrow {
+    margin-left: 5px;
+    width: 12px;
+  }
+  .upArrow {
+    margin-left: 5px;
+    width: 12px;
+    transform: rotate(180deg);
+  }
+  p {
+    font-weight: 600;
+  }
+}
