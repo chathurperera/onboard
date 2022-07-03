@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import styles from "./profile.module.scss";
 import close from "../images/close (2).png";
+import jobRoles from "../data.json";
 
 const Profile = () => {
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState(null);
   return (
     <div className={styles.profile}>
       <div className={styles.detailsSection}>
@@ -31,6 +32,22 @@ const Profile = () => {
             />
             {searchQuery}
           </div>
+          {searchQuery && (
+            <div className={styles.rolesDropdown}>
+              {jobRoles.occupations
+                .filter((role) => {
+                  return role.startsWith(searchQuery);
+                })
+                .slice(0, 6)
+                .map((roleName, index) => {
+                  return (
+                    <div key={index} className={styles.roleOption}>
+                      {roleName}
+                    </div>
+                  );
+                })}
+            </div>
+          )}
         </div>
       </div>
       <div className={styles.skillsSection}></div>

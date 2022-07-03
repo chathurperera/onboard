@@ -35,9 +35,36 @@
                 border: 1px solid #2d68c2;
             }
         }
-        .openRoles{
+        position: relative;
+        .rolesDropdown{
+            position: absolute;
+            top:100%;
+            border-radius: 4px;
+            width: 95%;
+            cursor: pointer;
+            transition: all ease .3s;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+            border-radius: 5px;
+            padding: 5px 0;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            div:last-child{
+                border-bottom-right-radius:5px ;
+                border-bottom-left-radius:5px ;
+            }
+            .roleOption{
+                background: #fbfbfb;
+                padding: 8px 15px;
+                font-size: 14px;
+                font-weight: 500;
+                &:hover{
+                    background: #cac5c5;
+                }
+
+            }
+
+        }
+        .openRoles{
             .role{
                 background: #e0e8f4;
                 border-radius: 4px;
@@ -52,6 +79,8 @@
                     width: 10px;
                 }
             }
+            display: flex;
+            flex-wrap: wrap;
             .rolesAddInput{
                 border: none;
                 background-color: transparent;
