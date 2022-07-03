@@ -24,7 +24,7 @@ const Profile = () => {
             </div>
             <input
               className={styles.rolesAddInput}
-              onChange={(e) => setSearchQuery(e.target.vlaue)}
+              onChange={(e) => setSearchQuery(e.target.value)}
               type="text"
               name=""
               id=""
