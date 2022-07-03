@@ -38,12 +38,12 @@ const Application = () => {
             Salary
           </div>
         </div>
-        <div className={styles.toggle} onClick={() => setExpandInfo(prevState => !prevState )}>
+        {/* <div className={styles.toggle} onClick={() => setExpandInfo(prevState => !prevState )}>
           {!expandInfo ? "Expand" : "Hide"}{" "}
           <img src={!expandInfo ? expand : collapse} alt="toggle icon" />
-        </div>
+        </div> */}
       </div>
-      {expandInfo && <div className={styles.applicationCardBottom}>
+      {/* {expandInfo && <div className={styles.applicationCardBottom}>
         <div>
             <h2>Requirements</h2>
             <ul>
@@ -55,7 +55,7 @@ const Application = () => {
             </ul>
         </div>
 
-        </div>}
+        </div>} */}
     </div>
   );
 };

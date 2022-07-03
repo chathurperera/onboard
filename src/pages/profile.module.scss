@@ -52,6 +52,22 @@
                     width: 10px;
                 }
             }
+            .rolesAddInput{
+                border: none;
+                background-color: transparent;
+                &:focus-visible{
+                    border: none !important;
+                    outline: none;
+
+                }
+                &:focus{
+                    outline: none;
+                    border: none;
+
+                }
+                
+                
+            }
         }
     }
 }
