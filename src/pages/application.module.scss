@@ -1,5 +1,8 @@
 @import "/src/mixins";
 @import "/src/variables";
+.container{
+    background: #f5f3f3
+}
 .applications{
     @include section-width;
     padding: 50px 0;

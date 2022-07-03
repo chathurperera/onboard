@@ -1,102 +1,139 @@
 @import "/src/mixins";
 @import "/src/variables";
-
-.profile{
-    @include section-width;
-    padding: 50px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.container {
+  background: #f5f3f3;
 }
-.detailsSection{
-    .detailsTitle{
-        font-size: 20px;
-        color: #0c203a;
-        margin-bottom: 10px;
+.profile {
+  @include section-width;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.detailsSection {
+    background:#fff;
+    padding: 20px;
+    border-radius: 5px;
+  .detailsTitle {
+    font-size: 20px;
+    color: #0c203a;
+    margin-bottom: 10px;
+  }
+  .inputBox {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    label {
+      font-size: 15px;
+      color: #0c203a;
+      font-weight: 500;
     }
-    .inputBox{
+    input,
+    .openRoles,
+    textarea {
+      background: #0c4bb50d;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #959aa3;
+      &:hover {
+        border: 1px solid #2d68c2;
+      }
+      &:focus {
+        border: 1px solid #2d68c2;
+        outline: none;
+      }
+    }
+    .openRoles {
+      padding: 5px 10px;
+    }
+    position: relative;
+    .rolesDropdown {
+      position: absolute;
+      top: 100%;
+      border-radius: 4px;
+      width: 95%;
+      cursor: pointer;
+      transition: all ease 0.3s;
+      display: flex;
+      flex-direction: column;
+      border-radius: 5px;
+      padding: 5px 0;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      div:last-child {
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+      .roleOption {
+        background: #fbfbfb;
+        padding: 8px 15px;
+        font-size: 14px;
+        font-weight: 500;
+        &:hover {
+          background: #cac5c5;
+        }
+      }
+    }
+    .openRoles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      row-gap: 0px;
+      .role {
+        background: #e0e8f4;
+        border-radius: 4px;
+        padding: 5px;
+        color: #2d68c2;
+        font-size: 14px;
         display: flex;
-        flex-direction: column;
-        margin: 10px 0;
-        label{
-            font-size: 15px;
-            color: #0c203a;
-            font-weight: 500;
+        align-items: center;
+        gap: 6px;
+        margin: 5px;
+        img {
+          cursor: pointer;
+          width: 10px;
         }
-        input , .openRoles{
-            background: #0c4bb50d;
-            border: none;
-            padding: 10px;
-            border-radius: 4px;
-            border: 1px solid #959aa3;
-            &:hover{
-                border: 1px solid #2d68c2;
-            }
-            &:focus{
-                border: 1px solid #2d68c2;
-            }
+      }
+
+      .rolesAddInput {
+        flex: auto;
+        border: none;
+        padding: 5px 0;
+        background-color: transparent;
+        &:focus-visible {
+          border: none !important;
+          outline: none;
         }
-        position: relative;
-        .rolesDropdown{
-            position: absolute;
-            top:100%;
-            border-radius: 4px;
-            width: 95%;
-            cursor: pointer;
-            transition: all ease .3s;
-            display: flex;
-            flex-direction: column;
-            border-radius: 5px;
-            padding: 5px 0;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            div:last-child{
-                border-bottom-right-radius:5px ;
-                border-bottom-left-radius:5px ;
-            }
-            .roleOption{
-                background: #fbfbfb;
-                padding: 8px 15px;
-                font-size: 14px;
-                font-weight: 500;
-                &:hover{
-                    background: #cac5c5;
-                }
-
-            }
-
+        &:focus {
+          outline: none;
+          border: none;
         }
-        .openRoles{
-            .role{
-                background: #e0e8f4;
-                border-radius: 4px;
-                padding: 5px;
-                color: #2a53b1;
-                font-size: 14px;
-                display: flex;
-                align-items: center;
-                gap: 6px;
-                img{
-                    cursor: pointer;
-                    width: 10px;
-                }
-            }
-            display: flex;
-            flex-wrap: wrap;
-            .rolesAddInput{
-                border: none;
-                background-color: transparent;
-                &:focus-visible{
-                    border: none !important;
-                    outline: none;
-
-                }
-                &:focus{
-                    outline: none;
-                    border: none;
-
-                }
-                
-                
-            }
+      }
+    }
+  }
+  .btnwrap{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 50px;
+    button{
+        border-radius: 5px;
+        padding: 6px;
+        text-align: center;
+        font-weight: 14px;
+        font-weight: 500;
+        width: 100px;
+    }
+    button:nth-child(1){
+        background-color: #3075dd;
+        color: #fff;
+        cursor: pointer;
+        transition: all ease .2s;
+        &:hover{
+            background-color: #265294;
         }
     }
+    button:nth-child(2):hover{
+        background-color: #959aa33d;
+    }
+  }
 }
