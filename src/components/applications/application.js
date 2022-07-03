@@ -4,11 +4,9 @@ import companyLogo from "../../images/companyLogo.png";
 import clock from "../../images/clock.png";
 import marker from "../../images/marker.png";
 import money from "../../images/money.png";
-import expand from "../../images/angle-small-down.png";
-import collapse from "../../images/angle-small-up.png";
 
 const Application = () => {
-  const [expandInfo, setExpandInfo] = useState(false);
+  
   return (
     <div className={styles.applicationCard}>
       <div className={styles.requestCardTop}>
