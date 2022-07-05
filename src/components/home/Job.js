@@ -2,11 +2,11 @@ import React, { useState, memo } from "react";
 import styles from "./jobsWrapper.module.scss";
 import companyLogo from "../../images/companyLogo.png";
 import moreDetailsStyles from "./MoreDetails.module.scss";
-import save from "../../images/save.png";
-import saved from "../../images/saved.png";
-import unclickedHeartWhite from "../../images/unclickedHeartWhite.png";
+// import save from "../../images/save.png";
+// import saved from "../../images/saved.png";
+// import unclickedHeartWhite from "../../images/unclickedHeartWhite.png";
 import unclickedHeartBlack from "../../images/unclickedHeartBlack.png";
-import clickedHeartWhite from "../../images/clickedHeartWhite.png";
+// import clickedHeartWhite from "../../images/clickedHeartWhite.png";
 import clickedHeartRed from "../../images/clickedHeartRed.png";
 
 export const Job = memo((props) => {
@@ -18,7 +18,7 @@ export const Job = memo((props) => {
       props.setSelectedJob(props.job);
       props.setExpandDetails(true);
     }
-    setMobileExpandView((prevState) => !prevState);
+    else{setMobileExpandView((prevState) => !prevState);}
   }
   console.log("job rendered");
   return (
@@ -45,7 +45,7 @@ export const Job = memo((props) => {
           <img
             onClick={props.toggleSave}
             className={styles.save}
-            src={props.job.save ? clickedHeartRed : unclickedHeartBlack}
+            src={unclickedHeartBlack}
             alt="logo"
           />
         </div>
@@ -60,8 +60,8 @@ export const Job = memo((props) => {
       </div>
 
       {/*  */}
-      {mobileExpandView && (
-        <>
+      {mobileExpandView &&   (
+        <div className={styles.mobileJobDetails}>
           <div className={moreDetailsStyles.roleDetails}>
             <div className={moreDetailsStyles.detail}>
               <p className={moreDetailsStyles.label}>Category</p>
@@ -139,7 +139,7 @@ export const Job = memo((props) => {
               Apply now
             </a>
           </div>
-        </>
+        </div>
       )}
     </div>
   );
