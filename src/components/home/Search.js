@@ -3,22 +3,19 @@ import styles from "./search.module.scss";
 import close from "../../images/close.png";
 import location from "../../images/location.png";
 import search from "../../images/search.png";
-import axios from "axios";
 import PlacesAutocomplete from "react-places-autocomplete";
 import scriptLoader from "react-async-script-loader";
 import Loader from "../common/Loader";
-
+import { useContext } from "react";
+import { jobContext } from "../../JobsContext";
 function Search({
-  setFetchedJobs,
-  isEmpty,
-  setIsEmpty,
   isScriptLoaded,
   isScriptLoadSucceed,
 }) {
+  const {isSearching,searchJobs} = useContext(jobContext);
   const [searchTerms, setSearchTerms] = useState([]);
   const [typingText, setTypingText] = useState("");
   const [address, setAddress] = useState("");
-  const [loading, setLoading] = useState(false);
 
   //HANDLE INPUT KEY WORDS
   const handleSearchTerm = (e) => {
@@ -36,28 +33,6 @@ function Search({
     }
   };
 
-  //SEARCH JOBS
-  function searchJobs(keywords) {
-    setIsEmpty(true);
-    setLoading(true);
-    const keywordsStringValue = keywords.join("%");
-    axios
-      .get(
-        `https://data.usajobs.gov/api/search?Keyword=${keywordsStringValue}&LocationName=${address}`,
-        {
-          headers: {
-            Host: "data.usajobs.gov",
-            "User-Agent": "chathuraperera007@gmail.com",
-            "Authorization-Key": "HkTFjHkMQq7GxG4w/xfmMgnTOFgpbXtUeQ2GdN2etfQ=",
-          },
-        }
-      )
-      .then((res) => {
-        setFetchedJobs(res.data.SearchResult.SearchResultItems);
-        setLoading(false);
-        setIsEmpty(false);
-      });
-  }
 
   //REMOVE SEARCH TERM
   function removeSearchTerm(index) {
@@ -154,8 +129,8 @@ function Search({
           )}
         </div>
         <div className={styles.searchButton}>
-          <button onClick={() => searchJobs(searchTerms)}>
-            {loading ? <Loader /> : "Search"}
+          <button onClick={() => searchJobs(searchTerms,address)}>
+            {isSearching ? <Loader /> : "Search"}
           </button>
         </div>
       </div>

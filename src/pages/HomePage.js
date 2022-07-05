@@ -2,34 +2,17 @@ import React, { useEffect } from "react";
 import "../App.css";
 import Search from "../components/home/Search";
 import JobsWrapper from "../components/home/JobsWrapper.js";
-import axios from "axios";
 import { useState } from "react";
-
+import axios from '../axios.js'
+import { jobContext } from "../JobsContext";
+import { useContext } from "react";
 
 export default function HomePage() {
-    
-    const [fetchedJobs, setFetchedJobs] = useState(null);
-    const [isEmpty, setIsEmpty] = useState(true);
-        
-    useEffect(() => {
-      axios.get('https://data.usajobs.gov/api/search?Keyword=Software',{
-        headers:{
-          "Host": "data.usajobs.gov",          
-          "User-Agent": "chathuraperera007@gmail.com",          
-          "Authorization-Key": "HkTFjHkMQq7GxG4w/xfmMgnTOFgpbXtUeQ2GdN2etfQ="      
-        }
-      }).then((res) => {
-        setFetchedJobs(res.data.SearchResult.SearchResultItems);
-        setIsEmpty(false);
-        console.log('setFetchedJobs',fetchedJobs)
-      })      
-    },[])
-  
+  const {isEmpty,fetchedJobs} = useContext(jobContext);  
   return (
     <div className="main-content">
-      <Search isEmpty={isEmpty} setIsEmpty={setIsEmpty}  setFetchedJobs={setFetchedJobs} />
-      <JobsWrapper isEmpty={isEmpty}  fetchedJobs={fetchedJobs}/>
-      
+      <Search/>
+      <JobsWrapper isEmpty={isEmpty} fetchedJobs={fetchedJobs} />
     </div>
   );
 }
