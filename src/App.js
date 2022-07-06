@@ -10,6 +10,7 @@ import Applications from "./pages/Applications";
 import Profile from "./pages/Profile";
 import { JobContextProvider } from "./JobsContext";
 export default function App() {
+  
   return (
     <div>
       <BrowserRouter>
