@@ -2,146 +2,142 @@ import React, { useState, memo } from "react";
 import styles from "./jobsWrapper.module.scss";
 import companyLogo from "../../images/companyLogo.png";
 import moreDetailsStyles from "./MoreDetails.module.scss";
-import save from "../../images/save.png";
-import saved from "../../images/saved.png";
-import unclickedHeartWhite from "../../images/unclickedHeartWhite.png";
 import unclickedHeartBlack from "../../images/unclickedHeartBlack.png";
-import clickedHeartWhite from "../../images/clickedHeartWhite.png";
 import clickedHeartRed from "../../images/clickedHeartRed.png";
 
-export const Job = memo((props) => {
-  const [focused, setFocused] = useState(false);
-  const [mobileExpandView, setMobileExpandView] = useState(false);
-  function selectJob(toggleFunc) {
-    setFocused(!focused);
-    if (window.innerWidth > 978) {
-      props.setSelectedJob(props.job);
-      props.setExpandDetails(true);
-    }
-    setMobileExpandView((prevState) => !prevState);
-  }
-  console.log("job rendered");
-  return (
-    <div
-      className={
-        props.selectedJob.MatchedObjectId === props.job.MatchedObjectId &&
-        props.expandDetails
-          ? `${styles.job} ${styles.focused}`
-          : `${styles.job}`
+export const Job = memo(
+  ({
+    setSelectedJob,
+    job,
+    setExpandDetails,
+    selectedJob,
+    expandDetails,
+    toggleSave,
+  }) => {
+    const [focused, setFocused] = useState(false);
+    const [mobileExpandView, setMobileExpandView] = useState(false);
+
+    function selectJob(toggleFunc) {
+      setFocused(!focused);
+      if (window.innerWidth > 978) {
+        setSelectedJob(job);
+        setExpandDetails(true);
       }
-      onClick={selectJob}
-    >
-      <div className={styles.logoWrapper}>
-        <img className={styles.logo} src={companyLogo} alt="logo" />
-        <div>
-          <p className={styles.jobTitle}>
-            {props.job.MatchedObjectDescriptor.PositionTitle}
-          </p>
-          <p className={styles.OrganizationName}>
-            {props.job.MatchedObjectDescriptor.OrganizationName}
-          </p>
-        </div>
-        <div className={styles.saveWrap}>
-          <img
-            onClick={props.toggleSave}
-            className={styles.save}
-            src={props.job.save ? clickedHeartRed : unclickedHeartBlack}
-            alt="logo"
-          />
-        </div>
-      </div>
-      <div className={styles.jobTags}>
-        <div className={styles.tag}>
-          {props.job.MatchedObjectDescriptor.PositionSchedule[0].Name}
-        </div>
-        <div className={styles.tag}>
-          {props.job.MatchedObjectDescriptor.JobCategory[0].Name}
-        </div>
-      </div>
+      setMobileExpandView((prevState) => !prevState);
+    }
 
-      {/*  */}
-      {mobileExpandView && (
-        <>
-          <div className={moreDetailsStyles.roleDetails}>
-            <div className={moreDetailsStyles.detail}>
-              <p className={moreDetailsStyles.label}>Category</p>
-              <p className={moreDetailsStyles.value}>
-                {props.job.MatchedObjectDescriptor?.JobCategory[0].Name}
-              </p>
-            </div>
-            <div className={moreDetailsStyles.detail}>
-              <p className={moreDetailsStyles.label}>Location</p>
-              <p className={moreDetailsStyles.value}>
-                {props.job.MatchedObjectDescriptor?.PositionLocationDisplay}
-              </p>
-            </div>
-            <div className={moreDetailsStyles.detail}>
-              <p className={moreDetailsStyles.label}>Offer Salary</p>
-              <p className={moreDetailsStyles.value}>
-                {
-                  props.job.MatchedObjectDescriptor?.PositionRemuneration[0]
-                    .MinimumRange
-                }
-                $ /
-                {
-                  props.job.MatchedObjectDescriptor?.PositionRemuneration[0]
-                    .RateIntervalCode
-                }
-              </p>
-            </div>
+    const {
+      MatchedObjectId,
+      MatchedObjectDescriptor: {
+        PositionTitle,
+        OrganizationName,
+        PositionSchedule,
+        JobCategory,
+        PositionLocationDisplay,
+        PositionRemuneration,
+        UserArea: {
+          Details: {
+            AgencyMarketingStatement,
+            KeyRequirements,
+            Requirements,
+            MajorDuties,
+          },
+        },
+      },
+    } = job;
+
+    return (
+      <div
+        className={
+          selectedJob.MatchedObjectId === MatchedObjectId && expandDetails
+            ? `${styles.job} ${styles.focused}`
+            : `${styles.job}`
+        }
+        onClick={selectJob}
+      >
+        <div className={styles.logoWrapper}>
+          <img className={styles.logo} src={companyLogo} alt="logo" />
+          <div>
+            <p className={styles.jobTitle}>{PositionTitle}</p>
+            <p className={styles.OrganizationName}>{OrganizationName}</p>
           </div>
-          <div className={moreDetailsStyles.details}>
-            <div className={moreDetailsStyles.overView}>
-              <h2>Overview</h2>
-              <p>
-                {
-                  props.job.MatchedObjectDescriptor?.UserArea.Details
-                    .AgencyMarketingStatement
-                }
-              </p>
+          <div className={styles.saveWrap}>
+            <img
+              onClick={toggleSave}
+              className={styles.save}
+              src={job.save ? clickedHeartRed : unclickedHeartBlack}
+              alt="logo"
+            />
+          </div>
+        </div>
+        <div className={styles.jobTags}>
+          <div className={styles.tag}>{PositionSchedule[0].Name}</div>
+          <div className={styles.tag}>{JobCategory[0].Name}</div>
+        </div>
+
+        {mobileExpandView && (
+          <>
+            <div className={moreDetailsStyles.mobileRoleDetails}>
+              <div className={moreDetailsStyles.detail}>
+                <p className={moreDetailsStyles.label}>Category</p>
+                <p className={moreDetailsStyles.value}>{JobCategory[0].Name}</p>
+              </div>
+              <div className={moreDetailsStyles.detail}>
+                <p className={moreDetailsStyles.label}>Location</p>
+                <p className={moreDetailsStyles.value}>
+                  {PositionLocationDisplay}
+                </p>
+              </div>
+              <div className={moreDetailsStyles.detail}>
+                <p className={moreDetailsStyles.label}>Offer Salary</p>
+                <p className={moreDetailsStyles.value}>
+                  {PositionRemuneration[0].MinimumRange}$ /
+                  {PositionRemuneration[0].RateIntervalCode}
+                </p>
+              </div>
             </div>
-            {props.job.MatchedObjectDescriptor?.UserArea.Details.KeyRequirements
-              .length !== 0 ||
-            props.job.MatchedObjectDescriptor?.UserArea.Details.Requirements ? (
-              <div className={moreDetailsStyles.description}>
-                <h2>Requirements</h2>
-                <ul>
-                  {props.job.MatchedObjectDescriptor?.UserArea.Details
-                    .KeyRequirements.length !== 0
-                    ? props.job.MatchedObjectDescriptor?.UserArea.Details.KeyRequirements.map(
-                        (point) => {
+            <div className={moreDetailsStyles.mobileDetails}>
+              {AgencyMarketingStatement && (
+                <div className={moreDetailsStyles.overView}>
+                  <h2>Overview</h2>
+                  <p>{AgencyMarketingStatement}</p>
+                </div>
+              )}
+              {KeyRequirements.length !== 0 || Requirements ? (
+                <div className={moreDetailsStyles.description}>
+                  <h2>Requirements</h2>
+                  <ul>
+                    {KeyRequirements.length !== 0
+                      ? KeyRequirements.map((point) => {
                           return <li>{point}</li>;
-                        }
-                      )
-                    : props.job.MatchedObjectDescriptor?.UserArea.Details
-                        .Requirements}
-                </ul>
-              </div>
-            ) : (
-              <div className={moreDetailsStyles.description}>
-                <h2>Duties</h2>
-                <ul>
-                  {props.job.MatchedObjectDescriptor?.UserArea.Details.MajorDuties.map(
-                    (duty) => {
+                        })
+                      : Requirements}
+                  </ul>
+                </div>
+              ) : (
+                <div className={moreDetailsStyles.description}>
+                  <h2>Duties</h2>
+                  <ul>
+                    {MajorDuties.map((duty) => {
                       return <li>{duty}</li>;
-                    }
-                  )}
-                </ul>
-              </div>
-            )}
+                    })}
+                  </ul>
+                </div>
+              )}
 
-            <a
-              className={moreDetailsStyles.applyBtn}
-              target="_blank"
-              rel="noopener noreferrer"
-              href={props.job.MatchedObjectDescriptor?.ApplyURI[0]}
-            >
-              Apply now
-            </a>
-          </div>
-        </>
-      )}
-    </div>
-  );
-});
+              <a
+                className={moreDetailsStyles.applyBtn}
+                target="_blank"
+                rel="noopener noreferrer"
+                href={job.MatchedObjectDescriptor?.ApplyURI[0]}
+              >
+                Apply now
+              </a>
+            </div>
+          </>
+        )}
+      </div>
+    );
+  }
+);
 export default Job;

@@ -1,9 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../App.css";
 import Search from "../components/home/Search";
 import JobsWrapper from "../components/home/JobsWrapper.js";
-import { useState } from "react";
-import axios from '../axios.js'
 import { jobContext } from "../JobsContext";
 import { useContext } from "react";
 
