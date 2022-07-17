@@ -6,17 +6,20 @@ import search from "../../images/search.png";
 import PlacesAutocomplete from "react-places-autocomplete";
 import scriptLoader from "react-async-script-loader";
 import Loader from "../common/Loader";
+import downArrow from "../../images/downArrow.png";
 import { useContext } from "react";
 import { jobContext } from "../../JobsContext";
-function Search({
-  isScriptLoaded,
-  isScriptLoadSucceed,
-}) {
-  const {isSearching,searchJobs} = useContext(jobContext);
+function Search({ isScriptLoaded, isScriptLoadSucceed }) {
+  const { isSearching, searchJobs } = useContext(jobContext);
   const [searchTerms, setSearchTerms] = useState([]);
   const [typingText, setTypingText] = useState("");
   const [address, setAddress] = useState("");
-
+  const [toggleFilterOptions, setToggleFilterOptions] = useState({
+    employmentType: false,
+    ExperienceLevel: false,
+    salaryRange: false,
+    remote: false,
+  });
   //HANDLE INPUT KEY WORDS
   const handleSearchTerm = (e) => {
     console.log(e.target.value);
@@ -32,7 +35,6 @@ function Search({
       handleSearchTerm(e);
     }
   };
-
 
   //REMOVE SEARCH TERM
   function removeSearchTerm(index) {
@@ -129,9 +131,95 @@ function Search({
           )}
         </div>
         <div className={styles.searchButton}>
-          <button onClick={() => searchJobs(searchTerms,address)}>
+          <button onClick={() => searchJobs(searchTerms, address)}>
             {isSearching ? <Loader /> : "Search"}
           </button>
+        </div>
+        <div className={styles.filter}>
+          <div
+            className={styles.filterOption}
+            onClick={() =>
+              setToggleFilterOptions((prevState) => {
+                return {
+                  ...prevState,
+                  employmentType: !toggleFilterOptions.employmentType,
+                };
+              })
+            }
+          >
+            <h3>Type of employment</h3>{" "}
+            <img
+              style={{
+                transform: !toggleFilterOptions.employmentType
+                  ? "rotate(0deg)"
+                  : "rotate(180deg)",
+              }}
+              src={downArrow}
+              alt="arrow icon"
+            />
+            {toggleFilterOptions.employmentType && (
+              <div className={styles.optionsPanel}>
+                <label htmlFor="FT">
+                  <input type="checkbox" name="" id="FT" />
+                  Full Time Jobs
+                </label>
+                <label htmlFor="PT">
+                  <input type="checkbox" name="" id="PT" />
+                  Part Time Jobs
+                </label>
+                <label htmlFor="RJ">
+                  <input type="checkbox" name="" id="RJ" />
+                  Remote Jobs
+                </label>
+                <label htmlFor="Intern">
+                  <input type="checkbox" name="" id="Intern" />
+                  Internship
+                </label>
+                <label htmlFor="Contract">
+                  <input type="checkbox" name="" id="Contract" />
+                  Contract
+                </label>
+              </div>
+            )}
+          </div>
+          <div
+            className={styles.filterOption}
+            onClick={() =>
+              setToggleFilterOptions((prevState) => {
+                return {
+                  ...prevState,
+                  employmentType: !toggleFilterOptions.employmentType,
+                };
+              })
+            }
+          >
+            <h3>Experience Level</h3>{" "}
+            <img
+              style={{
+                transform: !toggleFilterOptions.employmentType
+                  ? "rotate(0deg)"
+                  : "rotate(180deg)",
+              }}
+              src={downArrow}
+              alt="arrow icon"
+            />
+            {toggleFilterOptions.employmentType && (
+              <div className={styles.optionsPanel}>
+                <label htmlFor="FT">
+                  <input type="checkbox" name="" id="FT" />
+                  Entry Level
+                </label>
+                <label htmlFor="PT">
+                  <input type="checkbox" name="" id="PT" />
+                  Mid Level
+                </label>
+                <label htmlFor="RJ">
+                  <input type="checkbox" name="" id="RJ" />
+                  Senior Level
+                </label>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>

@@ -37,6 +37,7 @@ export const JobsWrapper = ({ fetchedJobs, isEmpty }) => {
     width: "100%",
   };
   const jobsContainer = {
+    marginTop:"40px",
     display: "grid",
     gridTemplateColumns: expandDetails ? "1fr" : "1fr",
     gridGap: "20px",

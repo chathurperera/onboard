@@ -13,6 +13,7 @@
     border-bottom-right-radius: 5px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    position: relative;
     @media (max-width:798px) {
       display: flex;
       flex-wrap: wrap;
@@ -127,6 +128,57 @@
           border-radius: 5px;
           
         }
+      }
+    }
+  }
+  .filter{
+    position: absolute;
+    // top:0;
+    display: flex;
+    gap:15px;
+    align-items:center;
+
+    top:80px;
+    z-index: 9999999;
+    &Option{
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      display: flex;
+      align-items: center;
+      gap:10px;
+      background:#fff;
+      border-radius: 5px;
+      padding:5px 10px;
+      cursor: pointer;
+      position: relative;
+      width:max-content;
+      img{
+        width:12px;
+      }
+      h3{
+        font-size: 15px;
+        font-weight: 500;
+      }
+      
+    }
+  }
+  .optionsPanel{
+    position: absolute;
+    top:100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-top:5px;
+    background:#fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+
+    label{
+      cursor: pointer;
+      margin:5px 0;
+      font-size:14px;
+      color: rgb(58, 57, 57);
+      input{
+        margin-right:10px;
       }
     }
   }
