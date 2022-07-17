@@ -37,7 +37,7 @@ export const JobsWrapper = ({ fetchedJobs, isEmpty }) => {
     width: "100%",
   };
   const jobsContainer = {
-    marginTop:"40px",
+    // marginTop:"40px",
     display: "grid",
     gridTemplateColumns: expandDetails ? "1fr" : "1fr",
     gridGap: "20px",
@@ -72,7 +72,7 @@ export const JobsWrapper = ({ fetchedJobs, isEmpty }) => {
       >
         <div>
           <div style={jobsContainer}>
-            {isEmpty ? skeletonLoaders : jobsList}
+            {isEmpty ? <div className={styles.skeletonLoaders}>{skeletonLoaders}</div>  : jobsList}
           </div>
         </div>
         {!isEmpty && fetchedJobs.length === 0 ? <NoResults /> : ""}

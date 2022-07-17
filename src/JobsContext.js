@@ -11,15 +11,15 @@ export const JobContextProvider = ({ children }) => {
   const [searchTerms, setSearchTerms] = useState([]);
 
   useEffect(() => {
-    fetchData();
+    // fetchData();
   }, []);
 
-  async function fetchData() {
-    await axios.get("Keyword=Software").then((res) => {
-      setFetchedJobs(res.data.SearchResult.SearchResultItems);
-      setIsEmpty(false);
-    });
-  }
+  // async function fetchData() {
+  //   await axios.get("Keyword=Software").then((res) => {
+  //     setFetchedJobs(res.data.SearchResult.SearchResultItems);
+  //     setIsEmpty(false);
+  //   });
+  // }
   async function searchJobs(keywords, address) {
     setIsSearching(true);
     setIsEmpty(true);
