@@ -188,7 +188,7 @@ function Search({ isScriptLoaded, isScriptLoadSucceed }) {
               setToggleFilterOptions((prevState) => {
                 return {
                   ...prevState,
-                  employmentType: !toggleFilterOptions.employmentType,
+                  ExperienceLevel: !toggleFilterOptions.ExperienceLevel,
                 };
               })
             }
@@ -196,26 +196,76 @@ function Search({ isScriptLoaded, isScriptLoadSucceed }) {
             <h3>Experience Level</h3>{" "}
             <img
               style={{
-                transform: !toggleFilterOptions.employmentType
+                transform: !toggleFilterOptions.ExperienceLevel
                   ? "rotate(0deg)"
                   : "rotate(180deg)",
               }}
               src={downArrow}
               alt="arrow icon"
             />
-            {toggleFilterOptions.employmentType && (
+            {toggleFilterOptions.ExperienceLevel && (
               <div className={styles.optionsPanel}>
-                <label htmlFor="FT">
-                  <input type="checkbox" name="" id="FT" />
+                <label htmlFor="EL">
+                  <input type="checkbox" name="" id="EL" />
                   Entry Level
                 </label>
-                <label htmlFor="PT">
-                  <input type="checkbox" name="" id="PT" />
+                <label htmlFor="ML">
+                  <input type="checkbox" name="" id="ML" />
                   Mid Level
                 </label>
-                <label htmlFor="RJ">
-                  <input type="checkbox" name="" id="RJ" />
+                <label htmlFor="SL">
+                  <input type="checkbox" name="" id="SL" />
                   Senior Level
+                </label>
+              </div>
+            )}
+          </div>
+          <div
+            className={styles.filterOption}
+            onClick={() =>
+              setToggleFilterOptions((prevState) => {
+                return {
+                  ...prevState,
+                  salaryRange: !toggleFilterOptions.salaryRange,
+                };
+              })
+            }
+          >
+            <h3>Salary Range</h3>{" "}
+            <img
+              style={{
+                transform: !toggleFilterOptions.salaryRange
+                  ? "rotate(0deg)"
+                  : "rotate(180deg)",
+              }}
+              src={downArrow}
+              alt="arrow icon"
+            />
+            {toggleFilterOptions.salaryRange && (
+              <div className={styles.optionsPanel}>
+                <label htmlFor="7000-1000">
+                  <input type="checkbox" name="" id="7000-1000" />
+                  $700 - $1000 
+                </label>
+                <label htmlFor="1000-1200">
+                  <input type="checkbox" name="" id="1000-1200" />
+                  $1000 - $1200
+                </label>
+                <label htmlFor="1200">
+                  <input type="checkbox" name="" id="1200" />
+                  $1200 - $1400
+                </label>
+                <label htmlFor="1400">
+                  <input type="checkbox" name="" id="1400" />
+                  $1400 - $1600
+                </label>
+                <label htmlFor="1600">
+                  <input type="checkbox" name="" id="1600" />
+                  $1600 - $1800
+                </label>
+                <label htmlFor="2000">
+                  <input type="checkbox" name="" id="2000" />
+                  $2000+
                 </label>
               </div>
             )}
