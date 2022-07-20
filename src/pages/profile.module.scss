@@ -48,7 +48,9 @@
     }
     position: relative;
     .rolesDropdown {
+      background-color: #fff;
       position: absolute;
+      z-index: 9;
       top: 100%;
       border-radius: 4px;
       width: 95%;
