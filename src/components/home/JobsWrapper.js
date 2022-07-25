@@ -12,6 +12,7 @@ export const JobsWrapper = ({ fetchedJobs, isEmpty }) => {
   const [expandDetails, setExpandDetails] = useState(false);
   // const [listings, setListings] = useState(jobs.jobs);
   const [selectedJob, setSelectedJob] = useState({});
+  console.log('rederned')
 
   //TOGGLES SAVE ICON
   // function toggleSave(id) {

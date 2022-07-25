@@ -14,6 +14,7 @@ function Search({ isScriptLoaded, isScriptLoadSucceed }) {
   const [searchTerms, setSearchTerms] = useState([]);
   const [typingText, setTypingText] = useState("");
   const [address, setAddress] = useState("");
+  const [filterToggle, setFilterToggle] = useState(null);
   const [toggleFilterOptions, setToggleFilterOptions] = useState({
     employmentType: false,
     ExperienceLevel: false,
@@ -27,6 +28,13 @@ function Search({ isScriptLoaded, isScriptLoadSucceed }) {
       return [...prevTerms, e.target.value];
     });
     setTypingText("");
+  };
+
+  //HANDLE FILTER TOGGLE
+  const handleToggleFilter = (filterCount) => {
+    setFilterToggle((prevState) =>
+      prevState === filterCount ? null : filterCount
+    );
   };
 
   //HANDLE KEY PRESS
@@ -138,26 +146,19 @@ function Search({ isScriptLoaded, isScriptLoadSucceed }) {
         <div className={styles.filter}>
           <div
             className={styles.filterOption}
-            onClick={() =>
-              setToggleFilterOptions((prevState) => {
-                return {
-                  ...prevState,
-                  employmentType: !toggleFilterOptions.employmentType,
-                };
-              })
-            }
+            onClick={() => handleToggleFilter(2)}
           >
             <h3>Type of employment</h3>{" "}
             <img
               style={{
-                transform: !toggleFilterOptions.employmentType
+                transform: !toggleFilterOptions.salaryRange
                   ? "rotate(0deg)"
                   : "rotate(180deg)",
               }}
               src={downArrow}
               alt="arrow icon"
             />
-            {toggleFilterOptions.employmentType && (
+            {filterToggle === 2 && (
               <div className={styles.optionsPanel}>
                 <label htmlFor="FT">
                   <input type="checkbox" name="" id="FT" />
@@ -184,26 +185,18 @@ function Search({ isScriptLoaded, isScriptLoadSucceed }) {
           </div>
           <div
             className={styles.filterOption}
-            onClick={() =>
-              setToggleFilterOptions((prevState) => {
-                return {
-                  ...prevState,
-                  ExperienceLevel: !toggleFilterOptions.ExperienceLevel,
-                };
-              })
-            }
+            onClick={() => handleToggleFilter(3)}
           >
             <h3>Experience Level</h3>{" "}
             <img
               style={{
-                transform: !toggleFilterOptions.ExperienceLevel
-                  ? "rotate(0deg)"
-                  : "rotate(180deg)",
+                transform:
+                !toggleFilterOptions.salaryRange ? "rotate(0deg)" : "rotate(180deg)",
               }}
               src={downArrow}
               alt="arrow icon"
             />
-            {toggleFilterOptions.ExperienceLevel && (
+            {filterToggle === 3 && (
               <div className={styles.optionsPanel}>
                 <label htmlFor="EL">
                   <input type="checkbox" name="" id="EL" />
@@ -222,14 +215,7 @@ function Search({ isScriptLoaded, isScriptLoadSucceed }) {
           </div>
           <div
             className={styles.filterOption}
-            onClick={() =>
-              setToggleFilterOptions((prevState) => {
-                return {
-                  ...prevState,
-                  salaryRange: !toggleFilterOptions.salaryRange,
-                };
-              })
-            }
+            onClick={() => handleToggleFilter(1)}
           >
             <h3>Salary Range</h3>{" "}
             <img
@@ -241,11 +227,11 @@ function Search({ isScriptLoaded, isScriptLoadSucceed }) {
               src={downArrow}
               alt="arrow icon"
             />
-            {toggleFilterOptions.salaryRange && (
+            {filterToggle === 1 && (
               <div className={styles.optionsPanel}>
                 <label htmlFor="7000-1000">
                   <input type="checkbox" name="" id="7000-1000" />
-                  $700 - $1000 
+                  $700 - $1000
                 </label>
                 <label htmlFor="1000-1200">
                   <input type="checkbox" name="" id="1000-1200" />

@@ -1,30 +1,30 @@
 @import "/src/mixins";
 @import "/src/variables";
-.jobsCount{
+.jobsCount {
   font-weight: 600;
- padding-left: 80px;
- font-size: 18px;
- padding-bottom: 10px;
+  padding-left: 80px;
+  font-size: 18px;
+  padding-bottom: 10px;
 }
-.skeletonLoaders{
-  margin-top:40px;
+.skeletonLoaders {
+  margin-top: 40px;
 }
 .jobsWrapper {
   position: relative;
   display: grid;
-  grid-template-columns:2fr 3fr;
+  grid-template-columns: 2fr 3fr;
   column-gap: 20px;
-  padding-bottom:50px;
+  padding-bottom: 50px;
   @include section-width;
-  
-  @media (max-width:978px) {
-    grid-template-columns:1fr;
-    
+  margin-top: 20px;
+
+  @media (max-width: 978px) {
+    grid-template-columns: 1fr;
   }
   .alertCreate {
     background-color: #e6e7e7;
     border-radius: 8px;
-    padding:18px;
+    padding: 18px;
     max-width: 250px;
     .alertTitle {
       color: black;
@@ -62,7 +62,7 @@
       cursor: pointer;
     }
   }
-  .focused{
+  .focused {
     border: 2px solid #010203;
   }
   .job {
@@ -73,13 +73,13 @@
     border-radius: 8px;
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.048) 0px 5px 15px 0px;
-    @media (max-width:978px){
+    @media (max-width: 978px) {
       max-width: none;
     }
     h1 {
       font-size: 50px;
     }
-    .logoWrapper{
+    .logoWrapper {
       display: flex;
       // justify-content: space-between;
       align-items: flex-start;
@@ -89,7 +89,7 @@
         width: 60px;
         border-radius: 5px;
       }
-      .saveWrap{
+      .saveWrap {
         border: 1px solid #7b7b8541;
         width: 25px;
         height: 25px;
@@ -99,14 +99,13 @@
         position: absolute;
         right: 0;
         top: 0;
-        img{
+        img {
           width: 13px;
         }
       }
-      .save{
+      .save {
         cursor: pointer;
       }
-      
     }
     .jobTitle {
       font-weight: 600;
@@ -114,7 +113,7 @@
       max-width: 330px;
       word-break: break-word;
     }
-    .OrganizationName{
+    .OrganizationName {
       max-width: 330px;
       font-weight: 600;
       margin-bottom: 20px;
@@ -130,7 +129,7 @@
     .jobTags {
       display: flex;
       align-items: center;
-      column-gap:15px;
+      column-gap: 15px;
       // justify-content: space-between;
       margin-bottom: 12px;
       .tag {
@@ -172,8 +171,7 @@
         }
       }
     }
-    
   }
 }
-@media (min-width:978px) {
+@media (min-width: 978px) {
 }

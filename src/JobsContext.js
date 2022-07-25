@@ -15,7 +15,7 @@ export const JobContextProvider = ({ children }) => {
   }, []);
 
   async function fetchData() {
-    await axios.get("Keyword=Software").then((res) => {
+    await axios.get("Keyword=development").then((res) => {
       setFetchedJobs(res.data.SearchResult.SearchResultItems);
       setIsEmpty(false);
     });
@@ -27,6 +27,7 @@ export const JobContextProvider = ({ children }) => {
     await axios
       .get(`Keyword=${keywordsStringValue}&LocationName=${address}`)
       .then((res) => {
+        console.log('jobs detchged')
         setFetchedJobs(res.data.SearchResult.SearchResultItems);
         setIsEmpty(false);
         setIsSearching(false);
