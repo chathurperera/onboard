@@ -7,10 +7,13 @@ import JobAlert from "./JobAlert";
 import axios from "axios";
 import { Skeleton } from "./Skeleton";
 import { NoResults } from "./NoResults";
+import { useContext } from "react";
+import { jobContext } from "../../JobsContext";
 
-export const JobsWrapper = ({ fetchedJobs, isEmpty }) => {
+export const JobsWrapper = ({  isEmpty }) => {
   const [expandDetails, setExpandDetails] = useState(false);
   // const [listings, setListings] = useState(jobs.jobs);
+  const {fetchedJobs} = useContext(jobContext);
   const [selectedJob, setSelectedJob] = useState({});
   console.log('rederned')
 
